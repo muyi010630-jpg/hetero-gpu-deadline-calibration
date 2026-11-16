@@ -1,17 +1,10 @@
-# Data and Code for *When Do Online Calibration Gains Carry through to Deadline Outcomes in Heterogeneous GPU Pools?*
+# Data and Code for *From Prediction Error to Deadline Outcomes: Online Execution-Time Calibration for Deadline-Aware Scheduling in Heterogeneous GPU Pools*
 
 This repository contains the experimental records, reference implementations, analysis
 scripts, and derived data for the manuscript above (Pang, Guo, Hao, Guo, Huang, and Lü,
 North Automatic Control Technology Institute). It is the public location of the two
 archives supplied with the submission, unpacked so that every file can be read and
 downloaded individually.
-
-Earlier versions of this work were circulated under the titles *From Prediction Error to
-Deadline Outcomes: Online Execution-Time Calibration for Deadline-Aware Scheduling in
-Heterogeneous GPU Pools* and *Closed-Loop Online Performance Calibration for Deadline-Aware
-Scheduling in Heterogeneous GPU Pools*. The materials are the same delivery (20261109);
-the internal package READMEs still carry the earlier title and describe the archives as
-review-only attachments, which predates this public release.
 
 ## Contents
 
