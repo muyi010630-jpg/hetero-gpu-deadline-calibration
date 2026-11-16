@@ -1,0 +1,18 @@
+{
+  "n": 45,
+  "weights": "each device-context cell has equal weight; 7/4/4 contexts per family and per device",
+  "sums_of_squares": {
+    "total": 2.0732941920056382,
+    "device": 0.40223631308097546,
+    "family": 0.3962997321291142,
+    "interaction": 0.6883883437002891,
+    "within_group": 0.5863698030952595
+  },
+  "percentage_shares": {
+    "device": 19.400831518843205,
+    "family": 19.114495842278252,
+    "interaction": 33.2026369607665,
+    "within_group": 28.28203567811205
+  },
+  "shared_percentage": 71.71796432188796
+}

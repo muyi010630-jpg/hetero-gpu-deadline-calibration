@@ -1,0 +1,13 @@
+{"event": "context_completed", "device": "RTX5070", "round": 1, "phase": 1, "context": "fp32_n2048", "mode": "ieee", "median_ms": 0.7945600152015686, "window_rows": 1}
+{"event": "context_completed", "device": "RTX5070", "round": 1, "phase": 1, "context": "fp32_n4096", "mode": "ieee", "median_ms": 5.8114237785339355, "window_rows": 2}
+{"event": "context_completed", "device": "RTX5070", "round": 1, "phase": 1, "context": "fp32_n6144", "mode": "ieee", "median_ms": 21.810495376586914, "window_rows": 3}
+{"event": "context_completed", "device": "RTX5070", "round": 1, "phase": 1, "context": "fp16_n4096", "mode": "ieee", "median_ms": 1.985856056213379, "window_rows": 4}
+{"event": "context_completed", "device": "RTX5070", "round": 1, "phase": 2, "context": "fp32_n2048", "mode": "allow_tf32", "median_ms": 0.5764480233192444, "window_rows": 5}
+{"event": "context_completed", "device": "RTX5070", "round": 1, "phase": 2, "context": "fp32_n4096", "mode": "allow_tf32", "median_ms": 4.268799781799316, "window_rows": 6}
+{"event": "context_completed", "device": "RTX5070", "round": 1, "phase": 2, "context": "fp32_n6144", "mode": "allow_tf32", "median_ms": 13.902239799499512, "window_rows": 7}
+{"event": "context_completed", "device": "RTX5070", "round": 1, "phase": 2, "context": "fp16_n4096", "mode": "allow_tf32", "median_ms": 2.16428804397583, "window_rows": 8}
+{"event": "context_completed", "device": "RTX5070", "round": 1, "phase": 3, "context": "fp32_n2048", "mode": "ieee", "median_ms": 0.730783998966217, "window_rows": 9}
+{"event": "context_completed", "device": "RTX5070", "round": 1, "phase": 3, "context": "fp32_n4096", "mode": "ieee", "median_ms": 5.752799987792969, "window_rows": 10}
+{"event": "context_completed", "device": "RTX5070", "round": 1, "phase": 3, "context": "fp32_n6144", "mode": "ieee", "median_ms": 21.6713924407959, "window_rows": 11}
+{"event": "context_completed", "device": "RTX5070", "round": 1, "phase": 3, "context": "fp16_n4096", "mode": "ieee", "median_ms": 2.0312321186065674, "window_rows": 12}
+{"protocol_id": "tf32_software_path_mechanism_20261018_v1", "state": "completed", "device_label": "RTX5070", "round": 1, "smoke": true, "started_utc": "2026-10-18T10:27:09.494467+00:00", "pid": 42220, "window_rows": 12, "completed_context_phases": 12, "expected_window_rows": 12, "expected_context_phases": 12, "paired_output_differences": 4, "external_compute_process_seen": false, "telemetry_query_failure_seen": false, "nonfinite_output_seen": false, "run_directory": "tf32_diagnostic/raw/RTX5070/smoke_round_01", "current_phase": 3, "current_context": "fp16_n4096", "current_mode": "ieee", "completed_utc": "2026-10-18T10:27:14.844418+00:00"}

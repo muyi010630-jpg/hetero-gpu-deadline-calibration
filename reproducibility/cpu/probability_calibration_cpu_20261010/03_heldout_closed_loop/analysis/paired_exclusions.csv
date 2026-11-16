@@ -1,0 +1,15 @@
+﻿comparison,metric,excluded_images,reason
+boundary_vs_window,arrival_prefix120_sla,"[52001, 52002, 52003, 52004, 52005, 52006, 52007, 52008, 52009, 52010, 52011, 52012, 52013, 52014, 52015, 52016]",missing paired task streams/metrics/conditions
+boundary_vs_window,arrival_prefix120_n,"[52001, 52002, 52003, 52004, 52005, 52006, 52007, 52008, 52009, 52010, 52011, 52012, 52013, 52014, 52015, 52016]",missing paired task streams/metrics/conditions
+boundary_vs_uniform,arrival_prefix120_sla,"[52001, 52002, 52003, 52004, 52005, 52006, 52007, 52008, 52009, 52010, 52011, 52012, 52013, 52014, 52015, 52016]",missing paired task streams/metrics/conditions
+boundary_vs_uniform,arrival_prefix120_n,"[52001, 52002, 52003, 52004, 52005, 52006, 52007, 52008, 52009, 52010, 52011, 52012, 52013, 52014, 52015, 52016]",missing paired task streams/metrics/conditions
+uniform_vs_uncalibrated,arrival_prefix120_sla,"[52001, 52002, 52003, 52004, 52005, 52006, 52007, 52008, 52009, 52010, 52011, 52012, 52013, 52014, 52015, 52016]",missing paired task streams/metrics/conditions
+uniform_vs_uncalibrated,arrival_prefix120_n,"[52001, 52002, 52003, 52004, 52005, 52006, 52007, 52008, 52009, 52010, 52011, 52012, 52013, 52014, 52015, 52016]",missing paired task streams/metrics/conditions
+uncalibrated_vs_window,arrival_prefix120_sla,"[52001, 52002, 52003, 52004, 52005, 52006, 52007, 52008, 52009, 52010, 52011, 52012, 52013, 52014, 52015, 52016]",missing paired task streams/metrics/conditions
+uncalibrated_vs_window,arrival_prefix120_n,"[52001, 52002, 52003, 52004, 52005, 52006, 52007, 52008, 52009, 52010, 52011, 52012, 52013, 52014, 52015, 52016]",missing paired task streams/metrics/conditions
+boundary_vs_fixed,arrival_prefix120_sla,"[52001, 52002, 52003, 52004, 52005, 52006, 52007, 52008, 52009, 52010, 52011, 52012, 52013, 52014, 52015, 52016]",missing paired task streams/metrics/conditions
+boundary_vs_fixed,arrival_prefix120_n,"[52001, 52002, 52003, 52004, 52005, 52006, 52007, 52008, 52009, 52010, 52011, 52012, 52013, 52014, 52015, 52016]",missing paired task streams/metrics/conditions
+boundary_vs_rolling,arrival_prefix120_sla,"[52001, 52002, 52003, 52004, 52005, 52006, 52007, 52008, 52009, 52010, 52011, 52012, 52013, 52014, 52015, 52016]",missing paired task streams/metrics/conditions
+boundary_vs_rolling,arrival_prefix120_n,"[52001, 52002, 52003, 52004, 52005, 52006, 52007, 52008, 52009, 52010, 52011, 52012, 52013, 52014, 52015, 52016]",missing paired task streams/metrics/conditions
+mean_oracle_vs_window,arrival_prefix120_sla,"[52001, 52002, 52003, 52004, 52005, 52006, 52007, 52008, 52009, 52010, 52011, 52012, 52013, 52014, 52015, 52016]",missing paired task streams/metrics/conditions
+mean_oracle_vs_window,arrival_prefix120_n,"[52001, 52002, 52003, 52004, 52005, 52006, 52007, 52008, 52009, 52010, 52011, 52012, 52013, 52014, 52015, 52016]",missing paired task streams/metrics/conditions

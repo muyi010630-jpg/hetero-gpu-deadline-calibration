@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "utc": "2026-10-18T10:40:05.619286+00:00",
+  "cross_device_inputs_equal": true,
+  "identity_source": "CPU-only frozen formal-generator input checks; v1 smoke inputs differed by NumPy sampler version",
+  "devices": [
+    "A100",
+    "T4",
+    "RTX5070"
+  ],
+  "smoke_excluded_from_formal": true
+}

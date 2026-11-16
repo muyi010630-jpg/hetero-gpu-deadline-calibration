@@ -1,0 +1,71 @@
+{
+  "created_at_unix": 1788513001.3548398,
+  "profile_csv": "reproducibility/deployment/profiles/P1.csv",
+  "holdout_seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130
+  ],
+  "events_per_seed": 1800,
+  "tune_seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "tune_events_per_seed": 700,
+  "family_alpha": {
+    "compute": 0.35,
+    "inference": 0.22,
+    "memory": 0.45
+  },
+  "selected_params": {
+    "tau": 1.5,
+    "alpha_high": 0.3,
+    "cusum_h": 0.32,
+    "cusum_k": 0.03,
+    "boost_steps": 1,
+    "risk_kappa": 1.45,
+    "cold_uncertainty": 0.3
+  },
+  "strategies": [
+    "fixed",
+    "window",
+    "kalman",
+    "ema_original",
+    "family_ema",
+    "hierarchical_ema",
+    "drift_aware_ema",
+    "full_method"
+  ],
+  "note": "All methods predict before observing each event. Phase labels are used only for reporting, not for algorithm decisions."
+}

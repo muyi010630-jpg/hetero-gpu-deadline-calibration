@@ -1,0 +1,16 @@
+{
+  "query": {
+    "command": [
+      "nvidia-smi",
+      "--query-compute-apps=gpu_uuid,pid,process_name,used_gpu_memory",
+      "--format=csv,noheader,nounits"
+    ],
+    "started_utc": "2026-10-18T10:46:53.850170+00:00",
+    "completed_utc": "2026-10-18T10:46:53.888887+00:00",
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "processes": [],
+  "parse_errors": []
+}

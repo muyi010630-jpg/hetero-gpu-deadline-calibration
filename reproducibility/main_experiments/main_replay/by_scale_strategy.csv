@@ -1,0 +1,61 @@
+﻿cluster_size,strategy,strategy_label,scenario_count
+2,edf,EDF,27
+2,ema,Original EMA-QoS,27
+2,ema_risk,EMA + risk bound,27
+2,family_ema_qos,Family EMA-QoS,27
+2,fcfs,FCFS,27
+2,fixed,Fixed-QoS,27
+2,full_no_drift,Full w/o drift-aware alpha,27
+2,full_no_hier,Full w/o hierarchical borrowing,27
+2,full_no_risk,Full w/o risk upper bound,27
+2,full_qos,Full method,27
+2,hier_qos,Hierarchical EMA-QoS,27
+2,oracle,Oracle reference,27
+4,edf,EDF,27
+4,ema,Original EMA-QoS,27
+4,ema_risk,EMA + risk bound,27
+4,family_ema_qos,Family EMA-QoS,27
+4,fcfs,FCFS,27
+4,fixed,Fixed-QoS,27
+4,full_no_drift,Full w/o drift-aware alpha,27
+4,full_no_hier,Full w/o hierarchical borrowing,27
+4,full_no_risk,Full w/o risk upper bound,27
+4,full_qos,Full method,27
+4,hier_qos,Hierarchical EMA-QoS,27
+4,oracle,Oracle reference,27
+8,edf,EDF,27
+8,ema,Original EMA-QoS,27
+8,ema_risk,EMA + risk bound,27
+8,family_ema_qos,Family EMA-QoS,27
+8,fcfs,FCFS,27
+8,fixed,Fixed-QoS,27
+8,full_no_drift,Full w/o drift-aware alpha,27
+8,full_no_hier,Full w/o hierarchical borrowing,27
+8,full_no_risk,Full w/o risk upper bound,27
+8,full_qos,Full method,27
+8,hier_qos,Hierarchical EMA-QoS,27
+8,oracle,Oracle reference,27
+16,edf,EDF,27
+16,ema,Original EMA-QoS,27
+16,ema_risk,EMA + risk bound,27
+16,family_ema_qos,Family EMA-QoS,27
+16,fcfs,FCFS,27
+16,fixed,Fixed-QoS,27
+16,full_no_drift,Full w/o drift-aware alpha,27
+16,full_no_hier,Full w/o hierarchical borrowing,27
+16,full_no_risk,Full w/o risk upper bound,27
+16,full_qos,Full method,27
+16,hier_qos,Hierarchical EMA-QoS,27
+16,oracle,Oracle reference,27
+32,edf,EDF,27
+32,ema,Original EMA-QoS,27
+32,ema_risk,EMA + risk bound,27
+32,family_ema_qos,Family EMA-QoS,27
+32,fcfs,FCFS,27
+32,fixed,Fixed-QoS,27
+32,full_no_drift,Full w/o drift-aware alpha,27
+32,full_no_hier,Full w/o hierarchical borrowing,27
+32,full_no_risk,Full w/o risk upper bound,27
+32,full_qos,Full method,27
+32,hier_qos,Hierarchical EMA-QoS,27
+32,oracle,Oracle reference,27

@@ -1,0 +1,11 @@
+SHA-256 of the archives as supplied with the submission
+
+C3CD46D110A77D723D5A488B43C2C9101E3D967C90A79E488955AF3D4C13EC15  Reproducibility_Data_and_Code.zip  (73,604,511 bytes, 1459 entries)
+8666BEFBD1A8A06E65C3EB7E535F835645789CE20B98C5B77D35272372EE46D4  TF32_Data_and_Code.zip  (929,623 bytes, 247 entries)
+
+The two directories in this repository are the entry-for-entry extraction of these
+archives. Per-file checksums of the extracted trees:
+  reproducibility/package_manifest_sha256.csv
+  tf32_diagnostic/delivery_manifest.json
+
+Issued: 2026-11-16

@@ -1,0 +1,441 @@
+{
+  "status": "FROZEN",
+  "frozen_at_utc": "2026-10-10T06:40:47.270303+00:00",
+  "exploratory": true,
+  "code_sha256": {
+    "scripts/run_deadline.py": "7ae06ab3297ec3aac6aa8ee85a6073e55976fd1a79e7e23edd4cb91196911f8c",
+    "scripts/deadline_calibrator.py": "68c000e44263814cfe8a8b291fad488829d09040e7044144ee7c7ebcfd119cf8",
+    "scripts/analyze_deadline.py": "814ca28df9b140899746059e6915ec08c32b3fa48a03638ff7b3e83dcc7b80b8",
+    "scripts/check_artifacts.py": "f8246dea6cbf0fa005015cf57bb65de29245a808dbdf49714077852d2aaf0fd8",
+    "frozen_support/calibrator_core.py": "e69136779a14ff01aedd2e26cfa3ea6d64f9a7589d240011108c083cd71e079e",
+    "frozen_support/profile_flows.py": "3987b696f4877e0db066e3b2ec47a71baef2d16e9ca8a8c2904cf68925a59c57",
+    "00_protocol_sources/frozen_sources/hetero_qos_sim_n2.py": "bc27f8dbf77bab7b453aa3a98df10811b3484e2b7e8301109056ed0c0799b3a6",
+    "00_design_sources/实验协议.md": "fe4e8d02ba2495c21a30aea8bb5129cf53cabe5272335525be2b729349b56240"
+  },
+  "input_sha256": {
+    "reproducibility/cpu/pooled_ema_cpu_20261009/00_configuration_sources/profiles_P0/cluster_08_profile.csv": "aba668df65d8273c63bba5e920f1815d83ab1b3cbf9ebc0d65a307e5bb15f5e3"
+  },
+  "selected": {
+    "uniform": {
+      "mode": "uniform",
+      "eta": 0.005,
+      "weight": 0.0
+    },
+    "boundary": {
+      "mode": "boundary",
+      "eta": 0.005,
+      "weight": 1.0
+    },
+    "fixed": {
+      "mode": "fixed_margin_0.3",
+      "eta": 0.0,
+      "weight": 0.0,
+      "margin": 0.3
+    },
+    "strongest_simple": {
+      "mode": "fixed_margin_0.3",
+      "eta": 0.0,
+      "weight": 0.0,
+      "margin": 0.3
+    }
+  },
+  "test_arms": [
+    {
+      "mode": "window_original",
+      "eta": 0.0,
+      "weight": 0.0
+    },
+    {
+      "mode": "uncalibrated",
+      "eta": 0.0,
+      "weight": 0.0
+    },
+    {
+      "mode": "rolling_cdf",
+      "eta": 0.0,
+      "weight": 0.0
+    },
+    {
+      "mode": "fixed_margin_0.3",
+      "eta": 0.0,
+      "weight": 0.0,
+      "margin": 0.3
+    },
+    {
+      "mode": "mean_oracle_original",
+      "eta": 0.0,
+      "weight": 0.0
+    },
+    {
+      "mode": "uniform",
+      "eta": 0.005,
+      "weight": 0.0
+    },
+    {
+      "mode": "boundary",
+      "eta": 0.005,
+      "weight": 1.0
+    }
+  ],
+  "validation_ranking": [
+    {
+      "mode": "mean_oracle_original",
+      "eta": 0.0,
+      "weight": 0.0,
+      "arm_id": "mean_oracle_original__eta0__w0",
+      "validation_sla": 0.14419129707829195
+    },
+    {
+      "mode": "boundary",
+      "eta": 0.005,
+      "weight": 1.0,
+      "arm_id": "boundary__eta0.005__w1",
+      "validation_sla": 0.1518280888632696
+    },
+    {
+      "mode": "uniform",
+      "eta": 0.005,
+      "weight": 0.0,
+      "arm_id": "uniform__eta0.005__w0",
+      "validation_sla": 0.15185332774040072
+    },
+    {
+      "mode": "boundary",
+      "eta": 0.005,
+      "weight": 3.0,
+      "arm_id": "boundary__eta0.005__w3",
+      "validation_sla": 0.15218553877045793
+    },
+    {
+      "mode": "uncalibrated",
+      "eta": 0.0,
+      "weight": 0.0,
+      "arm_id": "uncalibrated__eta0__w0",
+      "validation_sla": 0.1525275058998955
+    },
+    {
+      "mode": "boundary",
+      "eta": 0.02,
+      "weight": 3.0,
+      "arm_id": "boundary__eta0.02__w3",
+      "validation_sla": 0.1530901998405425
+    },
+    {
+      "mode": "boundary",
+      "eta": 0.02,
+      "weight": 1.0,
+      "arm_id": "boundary__eta0.02__w1",
+      "validation_sla": 0.15321841457134341
+    },
+    {
+      "mode": "uniform",
+      "eta": 0.02,
+      "weight": 0.0,
+      "arm_id": "uniform__eta0.02__w0",
+      "validation_sla": 0.15324835163049122
+    },
+    {
+      "mode": "fixed_margin_0.3",
+      "eta": 0.0,
+      "weight": 0.0,
+      "arm_id": "fixed_margin_0.3__eta0__w0",
+      "validation_sla": 0.1537618201656981
+    },
+    {
+      "mode": "fixed_margin_0.15",
+      "eta": 0.0,
+      "weight": 0.0,
+      "arm_id": "fixed_margin_0.15__eta0__w0",
+      "validation_sla": 0.15380441759928346
+    },
+    {
+      "mode": "fixed_margin_0.05",
+      "eta": 0.0,
+      "weight": 0.0,
+      "arm_id": "fixed_margin_0.05__eta0__w0",
+      "validation_sla": 0.15384306581378643
+    },
+    {
+      "mode": "boundary",
+      "eta": 0.08,
+      "weight": 1.0,
+      "arm_id": "boundary__eta0.08__w1",
+      "validation_sla": 0.15412591230044062
+    },
+    {
+      "mode": "boundary",
+      "eta": 0.08,
+      "weight": 3.0,
+      "arm_id": "boundary__eta0.08__w3",
+      "validation_sla": 0.15426190402227813
+    },
+    {
+      "mode": "uniform",
+      "eta": 0.08,
+      "weight": 0.0,
+      "arm_id": "uniform__eta0.08__w0",
+      "validation_sla": 0.15469155702193307
+    },
+    {
+      "mode": "window_original",
+      "eta": 0.0,
+      "weight": 0.0,
+      "arm_id": "window_original__eta0__w0",
+      "validation_sla": 0.15470884555477518
+    },
+    {
+      "mode": "rolling_cdf",
+      "eta": 0.0,
+      "weight": 0.0,
+      "arm_id": "rolling_cdf__eta0__w0",
+      "validation_sla": 0.15508845355218107
+    }
+  ],
+  "test_images": [
+    52001,
+    52002,
+    52003,
+    52004,
+    52005,
+    52006,
+    52007,
+    52008,
+    52009,
+    52010,
+    52011,
+    52012,
+    52013,
+    52014,
+    52015,
+    52016
+  ],
+  "test_tasks": [
+    62001,
+    62002
+  ],
+  "analysis": {
+    "rate_columns_are": "fraction",
+    "primary_comparisons": [
+      {
+        "name": "boundary_vs_window",
+        "family": "deadline_sla",
+        "arm_a": {
+          "mode": "boundary",
+          "eta": 0.005,
+          "weight": 1.0
+        },
+        "arm_b": {
+          "mode": "window_original",
+          "eta": 0.0,
+          "weight": 0.0
+        },
+        "primary_metrics": [
+          "sla_violation_rate"
+        ]
+      },
+      {
+        "name": "boundary_vs_uniform",
+        "family": "deadline_sla",
+        "arm_a": {
+          "mode": "boundary",
+          "eta": 0.005,
+          "weight": 1.0
+        },
+        "arm_b": {
+          "mode": "uniform",
+          "eta": 0.005,
+          "weight": 0.0
+        },
+        "primary_metrics": [
+          "sla_violation_rate"
+        ]
+      },
+      {
+        "name": "uniform_vs_uncalibrated",
+        "family": "deadline_sla",
+        "arm_a": {
+          "mode": "uniform",
+          "eta": 0.005,
+          "weight": 0.0
+        },
+        "arm_b": {
+          "mode": "uncalibrated",
+          "eta": 0.0,
+          "weight": 0.0
+        },
+        "primary_metrics": [
+          "sla_violation_rate"
+        ]
+      },
+      {
+        "name": "uncalibrated_vs_window",
+        "family": "deadline_sla",
+        "arm_a": {
+          "mode": "uncalibrated",
+          "eta": 0.0,
+          "weight": 0.0
+        },
+        "arm_b": {
+          "mode": "window_original",
+          "eta": 0.0,
+          "weight": 0.0
+        },
+        "primary_metrics": [
+          "sla_violation_rate"
+        ]
+      },
+      {
+        "name": "boundary_vs_fixed",
+        "family": "deadline_sla",
+        "arm_a": {
+          "mode": "boundary",
+          "eta": 0.005,
+          "weight": 1.0
+        },
+        "arm_b": {
+          "mode": "fixed_margin_0.3",
+          "eta": 0.0,
+          "weight": 0.0,
+          "margin": 0.3
+        },
+        "primary_metrics": [
+          "sla_violation_rate"
+        ]
+      },
+      {
+        "name": "boundary_vs_rolling",
+        "family": "deadline_sla",
+        "arm_a": {
+          "mode": "boundary",
+          "eta": 0.005,
+          "weight": 1.0
+        },
+        "arm_b": {
+          "mode": "rolling_cdf",
+          "eta": 0.0,
+          "weight": 0.0
+        },
+        "primary_metrics": [
+          "sla_violation_rate"
+        ]
+      }
+    ],
+    "diagnostic_comparisons": [
+      {
+        "name": "mean_oracle_vs_window",
+        "arm_a": {
+          "mode": "mean_oracle_original",
+          "eta": 0.0,
+          "weight": 0.0
+        },
+        "arm_b": {
+          "mode": "window_original",
+          "eta": 0.0,
+          "weight": 0.0
+        }
+      }
+    ],
+    "probe_gate": {
+      "combiner": "all",
+      "rules": [
+        {
+          "comparison": "boundary_vs_window",
+          "metric": "sla_violation_rate",
+          "scope": "overall",
+          "field": "difference_a_minus_b",
+          "op": "<=",
+          "value": -0.3
+        },
+        {
+          "comparison": "boundary_vs_window",
+          "metric": "sla_violation_rate",
+          "scope": "overall",
+          "field": "ci_high",
+          "op": "<",
+          "value": 0.0
+        },
+        {
+          "comparison": "boundary_vs_window",
+          "metric": "sla_violation_rate",
+          "scope": "overall",
+          "field": "p_holm",
+          "op": "<=",
+          "value": 0.05
+        },
+        {
+          "comparison": "boundary_vs_uniform",
+          "metric": "sla_violation_rate",
+          "scope": "overall",
+          "field": "ci_high",
+          "op": "<",
+          "value": 0.0
+        },
+        {
+          "comparison": "boundary_vs_uniform",
+          "metric": "sla_violation_rate",
+          "scope": "overall",
+          "field": "p_holm",
+          "op": "<=",
+          "value": 0.05
+        },
+        {
+          "comparison": "boundary_vs_fixed",
+          "metric": "sla_violation_rate",
+          "scope": "overall",
+          "field": "ci_high",
+          "op": "<",
+          "value": 0.0
+        },
+        {
+          "comparison": "boundary_vs_fixed",
+          "metric": "sla_violation_rate",
+          "scope": "overall",
+          "field": "p_holm",
+          "op": "<=",
+          "value": 0.05
+        }
+      ]
+    },
+    "design": {
+      "test": {
+        "image_seeds": [
+          52001,
+          52002,
+          52003,
+          52004,
+          52005,
+          52006,
+          52007,
+          52008,
+          52009,
+          52010,
+          52011,
+          52012,
+          52013,
+          52014,
+          52015,
+          52016
+        ],
+        "task_seeds": [
+          62001,
+          62002
+        ],
+        "rho_levels": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "load_levels": [
+          0.75,
+          1.7
+        ],
+        "horizon_levels": [
+          24.0,
+          120.0,
+          600.0
+        ]
+      }
+    }
+  },
+  "protocol_note": "No online probes unless predeclared no-probe gate passes. Auxiliary cost/P99 review also required; no test retuning."
+}

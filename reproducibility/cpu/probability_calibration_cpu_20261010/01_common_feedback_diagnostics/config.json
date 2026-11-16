@@ -1,0 +1,18 @@
+{
+  "stage": "common",
+  "units": 96,
+  "runs": 96,
+  "arms": [
+    {
+      "mode": "window_original",
+      "eta": 0.0,
+      "weight": 0.0
+    }
+  ],
+  "workers": 3,
+  "source_fingerprint": "dc4298bdfc24befa18bd235590239b4226132c1b746926cc9dad79f1477994d1",
+  "horizons": [
+    24.0,
+    120.0
+  ]
+}

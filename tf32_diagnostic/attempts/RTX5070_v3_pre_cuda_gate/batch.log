@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "tf32_diagnostic/scripts/run_all_rounds.py", line 38, in <module>
+    if __name__=='__main__':sys.exit(main())
+                                     ^^^^^^
+  File "tf32_diagnostic/scripts/run_all_rounds.py", line 26, in main
+    raise RuntimeError(f'Round {r} requires inspection: exit={rc}, state={result["state"]}')
+RuntimeError: Round 1 requires inspection: exit=1, state=failed

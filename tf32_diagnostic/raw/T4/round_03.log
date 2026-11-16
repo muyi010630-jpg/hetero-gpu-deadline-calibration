@@ -1,0 +1,13 @@
+{"event": "context_completed", "device": "T4", "round": 3, "phase": 1, "context": "fp32_n4096", "mode": "ieee", "median_ms": 33.51089935302734, "window_rows": 20}
+{"event": "context_completed", "device": "T4", "round": 3, "phase": 1, "context": "fp32_n2048", "mode": "ieee", "median_ms": 4.2275535583496096, "window_rows": 40}
+{"event": "context_completed", "device": "T4", "round": 3, "phase": 1, "context": "fp16_n4096", "mode": "ieee", "median_ms": 6.154113578796387, "window_rows": 60}
+{"event": "context_completed", "device": "T4", "round": 3, "phase": 1, "context": "fp32_n6144", "mode": "ieee", "median_ms": 131.9344909667969, "window_rows": 80}
+{"event": "context_completed", "device": "T4", "round": 3, "phase": 2, "context": "fp32_n4096", "mode": "allow_tf32", "median_ms": 34.14827423095703, "window_rows": 100}
+{"event": "context_completed", "device": "T4", "round": 3, "phase": 2, "context": "fp32_n2048", "mode": "allow_tf32", "median_ms": 4.297123146057128, "window_rows": 120}
+{"event": "context_completed", "device": "T4", "round": 3, "phase": 2, "context": "fp16_n4096", "mode": "allow_tf32", "median_ms": 6.296664047241211, "window_rows": 140}
+{"event": "context_completed", "device": "T4", "round": 3, "phase": 2, "context": "fp32_n6144", "mode": "allow_tf32", "median_ms": 132.8575866699219, "window_rows": 160}
+{"event": "context_completed", "device": "T4", "round": 3, "phase": 3, "context": "fp32_n4096", "mode": "ieee", "median_ms": 33.95991363525391, "window_rows": 180}
+{"event": "context_completed", "device": "T4", "round": 3, "phase": 3, "context": "fp32_n2048", "mode": "ieee", "median_ms": 4.269398498535156, "window_rows": 200}
+{"event": "context_completed", "device": "T4", "round": 3, "phase": 3, "context": "fp16_n4096", "mode": "ieee", "median_ms": 6.256196784973144, "window_rows": 220}
+{"event": "context_completed", "device": "T4", "round": 3, "phase": 3, "context": "fp32_n6144", "mode": "ieee", "median_ms": 131.78628540039062, "window_rows": 240}
+{"protocol_id": "tf32_software_path_mechanism_20261018_v3", "state": "completed", "device_label": "T4", "round": 3, "smoke": false, "input_check": false, "started_utc": "2026-10-18T10:45:05.041049+00:00", "pid": 2073, "window_rows": 240, "completed_context_phases": 12, "expected_window_rows": 240, "expected_context_phases": 12, "paired_output_differences": 4, "external_compute_process_seen": false, "telemetry_query_failure_seen": false, "nonfinite_output_seen": false, "run_directory": "<REMOTE_WORKDIR>/raw/round_03", "current_phase": 3, "current_context": "fp32_n6144", "current_mode": "ieee", "completed_utc": "2026-10-18T10:47:39.821114+00:00"}

@@ -1,0 +1,52 @@
+{
+  "protocol_id": "tf32_software_path_mechanism_20261018_v3",
+  "preformal_v3_amendment": {
+    "stage": "Before any formal timing collection; v2 remains archived in scripts/preformal_v2",
+    "reason": "Cloud NVML/nvidia-smi reports host PIDs while Python and container procfs report container PIDs; direct equality falsely identifies the benchmark as external",
+    "ownership_gate": "Before importing torch or creating CUDA state, require a successful empty nvidia-smi compute-process baseline. After all input tensors have been copied to GPU and CUDA synchronized, require exactly one compute PID on the selected GPU. Record and fix that PID for the entire round. On Windows/equal PID this is a direct match; otherwise explicitly label the association as an inference from sole new process appearance after own CUDA initialization with empty baseline. Initial zero, multiple, malformed, or unqueryable processes cause failure, without guesses",
+    "telemetry_rule": "Later snapshots accept only the fixed NVML PID on the selected UUID; any additional PID is recorded as external. No process is killed, baseline process is ignored, or PID is silently remapped mid-round",
+    "scope_limit": "The empty-baseline/sole-new-PID association is operational evidence, not a kernel-proven host/container PID mapping; capture raw queries and namespace status for audit. Phase snapshots do not guarantee detection of transient jobs between snapshots",
+    "unchanged": "All input generation, contexts, seeds, phase orders, warmup, measurement, numerical checks, and estimands remain exactly v2"
+  },
+  "preformal_amendment": {
+    "stage": "Before any formal timing collection; v1 interface/output smoke records are preserved separately",
+    "reason": "NumPy versions produced different standard_normal(float32) input hashes in the same seeded protocol; device property UUIDs omitted the GPU- prefix used by nvidia-smi",
+    "changes": "Use explicit PCG64 raw-bit conversion for identical cross-version inputs; normalize GPU UUID prefixes for external-process matching; add a CPU-only input-check mode",
+    "unchanged": ["devices", "context sizes and dtypes", "round count", "round seeds", "ABA/BAB/ABA sequence", "context orders", "warmup definition", "timing windows", "estimands"],
+    "selection_statement": "This amendment enforces cross-device input identity and correct telemetry matching; no condition was selected from measured speedups or numerical effect sizes",
+    "v1_archive": "scripts/preformal_v1/tf32_measure.py and protocol.json"
+  },
+  "purpose": "Within-device controlled diagnostic; no scheduler and no historical-cause attribution",
+  "devices": ["A100", "T4", "RTX5070"],
+  "contexts": [
+    {"id": "fp32_n2048", "n": 2048, "dtype": "float32", "input_stream_id": 0},
+    {"id": "fp32_n4096", "n": 4096, "dtype": "float32", "input_stream_id": 1},
+    {"id": "fp32_n6144", "n": 6144, "dtype": "float32", "input_stream_id": 2},
+    {"id": "fp16_n4096", "n": 4096, "dtype": "float16", "input_stream_id": 3}
+  ],
+  "rounds": [
+    {"round": 1, "seed": 2026101801, "phases": ["ieee", "allow_tf32", "ieee"], "context_order": ["fp32_n2048", "fp32_n4096", "fp32_n6144", "fp16_n4096"]},
+    {"round": 2, "seed": 2026101802, "phases": ["allow_tf32", "ieee", "allow_tf32"], "context_order": ["fp16_n4096", "fp32_n6144", "fp32_n2048", "fp32_n4096"]},
+    {"round": 3, "seed": 2026101803, "phases": ["ieee", "allow_tf32", "ieee"], "context_order": ["fp32_n4096", "fp32_n2048", "fp16_n4096", "fp32_n6144"]}
+  ],
+  "input_generation": {
+    "generator": "numpy.random.PCG64(numpy.random.SeedSequence([round_seed, input_stream_id])).random_raw(N*N); A then B from the same context-specific raw stream",
+    "distribution": "Exact float32 uniform grid in [-1,1): (raw_uint64 >> 40).astype(numpy.float32) * numpy.float32(2**-23) - numpy.float32(1.0), reshaped to (N,N)",
+    "dtype_conversion": "Generate float32 on CPU, cast once to context dtype on CPU, hash exact contiguous post-cast CPU bytes",
+    "placement": "Generate all four context input pairs on CPU first, then copy each pair to CUDA once; reuse the same tensors in every phase",
+    "cross_device_identity": "Verify A/B SHA256 using --input-check before formal GPU collection; explicit raw-bit conversion avoids version-dependent normal sampling"
+  },
+  "operator": "torch.mm(A, B) returning a newly allocated output; no out= argument",
+  "inference_context": "torch.inference_mode()",
+  "warmup": {"minimum_calls": 20, "minimum_seconds": 3.0, "batch_calls": 10, "synchronize_each_batch": true},
+  "measurement": {"windows_per_context_phase": 20, "calls_per_window": 10, "timer": "CUDA start/end Events; synchronize end Event; elapsed_ms divided by 10", "excluded": ["input generation", "host-device copies", "output checks", "file writes", "network"]},
+  "precision_api": {"new": "Set torch.backends.fp32_precision='ieee', switch only torch.backends.cuda.matmul.fp32_precision='ieee'/'tf32'", "legacy": "Switch only torch.backends.cuda.matmul.allow_tf32=False/True", "selection": "PyTorch >=2.9 with both new properties uses new API; otherwise legacy; never mix in one process", "other_settings": "Snapshot existing FP16/BF16 reduced-precision reduction and accumulation settings; assert unchanged throughout", "forbidden": ["set_float32_matmul_precision", "autocast", "torch.compile", "extra CUDA streams", "old Worker imports", "GPU power/frequency changes"]},
+  "environment_override_policy": "Abort before CUDA work if NVIDIA_TF32_OVERRIDE or TORCH_ALLOW_TF32_CUBLAS_OVERRIDE is nonempty; do not modify either",
+  "outputs": {"matrix_retention": "No full output matrices written; first output of each mode retained in CPU RAM only until paired difference is calculated", "checks_every_context_phase": ["post-copy CPU output SHA256", "finite element count", "shape", "dtype"], "delta": "CPU float64 chunked Frobenius norm of C_on-C_off divided by norm(C_off); check finite values and positive denominator; C_off is reference, not mathematical truth", "repeated_phase": "Record output hash and finiteness; do not replace first paired output"},
+  "estimands": {"stage_time": "median of 20 window per-call times", "mode_time": "geometric mean of stage medians when a mode appears twice; direct stage median otherwise", "R": "T_off / T_on", "recovery_ratio": "stage3_median / stage1_median", "descriptive_scope": "Report all three round-level R and recovery ratios; windows are within-round stability observations, not independent hardware replicates; no post-hoc deletion or significance threshold"},
+  "telemetry": "Mandatory empty pre-CUDA compute baseline and sole-process ownership gate, then nvidia-smi read-only snapshots before and after each phase using a fixed owned NVML PID; record failures and external compute PIDs without killing processes",
+  "expected": {"windows_per_round": 240, "windows_per_device": 720, "windows_all_devices": 2160, "stages_per_round": 12, "paired_output_differences_per_round": 4},
+  "smoke": "Separate smoke_round_XX output directory; same four contexts but 2 warmup calls, 1 window and 1 call; not formal data; do not use effect size to choose contexts",
+  "input_check": "Separate input_check_round_XX directory; import NumPy only, do not import torch, create CUDA state, query GPU or run GEMM; write four A/B hashes and status; never formal data",
+  "failure_policy": "Incrementally flush CSV/status/telemetry. Preserve every failed or interfered round, never overwrite an existing round directory. Any rerun uses a separate output root and an explicit reason."
+}

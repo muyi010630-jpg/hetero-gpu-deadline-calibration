@@ -1,0 +1,161 @@
+{
+  "stage": "test",
+  "image_seeds": [
+    13001,
+    13002,
+    13003,
+    13004,
+    13005,
+    13006,
+    13007,
+    13008,
+    13009,
+    13010,
+    13011,
+    13012,
+    13013,
+    13014,
+    13015,
+    13016,
+    13017,
+    13018,
+    13019,
+    13020
+  ],
+  "rhos": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "task_seeds": [
+    23001,
+    23002,
+    23003,
+    23004,
+    23005
+  ],
+  "n_events": 1800,
+  "flow_definition": {
+    "version": "controlled_flows_v1",
+    "balanced": "independent randomized permutations of all 45 unique cells",
+    "late_count": 22,
+    "late_onset_fraction": 0.4,
+    "late_per_cell_weight": 0.25,
+    "noise_log_sd": 0.08,
+    "now_end_s": 12.0,
+    "drift_onset_fraction": 0.5,
+    "drift_log_amplitude": 0.15,
+    "rng": "numpy.PCG64",
+    "source": "reproducibility/cpu/pooled_ema_cpu_20261009/00_configuration_sources/profiles_P0/cluster_08_profile.csv"
+  },
+  "configurations": [
+    {
+      "label": "full_original",
+      "mode": "full_original",
+      "params": {}
+    },
+    {
+      "label": "local_ema",
+      "mode": "local_ema",
+      "params": {}
+    },
+    {
+      "label": "pool_ema",
+      "mode": "pool_ema",
+      "params": {}
+    },
+    {
+      "label": "gated_point",
+      "mode": "gated_point",
+      "params": {}
+    },
+    {
+      "label": "local_window",
+      "mode": "local_window",
+      "params": {}
+    },
+    {
+      "label": "adaptive_pool_local",
+      "mode": "adaptive_pool_local",
+      "params": {
+        "shrink_scale": 0.5,
+        "freshness_half_life_s": 1000000000.0
+      }
+    }
+  ],
+  "source_hashes": {
+    "reproducibility/cpu/pooled_ema_cpu_20261009/00_configuration_sources/profiles_P0/cluster_08_profile.csv": "aba668df65d8273c63bba5e920f1815d83ab1b3cbf9ebc0d65a307e5bb15f5e3",
+    "reproducibility/cpu/heterogeneity_adaptive_cpu_20261009/scripts/run_fixed_feedback.py": "84dc477f3a1276b0223f2628d1ec28ad657a306f2c7c9bb9abf773f86421a1a2",
+    "reproducibility/cpu/heterogeneity_adaptive_cpu_20261009/scripts/profile_flows.py": "3987b696f4877e0db066e3b2ec47a71baef2d16e9ca8a8c2904cf68925a59c57",
+    "reproducibility/cpu/heterogeneity_adaptive_cpu_20261009/scripts/calibrator_core.py": "e69136779a14ff01aedd2e26cfa3ea6d64f9a7589d240011108c083cd71e079e",
+    "reproducibility/cpu/heterogeneity_adaptive_cpu_20261009/00_protocol_sources/development_protocol.json": "6b54b3c9c4930cc0dbc384f6dd5a2626e5190f65592550e45cfadaad24567ba5",
+    "reproducibility/cpu/heterogeneity_adaptive_cpu_20261009/00_protocol_sources/frozen_sources/hetero_qos_sim_n2.py": "bc27f8dbf77bab7b453aa3a98df10811b3484e2b7e8301109056ed0c0799b3a6"
+  },
+  "freeze": {
+    "path": "reproducibility/cpu/heterogeneity_adaptive_cpu_20261009/00_protocol_sources/final_freeze.json",
+    "sha256": "15667bf48cd3805c260836b955da36149583e2114dcde3338285b4bf127d8970",
+    "payload": {
+      "status": "FROZEN",
+      "qa_approved": true,
+      "frozen_at_utc": "2026-10-09T14:38:12.285889+00:00",
+      "selected_params": {
+        "shrink_scale": 0.5,
+        "freshness_half_life_s": 1000000000.0
+      },
+      "selection_source": "<SOURCE_WORKSPACE>/heterogeneity_adaptive_cpu_20261009/02_development_validation/validation_selection.json",
+      "validation_selection_sha256": "c847c077d02169d247e6474f20d2565a4f4a86c1a69618b8c90f2288a9c80502",
+      "validation_metric": "all validation image/rho/flow equally weighted context-macro MAPE; inner task seeds equally weighted",
+      "validation_objective": 8.520847410156769,
+      "validation_fingerprint": "9c315164c9e90d9c472f7c831a8c91e63c5a2f10a0b57672152a79959aa036f0",
+      "code_sha256": {
+        "scripts/calibrator_core.py": "e69136779a14ff01aedd2e26cfa3ea6d64f9a7589d240011108c083cd71e079e",
+        "scripts/profile_flows.py": "3987b696f4877e0db066e3b2ec47a71baef2d16e9ca8a8c2904cf68925a59c57",
+        "scripts/run_fixed_feedback.py": "84dc477f3a1276b0223f2628d1ec28ad657a306f2c7c9bb9abf773f86421a1a2",
+        "scripts/fixed_statistics.py": "a49dd7b79f7a7972dc32ca78a972c441bedf07d1e12af58f270f63e813e1b0c1",
+        "scripts/run_closed_loop.py": "5f7ef864b22eed9c3bbe9cd109c815bac7be65dd8a6efbb5b58c74e1fad5798e",
+        "scripts/freeze_protocol.py": "923724550bafe99e949b3d7ed74ea984ea32b95ffa6bd1662484f9a71586c4d8",
+        "qa/verify_design.py": "1ba96407ba70fc15af93019e55a4a12ae1dd3b726c5118fe76912eb8548611a2",
+        "qa/verify_completed_data.py": "aeddb734c62713579fae2620ee8d0aa094a3ab1f415efdaccb0cdc72752677f6",
+        "00_protocol_sources/frozen_sources/hetero_qos_sim_n2.py": "bc27f8dbf77bab7b453aa3a98df10811b3484e2b7e8301109056ed0c0799b3a6",
+        "00_protocol_sources/development_protocol.json": "6b54b3c9c4930cc0dbc384f6dd5a2626e5190f65592550e45cfadaad24567ba5"
+      },
+      "input_sha256": {
+        "reproducibility/cpu/pooled_ema_cpu_20261009/00_configuration_sources/profiles_P0/cluster_08_profile.csv": "aba668df65d8273c63bba5e920f1815d83ab1b3cbf9ebc0d65a307e5bb15f5e3"
+      },
+      "qa_evidence_sha256": "4e597d117545b63749c87a475f00a931abc392bbc0e2387449c3bd3b15b66629",
+      "interpretation": "Selected on static validation only; age decay improvement not established",
+      "formal_matrix": "Unchanged development_protocol.json: static1000, closed1000 units/6000runs, drift360",
+      "prohibition": "No test-driven change to candidate, seeds, rho levels, endpoints, baselines or selection rule"
+    }
+  },
+  "processes": 3,
+  "primary_metric": "context-macro MAPE over observed common context cells; report observed cell count",
+  "first_k": "own prior actual feedback count n_before<k",
+  "diagnostic_fields": [
+    "local_n_window",
+    "local_updates_count",
+    "unique_contexts",
+    "effective_group_samples",
+    "heterogeneity",
+    "local_sampling_variance",
+    "age_s",
+    "heterogeneity_local_weight",
+    "local_freshness_factor",
+    "effective_local_weight",
+    "group_updates_count",
+    "group_z",
+    "point_z",
+    "raw_point_z",
+    "point_clipped",
+    "risk_sigma",
+    "risk_self_weight",
+    "guard_log",
+    "guarded_output_clipped",
+    "local_window_mean_clipped",
+    "point_borrowing_active",
+    "point_self_weight"
+  ],
+  "run_fingerprint": "f65bdbf5ac91ff066427758e7b43e84b6042f1ddf43a062def80c99c8aef42bc"
+}

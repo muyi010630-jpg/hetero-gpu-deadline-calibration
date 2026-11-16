@@ -1,0 +1,21 @@
+{
+  "timestamp_utc": "2026-10-18T10:25:41.066927+00:00",
+  "method": "Native Windows GlobalMemoryStatusEx + Python stdlib fallback because optional psutil is absent",
+  "logical_cpu_count": 12,
+  "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "memory": {
+    "total_bytes": 33346146304,
+    "available_bytes": 15469285376,
+    "percent_used": 53
+  },
+  "disk": {
+    "total_bytes": 751623467008,
+    "free_bytes": 451090849792
+  },
+  "gpu_query": {
+    "returncode": 0,
+    "stdout": "NVIDIA GeForce RTX 5070, 616.92, 12227 MiB, 2247 MiB, 2 %\n",
+    "stderr": ""
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mode": "full",
+  "total_units": 1000,
+  "total_runs": 6000,
+  "freeze_sha256": "15667bf48cd3805c260836b955da36149583e2114dcde3338285b4bf127d8970",
+  "runner_sha256": "5f7ef864b22eed9c3bbe9cd109c815bac7be65dd8a6efbb5b58c74e1fad5798e",
+  "selected_params": {
+    "shrink_scale": 0.5,
+    "freshness_half_life_s": 1000000000.0
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "python_executable": "<PYTHON_ENV>/bin/python",
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "platform": "Linux-5.15.0-86-generic-x86_64-with-glibc2.35",
+  "disk": {
+    "total": 53687091200,
+    "used": 21319680,
+    "free": 53665771520
+  },
+  "tf32_override_env": {
+    "NVIDIA_TF32_OVERRIDE": null,
+    "TORCH_ALLOW_TF32_CUBLAS_OVERRIDE": null,
+    "CUDA_VISIBLE_DEVICES": null,
+    "CUBLAS_WORKSPACE_CONFIG": null,
+    "CUDA_LAUNCH_BLOCKING": null
+  },
+  "gpu": {
+    "returncode": 0,
+    "stdout": "NVIDIA A100-PCIE-40GB, GPU-322b1982-4898-e85f-0211-74f67db9d6ec, 550.90.07, 40960 MiB, 1 MiB, 0 %, 31, 33.46 W, 210 MHz, 1215 MHz\n",
+    "stderr": ""
+  },
+  "processes": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "torch_version": "2.5.1+cu124",
+  "cuda_version": "12.4",
+  "numpy_version": "2.1.3",
+  "cuda_available": true,
+  "tf32_new_api": false,
+  "device": "NVIDIA A100-PCIE-40GB",
+  "capability": [
+    8,
+    0
+  ],
+  "host_key_sha256_hex": "10fb2d83c8cd37ebb706cd49c903aa9417aadf0f9ae15ca7a0901ee3c627215d"
+}

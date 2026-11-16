@@ -1,0 +1,13 @@
+﻿horizon_s,arm_a,arm_b,metric,difference_a_minus_b,ci_low,ci_high,negative_blocks,positive_blocks,zero_blocks,image_blocks,status
+24,uniform,uncalibrated,panel_prob_brier,-0.0009969529362828192,-0.0010920948747802103,-0.0008960422696521238,16,0,0,16,post_hoc_descriptive_no_new_significance_test
+24,uniform,uncalibrated,sla_violation_rate,-0.05222387566137565,-0.11118834049823624,-0.01135988481040564,7,2,7,16,post_hoc_descriptive_no_new_significance_test
+24,boundary,uniform,panel_prob_brier,-0.00013299912112989774,-0.00015365933929637924,-0.00011018347828843619,16,0,0,16,post_hoc_descriptive_no_new_significance_test
+24,boundary,uniform,sla_violation_rate,0.004478064373897861,0.0,0.012056327160494207,0,2,14,16,post_hoc_descriptive_no_new_significance_test
+120,uniform,uncalibrated,panel_prob_brier,-0.002236848528628407,-0.002377833248673722,-0.002075104516130393,16,0,0,16,post_hoc_descriptive_no_new_significance_test
+120,uniform,uncalibrated,sla_violation_rate,0.008420914855888473,-0.025665645041835074,0.042885111253055254,9,7,0,16,post_hoc_descriptive_no_new_significance_test
+120,boundary,uniform,panel_prob_brier,-0.00032330138855747245,-0.0003700208565953397,-0.00028376884607032355,16,0,0,16,post_hoc_descriptive_no_new_significance_test
+120,boundary,uniform,sla_violation_rate,0.004256590650293823,-0.02384811785528653,0.036764803057253645,9,7,0,16,post_hoc_descriptive_no_new_significance_test
+600,uniform,uncalibrated,panel_prob_brier,-0.003217372132105734,-0.0034350371379875335,-0.003016706121402924,16,0,0,16,post_hoc_descriptive_no_new_significance_test
+600,uniform,uncalibrated,sla_violation_rate,0.011340481728763119,-0.04326773708121585,0.054894409511042394,7,9,0,16,post_hoc_descriptive_no_new_significance_test
+600,boundary,uniform,panel_prob_brier,-0.0003279985323465179,-0.00041875718392171414,-0.0002501998397022587,16,0,0,16,post_hoc_descriptive_no_new_significance_test
+600,boundary,uniform,sla_violation_rate,-0.02519287957800087,-0.04893214669640377,-0.002234782070678312,10,6,0,16,post_hoc_descriptive_no_new_significance_test

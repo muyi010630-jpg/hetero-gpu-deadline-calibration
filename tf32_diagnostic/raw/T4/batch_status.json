@@ -1,0 +1,14 @@
+{
+  "device": "T4",
+  "state": "completed",
+  "started_utc": "2026-10-18T10:40:05.737814+00:00",
+  "runner_pid": 1885,
+  "completed_rounds": [
+    1,
+    2,
+    3
+  ],
+  "current_round": 3,
+  "child_pid": 2073,
+  "completed_utc": "2026-10-18T10:47:40.391133+00:00"
+}

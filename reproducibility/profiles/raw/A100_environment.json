@@ -1,0 +1,21 @@
+{
+  "name": "NVIDIA A100-PCIE-40GB",
+  "driver_version": "550.90.07",
+  "memory_total_mib": "40960",
+  "memory_used_mib": "4",
+  "temperature_c": "30",
+  "power_draw_w": "34.37",
+  "power_limit_w": "250.00",
+  "utilization_gpu_pct": "0",
+  "utilization_memory_pct": "0",
+  "platform": "Linux-5.15.0-86-generic-x86_64-with-glibc2.35",
+  "python": "3.12.3",
+  "torch": "2.5.1+cu124",
+  "torch_cuda": "12.4",
+  "torchvision": "0.20.1+cu124",
+  "cuda_available": true,
+  "device_name": "NVIDIA A100-PCIE-40GB",
+  "compute_capability": "8.0",
+  "benchmark_note": "A100 profile; inference uses random ResNet18 weights with the same CIFAR-10 architecture as existing 5070/T4 pipeline.",
+  "repeats_per_context": 10
+}

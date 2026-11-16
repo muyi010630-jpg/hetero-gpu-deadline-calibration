@@ -1,0 +1,9 @@
+{
+  "started_utc": "2026-10-18T10:27:06.015311+00:00",
+  "state": "needs_inspection",
+  "remote_root": "<REMOTE_WORKDIR>/ei_tf32_mechanism_20261018",
+  "devices": {},
+  "error": "UnicodeDecodeError('gbk', b'{\\n  \"protocol_id\": \"tf32_software_path_mechanism_20261018_v1\",\\n  \"state\": \"completed\",\\n  \"device_label\": \"RTX5070\",\\n  \"round\": 1,\\n  \"smoke\": true,\\n  \"started_utc\": \"2026-10-18T10:27:09.494467+00:00\",\\n  \"pid\": 42220,\\n  \"window_rows\": 12,\\n  \"completed_context_phases\": 12,\\n  \"expected_window_rows\": 12,\\n  \"expected_context_phases\": 12,\\n  \"paired_output_differences\": 4,\\n  \"external_compute_process_seen\": false,\\n  \"telemetry_query_failure_seen\": false,\\n  \"nonfinite_output_seen\": false,\\n  \"run_directory\": \"<LOCAL_WORKDIR>/xe4/xbf/xae/xe6/x94/xb9/xe8/xa1/xa5/xe5/x85/x85/xe5/xae/x9e/xe9/xaa/x8c/TF32/xe8/xbd/xaf/xe4/xbb/xb6/xe8/xb7/xaf/xe5/xbe/x84/xe6/x9c/xba/xe5/x88/xb6/xe9/xaa/x8c/xe8/xaf/x81_20261018/raw/RTX5070/smoke_round_01\",\\n  \"current_phase\": 3,\\n  \"current_context\": \"fp16_n4096\",\\n  \"current_mode\": \"ieee\",\\n  \"completed_utc\": \"2026-10-18T10:27:14.844418+00:00\"\\n}\\n', 523, 524, 'illegal multibyte sequence')",
+  "traceback": "Traceback (most recent call last):\n  File \"tf32_diagnostic/scripts/orchestrate_tf32.py\", line 101, in main\n    result=json.loads((RAW/'RTX5070'/'smoke_round_01'/'status.json').read_text());assert result['state']=='completed',result\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<USER_HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/Lib/pathlib.py\", line 1028, in read_text\n    return f.read()\n           ^^^^^^^^\nUnicodeDecodeError: 'gbk' codec can't decode byte 0xae in position 523: illegal multibyte sequence\n",
+  "updated_utc": "2026-10-18T10:27:26.887475+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "tau": 1.5,
+  "alpha_high": 0.3,
+  "cusum_h": 0.32,
+  "cusum_k": 0.03,
+  "boost_steps": 1,
+  "risk_kappa": 1.45,
+  "cold_uncertainty": 0.3
+}

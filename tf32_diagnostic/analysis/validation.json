@@ -1,0 +1,3636 @@
+{
+  "complete_design_passed": true,
+  "errors": [],
+  "warnings": [
+    "A100 round 1: NVML host PID 482693 is operationally associated with container Python PID 1755 from an empty baseline and sole post-context process. This is an explicitly inferred namespace association, not a kernel-proven PID mapping.",
+    "A100 round 2: NVML host PID 483139 is operationally associated with container Python PID 1853 from an empty baseline and sole post-context process. This is an explicitly inferred namespace association, not a kernel-proven PID mapping.",
+    "A100 round 3: NVML host PID 483709 is operationally associated with container Python PID 1947 from an empty baseline and sole post-context process. This is an explicitly inferred namespace association, not a kernel-proven PID mapping.",
+    "T4 round 1: NVML host PID 810484 is operationally associated with container Python PID 1886 from an empty baseline and sole post-context process. This is an explicitly inferred namespace association, not a kernel-proven PID mapping.",
+    "T4 round 2: NVML host PID 811462 is operationally associated with container Python PID 1969 from an empty baseline and sole post-context process. This is an explicitly inferred namespace association, not a kernel-proven PID mapping.",
+    "T4 round 3: NVML host PID 812752 is operationally associated with container Python PID 2073 from an empty baseline and sole post-context process. This is an explicitly inferred namespace association, not a kernel-proven PID mapping.",
+    "RTX5070 was measured in the actual Windows desktop environment. A preserved zero-timing preformal query observed 32 background GPU process entries, including WallpaperEngine if listed in validation.windows_desktop_context; formal round inventory counts are [0, 0, 0]. Empty formal inventories do not establish an interference-free GPU or absence of desktop activity."
+  ],
+  "checks": [
+    {
+      "name": "2160 timing windows",
+      "passed": true,
+      "detail": 2160
+    },
+    {
+      "name": "720 timing windows per device",
+      "passed": true,
+      "detail": {
+        "A100": 720,
+        "RTX5070": 720,
+        "T4": 720
+      }
+    },
+    {
+      "name": "All 108 expected device-round-phase-context cells",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "unexpected": []
+      }
+    },
+    {
+      "name": "No duplicate timing windows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "20 unique contiguous windows per cell",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Prespecified ABA/BAB/ABA modes",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Fixed input seed within each cell",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "10 GEMM calls in every timing window",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Finite positive consistent event timings",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "No failed timing windows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Same seed across stages, contexts and devices within each round",
+      "passed": true,
+      "detail": {
+        "1": [
+          2026101801
+        ],
+        "2": [
+          2026101802
+        ],
+        "3": [
+          2026101803
+        ]
+      }
+    },
+    {
+      "name": "36 output-difference records",
+      "passed": true,
+      "detail": 36
+    },
+    {
+      "name": "No missing or duplicate output-difference records",
+      "passed": true,
+      "detail": {
+        "missing": []
+      }
+    },
+    {
+      "name": "All paired outputs finite",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All differences calculated on CPU float64",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Output-difference records succeeded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Finite nonzero reference and consistent delta",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Output-difference seeds match timing inputs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Nine formal round directories",
+      "passed": true,
+      "detail": 9
+    },
+    {
+      "name": "All auxiliary records present: tf32_diagnostic/raw/A100/round_01",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Round completed with full counts and formal protocol: tf32_diagnostic/raw/A100/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Successful fully parsed pre/post process queries: tf32_diagnostic/raw/A100/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Ownership UUID/fixed PID recorded: tf32_diagnostic/raw/A100/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Cloud empty-baseline/sole-post-context fixed PID ownership: tf32_diagnostic/raw/A100/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No invalid output flag: tf32_diagnostic/raw/A100/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Recorded round seed and sequence follow protocol: tf32_diagnostic/raw/A100/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No TF32 environment override: tf32_diagnostic/raw/A100/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: A100 1 fp32_n2048",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: A100 1 fp32_n2048",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: A100 1 fp32_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: A100 1 fp32_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: A100 1 fp32_n6144",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: A100 1 fp32_n6144",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: A100 1 fp16_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: A100 1 fp16_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Twelve stage summary rows: tf32_diagnostic/raw/A100/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 1, 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 1, 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 1, 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 1, 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 1, 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 1, 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 1, 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 1, 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 1, 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 1, 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 1, 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 1, 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 1, 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 1, 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 1, 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 1, 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 1, 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 1, 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 1, 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 1, 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 1, 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 1, 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 1, 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 1, 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Four archived round summary rows: tf32_diagnostic/raw/A100/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('A100', 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('A100', 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('A100', 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('A100', 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Twelve finite full-size output records: tf32_diagnostic/raw/A100/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 1 fp32_n2048 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 1 fp32_n4096 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 1 fp32_n6144 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 1 fp16_n4096 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 1 fp32_n2048 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 1 fp32_n4096 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 1 fp32_n6144 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 1 fp16_n4096 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Six boundary telemetry snapshots: tf32_diagnostic/raw/A100/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/A100/round_01 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/A100/round_01 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/A100/round_01 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/A100/round_01 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/A100/round_01 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/A100/round_01 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/A100/round_01 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/A100/round_01 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/A100/round_01 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/A100/round_01 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/A100/round_01 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/A100/round_01 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All auxiliary records present: tf32_diagnostic/raw/A100/round_02",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Round completed with full counts and formal protocol: tf32_diagnostic/raw/A100/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Successful fully parsed pre/post process queries: tf32_diagnostic/raw/A100/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Ownership UUID/fixed PID recorded: tf32_diagnostic/raw/A100/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Cloud empty-baseline/sole-post-context fixed PID ownership: tf32_diagnostic/raw/A100/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No invalid output flag: tf32_diagnostic/raw/A100/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Recorded round seed and sequence follow protocol: tf32_diagnostic/raw/A100/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No TF32 environment override: tf32_diagnostic/raw/A100/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: A100 2 fp16_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: A100 2 fp16_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: A100 2 fp32_n6144",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: A100 2 fp32_n6144",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: A100 2 fp32_n2048",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: A100 2 fp32_n2048",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: A100 2 fp32_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: A100 2 fp32_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Twelve stage summary rows: tf32_diagnostic/raw/A100/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 2, 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 2, 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 2, 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 2, 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 2, 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 2, 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 2, 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 2, 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 2, 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 2, 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 2, 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 2, 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 2, 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 2, 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 2, 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 2, 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 2, 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 2, 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 2, 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 2, 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 2, 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 2, 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 2, 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 2, 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Four archived round summary rows: tf32_diagnostic/raw/A100/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('A100', 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('A100', 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('A100', 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('A100', 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Twelve finite full-size output records: tf32_diagnostic/raw/A100/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 2 fp16_n4096 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 2 fp32_n6144 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 2 fp32_n2048 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 2 fp32_n4096 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 2 fp16_n4096 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 2 fp32_n6144 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 2 fp32_n2048 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 2 fp32_n4096 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Six boundary telemetry snapshots: tf32_diagnostic/raw/A100/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/A100/round_02 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/A100/round_02 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/A100/round_02 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/A100/round_02 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/A100/round_02 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/A100/round_02 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/A100/round_02 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/A100/round_02 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/A100/round_02 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/A100/round_02 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/A100/round_02 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/A100/round_02 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All auxiliary records present: tf32_diagnostic/raw/A100/round_03",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Round completed with full counts and formal protocol: tf32_diagnostic/raw/A100/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Successful fully parsed pre/post process queries: tf32_diagnostic/raw/A100/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Ownership UUID/fixed PID recorded: tf32_diagnostic/raw/A100/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Cloud empty-baseline/sole-post-context fixed PID ownership: tf32_diagnostic/raw/A100/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No invalid output flag: tf32_diagnostic/raw/A100/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Recorded round seed and sequence follow protocol: tf32_diagnostic/raw/A100/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No TF32 environment override: tf32_diagnostic/raw/A100/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: A100 3 fp32_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: A100 3 fp32_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: A100 3 fp32_n2048",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: A100 3 fp32_n2048",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: A100 3 fp16_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: A100 3 fp16_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: A100 3 fp32_n6144",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: A100 3 fp32_n6144",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Twelve stage summary rows: tf32_diagnostic/raw/A100/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 3, 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 3, 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 3, 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 3, 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 3, 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 3, 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 3, 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 3, 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 3, 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 3, 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 3, 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 3, 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 3, 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 3, 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 3, 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 3, 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 3, 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 3, 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 3, 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 3, 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 3, 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 3, 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('A100', 3, 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('A100', 3, 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Four archived round summary rows: tf32_diagnostic/raw/A100/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('A100', 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('A100', 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('A100', 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('A100', 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Twelve finite full-size output records: tf32_diagnostic/raw/A100/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 3 fp32_n4096 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 3 fp32_n2048 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 3 fp16_n4096 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 3 fp32_n6144 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 3 fp32_n4096 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 3 fp32_n2048 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 3 fp16_n4096 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: A100 3 fp32_n6144 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Six boundary telemetry snapshots: tf32_diagnostic/raw/A100/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/A100/round_03 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/A100/round_03 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/A100/round_03 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/A100/round_03 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/A100/round_03 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/A100/round_03 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/A100/round_03 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/A100/round_03 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/A100/round_03 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/A100/round_03 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/A100/round_03 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/A100/round_03 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All auxiliary records present: tf32_diagnostic/raw/RTX5070/round_01",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Round completed with full counts and formal protocol: tf32_diagnostic/raw/RTX5070/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Successful fully parsed pre/post process queries: tf32_diagnostic/raw/RTX5070/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Ownership UUID/fixed PID recorded: tf32_diagnostic/raw/RTX5070/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows exact Python PID ownership and frozen inventory: tf32_diagnostic/raw/RTX5070/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No invalid output flag: tf32_diagnostic/raw/RTX5070/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Recorded round seed and sequence follow protocol: tf32_diagnostic/raw/RTX5070/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No TF32 environment override: tf32_diagnostic/raw/RTX5070/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: RTX5070 1 fp32_n2048",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: RTX5070 1 fp32_n2048",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: RTX5070 1 fp32_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: RTX5070 1 fp32_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: RTX5070 1 fp32_n6144",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: RTX5070 1 fp32_n6144",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: RTX5070 1 fp16_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: RTX5070 1 fp16_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Twelve stage summary rows: tf32_diagnostic/raw/RTX5070/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 1, 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 1, 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 1, 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 1, 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 1, 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 1, 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 1, 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 1, 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 1, 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 1, 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 1, 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 1, 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 1, 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 1, 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 1, 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 1, 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 1, 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 1, 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 1, 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 1, 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 1, 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 1, 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 1, 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 1, 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Four archived round summary rows: tf32_diagnostic/raw/RTX5070/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('RTX5070', 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('RTX5070', 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('RTX5070', 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('RTX5070', 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Twelve finite full-size output records: tf32_diagnostic/raw/RTX5070/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 1 fp32_n2048 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 1 fp32_n4096 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 1 fp32_n6144 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 1 fp16_n4096 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 1 fp32_n2048 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 1 fp32_n4096 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 1 fp32_n6144 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 1 fp16_n4096 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Six boundary telemetry snapshots: tf32_diagnostic/raw/RTX5070/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/RTX5070/round_01 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows background inventory never expanded: tf32_diagnostic/raw/RTX5070/round_01 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/RTX5070/round_01 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/RTX5070/round_01 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows background inventory never expanded: tf32_diagnostic/raw/RTX5070/round_01 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/RTX5070/round_01 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/RTX5070/round_01 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows background inventory never expanded: tf32_diagnostic/raw/RTX5070/round_01 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/RTX5070/round_01 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/RTX5070/round_01 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows background inventory never expanded: tf32_diagnostic/raw/RTX5070/round_01 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/RTX5070/round_01 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/RTX5070/round_01 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows background inventory never expanded: tf32_diagnostic/raw/RTX5070/round_01 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/RTX5070/round_01 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/RTX5070/round_01 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows background inventory never expanded: tf32_diagnostic/raw/RTX5070/round_01 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/RTX5070/round_01 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All auxiliary records present: tf32_diagnostic/raw/RTX5070/round_02",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Round completed with full counts and formal protocol: tf32_diagnostic/raw/RTX5070/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Successful fully parsed pre/post process queries: tf32_diagnostic/raw/RTX5070/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Ownership UUID/fixed PID recorded: tf32_diagnostic/raw/RTX5070/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows exact Python PID ownership and frozen inventory: tf32_diagnostic/raw/RTX5070/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No invalid output flag: tf32_diagnostic/raw/RTX5070/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Recorded round seed and sequence follow protocol: tf32_diagnostic/raw/RTX5070/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No TF32 environment override: tf32_diagnostic/raw/RTX5070/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: RTX5070 2 fp16_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: RTX5070 2 fp16_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: RTX5070 2 fp32_n6144",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: RTX5070 2 fp32_n6144",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: RTX5070 2 fp32_n2048",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: RTX5070 2 fp32_n2048",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: RTX5070 2 fp32_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: RTX5070 2 fp32_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Twelve stage summary rows: tf32_diagnostic/raw/RTX5070/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 2, 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 2, 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 2, 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 2, 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 2, 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 2, 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 2, 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 2, 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 2, 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 2, 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 2, 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 2, 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 2, 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 2, 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 2, 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 2, 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 2, 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 2, 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 2, 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 2, 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 2, 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 2, 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 2, 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 2, 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Four archived round summary rows: tf32_diagnostic/raw/RTX5070/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('RTX5070', 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('RTX5070', 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('RTX5070', 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('RTX5070', 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Twelve finite full-size output records: tf32_diagnostic/raw/RTX5070/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 2 fp16_n4096 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 2 fp32_n6144 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 2 fp32_n2048 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 2 fp32_n4096 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 2 fp16_n4096 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 2 fp32_n6144 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 2 fp32_n2048 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 2 fp32_n4096 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Six boundary telemetry snapshots: tf32_diagnostic/raw/RTX5070/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/RTX5070/round_02 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows background inventory never expanded: tf32_diagnostic/raw/RTX5070/round_02 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/RTX5070/round_02 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/RTX5070/round_02 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows background inventory never expanded: tf32_diagnostic/raw/RTX5070/round_02 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/RTX5070/round_02 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/RTX5070/round_02 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows background inventory never expanded: tf32_diagnostic/raw/RTX5070/round_02 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/RTX5070/round_02 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/RTX5070/round_02 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows background inventory never expanded: tf32_diagnostic/raw/RTX5070/round_02 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/RTX5070/round_02 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/RTX5070/round_02 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows background inventory never expanded: tf32_diagnostic/raw/RTX5070/round_02 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/RTX5070/round_02 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/RTX5070/round_02 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows background inventory never expanded: tf32_diagnostic/raw/RTX5070/round_02 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/RTX5070/round_02 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All auxiliary records present: tf32_diagnostic/raw/RTX5070/round_03",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Round completed with full counts and formal protocol: tf32_diagnostic/raw/RTX5070/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Successful fully parsed pre/post process queries: tf32_diagnostic/raw/RTX5070/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Ownership UUID/fixed PID recorded: tf32_diagnostic/raw/RTX5070/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows exact Python PID ownership and frozen inventory: tf32_diagnostic/raw/RTX5070/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No invalid output flag: tf32_diagnostic/raw/RTX5070/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Recorded round seed and sequence follow protocol: tf32_diagnostic/raw/RTX5070/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No TF32 environment override: tf32_diagnostic/raw/RTX5070/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: RTX5070 3 fp32_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: RTX5070 3 fp32_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: RTX5070 3 fp32_n2048",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: RTX5070 3 fp32_n2048",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: RTX5070 3 fp16_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: RTX5070 3 fp16_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: RTX5070 3 fp32_n6144",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: RTX5070 3 fp32_n6144",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Twelve stage summary rows: tf32_diagnostic/raw/RTX5070/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 3, 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 3, 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 3, 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 3, 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 3, 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 3, 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 3, 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 3, 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 3, 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 3, 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 3, 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 3, 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 3, 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 3, 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 3, 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 3, 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 3, 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 3, 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 3, 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 3, 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 3, 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 3, 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('RTX5070', 3, 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('RTX5070', 3, 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Four archived round summary rows: tf32_diagnostic/raw/RTX5070/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('RTX5070', 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('RTX5070', 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('RTX5070', 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('RTX5070', 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Twelve finite full-size output records: tf32_diagnostic/raw/RTX5070/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 3 fp32_n4096 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 3 fp32_n2048 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 3 fp16_n4096 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 3 fp32_n6144 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 3 fp32_n4096 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 3 fp32_n2048 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 3 fp16_n4096 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: RTX5070 3 fp32_n6144 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Six boundary telemetry snapshots: tf32_diagnostic/raw/RTX5070/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/RTX5070/round_03 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows background inventory never expanded: tf32_diagnostic/raw/RTX5070/round_03 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/RTX5070/round_03 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/RTX5070/round_03 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows background inventory never expanded: tf32_diagnostic/raw/RTX5070/round_03 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/RTX5070/round_03 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/RTX5070/round_03 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows background inventory never expanded: tf32_diagnostic/raw/RTX5070/round_03 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/RTX5070/round_03 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/RTX5070/round_03 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows background inventory never expanded: tf32_diagnostic/raw/RTX5070/round_03 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/RTX5070/round_03 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/RTX5070/round_03 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows background inventory never expanded: tf32_diagnostic/raw/RTX5070/round_03 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/RTX5070/round_03 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/RTX5070/round_03 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows background inventory never expanded: tf32_diagnostic/raw/RTX5070/round_03 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/RTX5070/round_03 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All auxiliary records present: tf32_diagnostic/raw/T4/round_01",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Round completed with full counts and formal protocol: tf32_diagnostic/raw/T4/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Successful fully parsed pre/post process queries: tf32_diagnostic/raw/T4/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Ownership UUID/fixed PID recorded: tf32_diagnostic/raw/T4/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Cloud empty-baseline/sole-post-context fixed PID ownership: tf32_diagnostic/raw/T4/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No invalid output flag: tf32_diagnostic/raw/T4/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Recorded round seed and sequence follow protocol: tf32_diagnostic/raw/T4/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No TF32 environment override: tf32_diagnostic/raw/T4/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: T4 1 fp32_n2048",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: T4 1 fp32_n2048",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: T4 1 fp32_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: T4 1 fp32_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: T4 1 fp32_n6144",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: T4 1 fp32_n6144",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: T4 1 fp16_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: T4 1 fp16_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Twelve stage summary rows: tf32_diagnostic/raw/T4/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 1, 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 1, 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 1, 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 1, 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 1, 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 1, 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 1, 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 1, 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 1, 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 1, 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 1, 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 1, 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 1, 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 1, 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 1, 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 1, 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 1, 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 1, 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 1, 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 1, 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 1, 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 1, 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 1, 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 1, 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Four archived round summary rows: tf32_diagnostic/raw/T4/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('T4', 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('T4', 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('T4', 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('T4', 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Twelve finite full-size output records: tf32_diagnostic/raw/T4/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 1 fp32_n2048 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 1 fp32_n4096 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 1 fp32_n6144 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 1 fp16_n4096 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 1 fp32_n2048 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 1 fp32_n4096 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 1 fp32_n6144 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 1 fp16_n4096 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Six boundary telemetry snapshots: tf32_diagnostic/raw/T4/round_01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/T4/round_01 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/T4/round_01 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/T4/round_01 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/T4/round_01 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/T4/round_01 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/T4/round_01 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/T4/round_01 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/T4/round_01 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/T4/round_01 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/T4/round_01 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/T4/round_01 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/T4/round_01 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All auxiliary records present: tf32_diagnostic/raw/T4/round_02",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Round completed with full counts and formal protocol: tf32_diagnostic/raw/T4/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Successful fully parsed pre/post process queries: tf32_diagnostic/raw/T4/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Ownership UUID/fixed PID recorded: tf32_diagnostic/raw/T4/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Cloud empty-baseline/sole-post-context fixed PID ownership: tf32_diagnostic/raw/T4/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No invalid output flag: tf32_diagnostic/raw/T4/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Recorded round seed and sequence follow protocol: tf32_diagnostic/raw/T4/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No TF32 environment override: tf32_diagnostic/raw/T4/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: T4 2 fp16_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: T4 2 fp16_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: T4 2 fp32_n6144",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: T4 2 fp32_n6144",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: T4 2 fp32_n2048",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: T4 2 fp32_n2048",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: T4 2 fp32_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: T4 2 fp32_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Twelve stage summary rows: tf32_diagnostic/raw/T4/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 2, 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 2, 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 2, 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 2, 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 2, 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 2, 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 2, 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 2, 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 2, 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 2, 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 2, 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 2, 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 2, 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 2, 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 2, 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 2, 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 2, 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 2, 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 2, 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 2, 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 2, 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 2, 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 2, 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 2, 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Four archived round summary rows: tf32_diagnostic/raw/T4/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('T4', 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('T4', 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('T4', 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('T4', 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Twelve finite full-size output records: tf32_diagnostic/raw/T4/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 2 fp16_n4096 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 2 fp32_n6144 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 2 fp32_n2048 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 2 fp32_n4096 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 2 fp16_n4096 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 2 fp32_n6144 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 2 fp32_n2048 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 2 fp32_n4096 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Six boundary telemetry snapshots: tf32_diagnostic/raw/T4/round_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/T4/round_02 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/T4/round_02 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/T4/round_02 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/T4/round_02 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/T4/round_02 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/T4/round_02 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/T4/round_02 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/T4/round_02 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/T4/round_02 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/T4/round_02 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/T4/round_02 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/T4/round_02 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All auxiliary records present: tf32_diagnostic/raw/T4/round_03",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Round completed with full counts and formal protocol: tf32_diagnostic/raw/T4/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Successful fully parsed pre/post process queries: tf32_diagnostic/raw/T4/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Ownership UUID/fixed PID recorded: tf32_diagnostic/raw/T4/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Cloud empty-baseline/sole-post-context fixed PID ownership: tf32_diagnostic/raw/T4/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No invalid output flag: tf32_diagnostic/raw/T4/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Recorded round seed and sequence follow protocol: tf32_diagnostic/raw/T4/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No TF32 environment override: tf32_diagnostic/raw/T4/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: T4 3 fp32_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: T4 3 fp32_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: T4 3 fp32_n2048",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: T4 3 fp32_n2048",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: T4 3 fp16_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: T4 3 fp16_n4096",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Contiguous input: T4 3 fp32_n6144",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Frozen explicit PCG64 input generator: T4 3 fp32_n6144",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Twelve stage summary rows: tf32_diagnostic/raw/T4/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 3, 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 3, 1, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 3, 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 3, 1, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 3, 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 3, 1, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 3, 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 3, 1, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 3, 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 3, 2, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 3, 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 3, 2, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 3, 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 3, 2, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 3, 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 3, 2, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 3, 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 3, 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 3, 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 3, 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 3, 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 3, 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent median/min/max reproduce archived stage ('T4', 3, 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Prespecified warmup completed ('T4', 3, 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Four archived round summary rows: tf32_diagnostic/raw/T4/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('T4', 3, 'float32', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('T4', 3, 'float32', 2048)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('T4', 3, 'float16', 4096)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent R/recovery/delta reproduce archived round ('T4', 3, 'float32', 6144)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Twelve finite full-size output records: tf32_diagnostic/raw/T4/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 3 fp32_n4096 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 3 fp32_n2048 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 3 fp16_n4096 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 3 fp32_n6144 off",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 3 fp32_n4096 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 3 fp32_n2048 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 3 fp16_n4096 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Paired output identity matches difference record: T4 3 fp32_n6144 on",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Six boundary telemetry snapshots: tf32_diagnostic/raw/T4/round_03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/T4/round_03 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/T4/round_03 phase1 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/T4/round_03 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/T4/round_03 phase1 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/T4/round_03 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/T4/round_03 phase2 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/T4/round_03 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/T4/round_03 phase2 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/T4/round_03 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/T4/round_03 phase3 before",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed NVML ownership retained: tf32_diagnostic/raw/T4/round_03 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "External PID flag agrees with independently parsed query: tf32_diagnostic/raw/T4/round_03 phase3 after",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Every window records matching precision-interface readback",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Fixed GPU and software settings across three rounds: A100",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed GPU and software settings across three rounds: RTX5070",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Fixed GPU and software settings across three rounds: T4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact CPU input hashes match across devices for all 12 round-context pairs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Per-device runs match exact frozen sources: A100",
+      "passed": true,
+      "detail": {
+        "protocol_sha256": [
+          "9bddfb17ad534779fe013bb5ef8a82a237015e3db7ca344d25734ed86bfb7935"
+        ],
+        "measurement_script_sha256": [
+          "d43d4e04e8df995ebf97e2b87e8aac38c7e0076f4f9c22d346d24ee6252d3c58"
+        ]
+      }
+    },
+    {
+      "name": "Per-device runs match exact frozen sources: T4",
+      "passed": true,
+      "detail": {
+        "protocol_sha256": [
+          "9bddfb17ad534779fe013bb5ef8a82a237015e3db7ca344d25734ed86bfb7935"
+        ],
+        "measurement_script_sha256": [
+          "d43d4e04e8df995ebf97e2b87e8aac38c7e0076f4f9c22d346d24ee6252d3c58"
+        ]
+      }
+    },
+    {
+      "name": "Per-device runs match exact frozen sources: RTX5070",
+      "passed": true,
+      "detail": {
+        "protocol_sha256": [
+          "39fec9e023c11ce1a5386bdc857a8a97ec8e4ba1964479294ceb89ec6e2ff63a"
+        ],
+        "measurement_script_sha256": [
+          "37d149180c23cdaad20d5ea59c09caee103b52a6b227311bf9e027977970c8c3"
+        ]
+      }
+    },
+    {
+      "name": "Identical timing/input/estimand protocol across cloud-v3 and Windows-v4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Preserved failed Windows-v3 gate contains zero timing windows",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "n_timing_records": 2160,
+  "n_difference_records": 36,
+  "measurement_unit": "one CUDA Event window containing 10 GEMM calls; timing divided by 10",
+  "inference": "descriptive only; no significance tests, no confidence intervals",
+  "round_sequences": {
+    "1": [
+      "ieee",
+      "allow_tf32",
+      "ieee"
+    ],
+    "2": [
+      "allow_tf32",
+      "ieee",
+      "allow_tf32"
+    ],
+    "3": [
+      "ieee",
+      "allow_tf32",
+      "ieee"
+    ]
+  },
+  "analyzed_at_utc": "2026-10-18T10:50:14.624487+00:00",
+  "analysis_script_sha256": "45efefac7b4cfad981140553bdd8bfe8168b37a20f75fc4ab8315726e0e49a8b",
+  "timing_files": [
+    "tf32_diagnostic/raw/A100/round_01/windows.csv",
+    "tf32_diagnostic/raw/A100/round_02/windows.csv",
+    "tf32_diagnostic/raw/A100/round_03/windows.csv",
+    "tf32_diagnostic/raw/RTX5070/round_01/windows.csv",
+    "tf32_diagnostic/raw/RTX5070/round_02/windows.csv",
+    "tf32_diagnostic/raw/RTX5070/round_03/windows.csv",
+    "tf32_diagnostic/raw/T4/round_01/windows.csv",
+    "tf32_diagnostic/raw/T4/round_02/windows.csv",
+    "tf32_diagnostic/raw/T4/round_03/windows.csv"
+  ],
+  "difference_files": [
+    "tf32_diagnostic/raw/A100/round_01/numerical_differences.csv",
+    "tf32_diagnostic/raw/A100/round_02/numerical_differences.csv",
+    "tf32_diagnostic/raw/A100/round_03/numerical_differences.csv",
+    "tf32_diagnostic/raw/RTX5070/round_01/numerical_differences.csv",
+    "tf32_diagnostic/raw/RTX5070/round_02/numerical_differences.csv",
+    "tf32_diagnostic/raw/RTX5070/round_03/numerical_differences.csv",
+    "tf32_diagnostic/raw/T4/round_01/numerical_differences.csv",
+    "tf32_diagnostic/raw/T4/round_02/numerical_differences.csv",
+    "tf32_diagnostic/raw/T4/round_03/numerical_differences.csv"
+  ],
+  "windows_desktop_context": {
+    "preserved_preformal_inventory_count": 32,
+    "preserved_preformal_process_names": [
+      "ApplicationFrameHost.exe",
+      "ChatGPT.exe",
+      "CrossDeviceResume.exe",
+      "DeepSeek Harness.exe",
+      "LockApp.exe",
+      "PhoneExperienceHost.exe",
+      "RadeonSoftware.exe",
+      "SearchHost.exe",
+      "ShellExperienceHost.exe",
+      "ShellHost.exe",
+      "StartMenuExperienceHost.exe",
+      "SystemSettings.exe",
+      "TextInputHost.exe",
+      "WINWORD.EXE",
+      "WeChatAppEx.exe",
+      "Weixin.exe",
+      "WorkBuddy.exe",
+      "codex-computer-use-swift.exe",
+      "explorer.exe",
+      "msedge.exe",
+      "msedgewebview2.exe",
+      "quark_cloud_drive.exe",
+      "wallpaper64.exe"
+    ],
+    "formal_round_inventory_counts": [
+      0,
+      0,
+      0
+    ],
+    "wallpaper_engine_observed_preformal": true,
+    "limitation": "Windows desktop processes were visible in the preserved preformal query. Empty formal inventories do not prove their absence or inactivity; query visibility differs across execution contexts and transient activity is not continuously monitored."
+  },
+  "input_identity_pairs": {
+    "round1_fp32_n2048": [
+      [
+        "A100",
+        "38397d769f7642e05ae257c32ab5c0a8ded1831851be55f3b85dbbaa9f856d43",
+        "d0bb420f04e16d5fe2003f1f5cda868352525d5cf2175dd00aa0109643487b3b"
+      ],
+      [
+        "RTX5070",
+        "38397d769f7642e05ae257c32ab5c0a8ded1831851be55f3b85dbbaa9f856d43",
+        "d0bb420f04e16d5fe2003f1f5cda868352525d5cf2175dd00aa0109643487b3b"
+      ],
+      [
+        "T4",
+        "38397d769f7642e05ae257c32ab5c0a8ded1831851be55f3b85dbbaa9f856d43",
+        "d0bb420f04e16d5fe2003f1f5cda868352525d5cf2175dd00aa0109643487b3b"
+      ]
+    ],
+    "round1_fp32_n4096": [
+      [
+        "A100",
+        "2aac952ce5b179dc74ea42cae97dbd4a2bb9a04776db2afaa540c8f710b4bc13",
+        "7887b01dbc41afd10a749de585cf0caa7e76d064e01694d758ab6706b6566ee9"
+      ],
+      [
+        "RTX5070",
+        "2aac952ce5b179dc74ea42cae97dbd4a2bb9a04776db2afaa540c8f710b4bc13",
+        "7887b01dbc41afd10a749de585cf0caa7e76d064e01694d758ab6706b6566ee9"
+      ],
+      [
+        "T4",
+        "2aac952ce5b179dc74ea42cae97dbd4a2bb9a04776db2afaa540c8f710b4bc13",
+        "7887b01dbc41afd10a749de585cf0caa7e76d064e01694d758ab6706b6566ee9"
+      ]
+    ],
+    "round1_fp32_n6144": [
+      [
+        "A100",
+        "bcf908ddc307dfa5b559e8f97e5434351ced1d11ee7d01596c7d0ab6a3bf7af2",
+        "88c94d29c1ebf5c2ff88ea9811016b6fb37874aae72aaee7f436f99c17673088"
+      ],
+      [
+        "RTX5070",
+        "bcf908ddc307dfa5b559e8f97e5434351ced1d11ee7d01596c7d0ab6a3bf7af2",
+        "88c94d29c1ebf5c2ff88ea9811016b6fb37874aae72aaee7f436f99c17673088"
+      ],
+      [
+        "T4",
+        "bcf908ddc307dfa5b559e8f97e5434351ced1d11ee7d01596c7d0ab6a3bf7af2",
+        "88c94d29c1ebf5c2ff88ea9811016b6fb37874aae72aaee7f436f99c17673088"
+      ]
+    ],
+    "round1_fp16_n4096": [
+      [
+        "A100",
+        "3fea3986f7c4c43ef0260fdf31687dc9e15fe126f7dbdddd12655fbf3857a0f5",
+        "865ccf67e7edf6d9783907b01eef806b2b195a8661674ebc2025674330c9ea10"
+      ],
+      [
+        "RTX5070",
+        "3fea3986f7c4c43ef0260fdf31687dc9e15fe126f7dbdddd12655fbf3857a0f5",
+        "865ccf67e7edf6d9783907b01eef806b2b195a8661674ebc2025674330c9ea10"
+      ],
+      [
+        "T4",
+        "3fea3986f7c4c43ef0260fdf31687dc9e15fe126f7dbdddd12655fbf3857a0f5",
+        "865ccf67e7edf6d9783907b01eef806b2b195a8661674ebc2025674330c9ea10"
+      ]
+    ],
+    "round2_fp16_n4096": [
+      [
+        "A100",
+        "14e6596e6e290adf6a19dedf3b758ada6017d796cd50e410b10bb9e07c1e3901",
+        "a4e709d909b74dc7c4c5744bd7c705fca90498a2c667830e0ad933366a1e7a39"
+      ],
+      [
+        "RTX5070",
+        "14e6596e6e290adf6a19dedf3b758ada6017d796cd50e410b10bb9e07c1e3901",
+        "a4e709d909b74dc7c4c5744bd7c705fca90498a2c667830e0ad933366a1e7a39"
+      ],
+      [
+        "T4",
+        "14e6596e6e290adf6a19dedf3b758ada6017d796cd50e410b10bb9e07c1e3901",
+        "a4e709d909b74dc7c4c5744bd7c705fca90498a2c667830e0ad933366a1e7a39"
+      ]
+    ],
+    "round2_fp32_n6144": [
+      [
+        "A100",
+        "e2ecd5bf4db0bf58bb4fcf515a93ebb5fb94303be87630d54632c959abfc48d6",
+        "4c841a6f61163f63a92de2003bf1a96d30e9aa4ebbdf132e2d0c5e505c46df64"
+      ],
+      [
+        "RTX5070",
+        "e2ecd5bf4db0bf58bb4fcf515a93ebb5fb94303be87630d54632c959abfc48d6",
+        "4c841a6f61163f63a92de2003bf1a96d30e9aa4ebbdf132e2d0c5e505c46df64"
+      ],
+      [
+        "T4",
+        "e2ecd5bf4db0bf58bb4fcf515a93ebb5fb94303be87630d54632c959abfc48d6",
+        "4c841a6f61163f63a92de2003bf1a96d30e9aa4ebbdf132e2d0c5e505c46df64"
+      ]
+    ],
+    "round2_fp32_n2048": [
+      [
+        "A100",
+        "ef68384c9f1cb2f5f3d895e73dfd9ef53399e98cbc12bcc42575555b84be88cc",
+        "e8ef208069b1df18c38eaf8e782234ab6051f67e0b683695eb9b4bd6af1ad4c1"
+      ],
+      [
+        "RTX5070",
+        "ef68384c9f1cb2f5f3d895e73dfd9ef53399e98cbc12bcc42575555b84be88cc",
+        "e8ef208069b1df18c38eaf8e782234ab6051f67e0b683695eb9b4bd6af1ad4c1"
+      ],
+      [
+        "T4",
+        "ef68384c9f1cb2f5f3d895e73dfd9ef53399e98cbc12bcc42575555b84be88cc",
+        "e8ef208069b1df18c38eaf8e782234ab6051f67e0b683695eb9b4bd6af1ad4c1"
+      ]
+    ],
+    "round2_fp32_n4096": [
+      [
+        "A100",
+        "ea64f04caae8504ca64c70452020fe1be90dfd55ad000e63a8b4c351c241e707",
+        "950b39ec6115eec5c3368830d5678a47f959603de4085eefae6edd662c333b59"
+      ],
+      [
+        "RTX5070",
+        "ea64f04caae8504ca64c70452020fe1be90dfd55ad000e63a8b4c351c241e707",
+        "950b39ec6115eec5c3368830d5678a47f959603de4085eefae6edd662c333b59"
+      ],
+      [
+        "T4",
+        "ea64f04caae8504ca64c70452020fe1be90dfd55ad000e63a8b4c351c241e707",
+        "950b39ec6115eec5c3368830d5678a47f959603de4085eefae6edd662c333b59"
+      ]
+    ],
+    "round3_fp32_n4096": [
+      [
+        "A100",
+        "a651c0af56f43ab9e60b5b0cec38dca8c83305881f0ef0a4f5490d74d5753c06",
+        "d2b8425022737baf56963b52856e00187201447a1d53a7c109edbcb706fd5c93"
+      ],
+      [
+        "RTX5070",
+        "a651c0af56f43ab9e60b5b0cec38dca8c83305881f0ef0a4f5490d74d5753c06",
+        "d2b8425022737baf56963b52856e00187201447a1d53a7c109edbcb706fd5c93"
+      ],
+      [
+        "T4",
+        "a651c0af56f43ab9e60b5b0cec38dca8c83305881f0ef0a4f5490d74d5753c06",
+        "d2b8425022737baf56963b52856e00187201447a1d53a7c109edbcb706fd5c93"
+      ]
+    ],
+    "round3_fp32_n2048": [
+      [
+        "A100",
+        "8b20c8bd2e10926af09e7cf85d56472fe2950e53c451c5e83fe8ffb7f26e1731",
+        "4b385096577faaa462d26acb841eb563fbe78331e6bb690075206dabdf510dc3"
+      ],
+      [
+        "RTX5070",
+        "8b20c8bd2e10926af09e7cf85d56472fe2950e53c451c5e83fe8ffb7f26e1731",
+        "4b385096577faaa462d26acb841eb563fbe78331e6bb690075206dabdf510dc3"
+      ],
+      [
+        "T4",
+        "8b20c8bd2e10926af09e7cf85d56472fe2950e53c451c5e83fe8ffb7f26e1731",
+        "4b385096577faaa462d26acb841eb563fbe78331e6bb690075206dabdf510dc3"
+      ]
+    ],
+    "round3_fp16_n4096": [
+      [
+        "A100",
+        "27a601470941ca4e93e41911406854895bd9d552b22b98c9ee8776c6d5e022f3",
+        "80fa36e9ca9bfac1895a678461054d18b0d507c851ba99e5af16fed9292bd213"
+      ],
+      [
+        "RTX5070",
+        "27a601470941ca4e93e41911406854895bd9d552b22b98c9ee8776c6d5e022f3",
+        "80fa36e9ca9bfac1895a678461054d18b0d507c851ba99e5af16fed9292bd213"
+      ],
+      [
+        "T4",
+        "27a601470941ca4e93e41911406854895bd9d552b22b98c9ee8776c6d5e022f3",
+        "80fa36e9ca9bfac1895a678461054d18b0d507c851ba99e5af16fed9292bd213"
+      ]
+    ],
+    "round3_fp32_n6144": [
+      [
+        "A100",
+        "bfdf4d40ae2b18c6d8a057b3a649574c798f25e5b62f9a0c6a25700d14684061",
+        "f9bf73e8900eac00121e676055ee3614516bf0ecd8c364d81aeb47b7613c8e98"
+      ],
+      [
+        "RTX5070",
+        "bfdf4d40ae2b18c6d8a057b3a649574c798f25e5b62f9a0c6a25700d14684061",
+        "f9bf73e8900eac00121e676055ee3614516bf0ecd8c364d81aeb47b7613c8e98"
+      ],
+      [
+        "T4",
+        "bfdf4d40ae2b18c6d8a057b3a649574c798f25e5b62f9a0c6a25700d14684061",
+        "f9bf73e8900eac00121e676055ee3614516bf0ecd8c364d81aeb47b7613c8e98"
+      ]
+    ]
+  }
+}

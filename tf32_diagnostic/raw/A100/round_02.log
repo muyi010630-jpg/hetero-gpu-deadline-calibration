@@ -1,0 +1,13 @@
+{"event": "context_completed", "device": "A100", "round": 2, "phase": 1, "context": "fp16_n4096", "mode": "allow_tf32", "median_ms": 0.6851583957672119, "window_rows": 20}
+{"event": "context_completed", "device": "A100", "round": 2, "phase": 1, "context": "fp32_n6144", "mode": "allow_tf32", "median_ms": 4.414310455322266, "window_rows": 40}
+{"event": "context_completed", "device": "A100", "round": 2, "phase": 1, "context": "fp32_n2048", "mode": "allow_tf32", "median_ms": 0.21304320096969603, "window_rows": 60}
+{"event": "context_completed", "device": "A100", "round": 2, "phase": 1, "context": "fp32_n4096", "mode": "allow_tf32", "median_ms": 1.3632511615753173, "window_rows": 80}
+{"event": "context_completed", "device": "A100", "round": 2, "phase": 2, "context": "fp16_n4096", "mode": "ieee", "median_ms": 0.6940671920776367, "window_rows": 100}
+{"event": "context_completed", "device": "A100", "round": 2, "phase": 2, "context": "fp32_n6144", "mode": "ieee", "median_ms": 26.690252685546874, "window_rows": 120}
+{"event": "context_completed", "device": "A100", "round": 2, "phase": 2, "context": "fp32_n2048", "mode": "ieee", "median_ms": 1.0305536270141602, "window_rows": 140}
+{"event": "context_completed", "device": "A100", "round": 2, "phase": 2, "context": "fp32_n4096", "mode": "ieee", "median_ms": 7.8788097381591795, "window_rows": 160}
+{"event": "context_completed", "device": "A100", "round": 2, "phase": 3, "context": "fp16_n4096", "mode": "allow_tf32", "median_ms": 0.6942208051681518, "window_rows": 180}
+{"event": "context_completed", "device": "A100", "round": 2, "phase": 3, "context": "fp32_n6144", "mode": "allow_tf32", "median_ms": 4.4168191909790036, "window_rows": 200}
+{"event": "context_completed", "device": "A100", "round": 2, "phase": 3, "context": "fp32_n2048", "mode": "allow_tf32", "median_ms": 0.21626880168914794, "window_rows": 220}
+{"event": "context_completed", "device": "A100", "round": 2, "phase": 3, "context": "fp32_n4096", "mode": "allow_tf32", "median_ms": 1.3833727836608887, "window_rows": 240}
+{"protocol_id": "tf32_software_path_mechanism_20261018_v3", "state": "completed", "device_label": "A100", "round": 2, "smoke": false, "input_check": false, "started_utc": "2026-10-18T10:41:09.419889+00:00", "pid": 1853, "window_rows": 240, "completed_context_phases": 12, "expected_window_rows": 240, "expected_context_phases": 12, "paired_output_differences": 4, "external_compute_process_seen": false, "telemetry_query_failure_seen": false, "nonfinite_output_seen": false, "run_directory": "<REMOTE_WORKDIR>/raw/round_02", "current_phase": 3, "current_context": "fp32_n4096", "current_mode": "allow_tf32", "completed_utc": "2026-10-18T10:42:05.787998+00:00"}

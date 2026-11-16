@@ -1,0 +1,242 @@
+{
+  "status": "post_hoc_supplementary_analysis",
+  "not_original_preregistration": true,
+  "prepared_at_asia_shanghai": "2026-10-13T16:35:52.185787+08:00",
+  "base_seed": 20261013,
+  "bootstrap_replicates": 5000,
+  "bootstrap_method": "paired image-block percentile bootstrap, numpy quantile(method=linear), marginal 95% intervals",
+  "signflip_replicates": 100000,
+  "signflip_method": "two-sided absolute mean statistic; independently flip each of 20 image differences; p=(extreme_count+1)/(100000+1)",
+  "multiple_testing": "Holm step-down over all 25 comparisons, alpha=0.05",
+  "estimand": "equal-weight mean across 20 images of PoolEMA minus LocalWindow24; 5 task seeds already averaged within each image in source CSV",
+  "interaction_estimand": "for a matched image and rho: (Pool-Window in late_sparse) minus (Pool-Window in balanced)",
+  "units": {
+    "fixed_direct": "MAPE percentage points",
+    "closed_direct": "SLA violation percentage points",
+    "fixed_feedback_interaction": "MAPE percentage points"
+  },
+  "assumptions": "image is independent resampling/inference block; within-image outcomes remain paired; sign-flip inference uses symmetry/exchangeability of paired differences under null and is not a randomized-mechanism causal test",
+  "source_hashes": {
+    "fixed": {
+      "path": "reproducibility/cpu/heterogeneity_adaptive_cpu_20261009/03_independent_prediction_test/image_block_metrics.csv",
+      "sha256": "40fd2ef5573130f33290e9879a47bf374b29eb750d88b00eab421484d14b73f6"
+    },
+    "closed": {
+      "path": "reproducibility/cpu/heterogeneity_adaptive_cpu_20261009/04_closed_loop_scheduling/full/analysis/image_block_metrics.csv",
+      "sha256": "ec1df276a52c9f79e6f7cf8cf4a9f4be1f06a90d5f563dea8e6590c6bea09862"
+    }
+  },
+  "script_sha256": "d7602260267c5dc56e920697cafc138caa3bf0f2a9ec2662d7904544d08042e8",
+  "source_filter": {
+    "fixed": "drift_type == none",
+    "closed": "supplied full analysis no-drift holdout"
+  },
+  "comparison_modes": [
+    "pool_ema",
+    "local_window"
+  ],
+  "comparison_specs": [
+    {
+      "id": "fixed_r0_balanced",
+      "analysis": "fixed_direct",
+      "rho": 0.0,
+      "condition": "balanced",
+      "bootstrap_seed": 10225514104317161925,
+      "signflip_seed": 5634312699235265474
+    },
+    {
+      "id": "fixed_r0_late_sparse",
+      "analysis": "fixed_direct",
+      "rho": 0.0,
+      "condition": "late_sparse",
+      "bootstrap_seed": 10058633989473488202,
+      "signflip_seed": 8804398170905420246
+    },
+    {
+      "id": "fixed_r0.25_balanced",
+      "analysis": "fixed_direct",
+      "rho": 0.25,
+      "condition": "balanced",
+      "bootstrap_seed": 7414680727983433444,
+      "signflip_seed": 10443839771044236667
+    },
+    {
+      "id": "fixed_r0.25_late_sparse",
+      "analysis": "fixed_direct",
+      "rho": 0.25,
+      "condition": "late_sparse",
+      "bootstrap_seed": 12183914961303741686,
+      "signflip_seed": 3313235984010712340
+    },
+    {
+      "id": "fixed_r0.5_balanced",
+      "analysis": "fixed_direct",
+      "rho": 0.5,
+      "condition": "balanced",
+      "bootstrap_seed": 8321042400472719547,
+      "signflip_seed": 3411293126004987969
+    },
+    {
+      "id": "fixed_r0.5_late_sparse",
+      "analysis": "fixed_direct",
+      "rho": 0.5,
+      "condition": "late_sparse",
+      "bootstrap_seed": 15387413989678718654,
+      "signflip_seed": 14052226048882708860
+    },
+    {
+      "id": "fixed_r0.75_balanced",
+      "analysis": "fixed_direct",
+      "rho": 0.75,
+      "condition": "balanced",
+      "bootstrap_seed": 14928636619110421883,
+      "signflip_seed": 9871661217924908393
+    },
+    {
+      "id": "fixed_r0.75_late_sparse",
+      "analysis": "fixed_direct",
+      "rho": 0.75,
+      "condition": "late_sparse",
+      "bootstrap_seed": 12103106826624653469,
+      "signflip_seed": 5198570281140385515
+    },
+    {
+      "id": "fixed_r1_balanced",
+      "analysis": "fixed_direct",
+      "rho": 1.0,
+      "condition": "balanced",
+      "bootstrap_seed": 8936102443086633369,
+      "signflip_seed": 10979852599118272583
+    },
+    {
+      "id": "fixed_r1_late_sparse",
+      "analysis": "fixed_direct",
+      "rho": 1.0,
+      "condition": "late_sparse",
+      "bootstrap_seed": 9419150811160936296,
+      "signflip_seed": 13439040850233929072
+    },
+    {
+      "id": "closed_r0_load1.25",
+      "analysis": "closed_direct",
+      "rho": 0.0,
+      "condition": 1.25,
+      "bootstrap_seed": 3928435507768017621,
+      "signflip_seed": 9625276708712937957
+    },
+    {
+      "id": "closed_r0_load1.7",
+      "analysis": "closed_direct",
+      "rho": 0.0,
+      "condition": 1.7,
+      "bootstrap_seed": 1031527350802985439,
+      "signflip_seed": 15094350038211080692
+    },
+    {
+      "id": "closed_r0.25_load1.25",
+      "analysis": "closed_direct",
+      "rho": 0.25,
+      "condition": 1.25,
+      "bootstrap_seed": 12346220263252721761,
+      "signflip_seed": 70962168376337186
+    },
+    {
+      "id": "closed_r0.25_load1.7",
+      "analysis": "closed_direct",
+      "rho": 0.25,
+      "condition": 1.7,
+      "bootstrap_seed": 12867389810206146327,
+      "signflip_seed": 13326718316354369423
+    },
+    {
+      "id": "closed_r0.5_load1.25",
+      "analysis": "closed_direct",
+      "rho": 0.5,
+      "condition": 1.25,
+      "bootstrap_seed": 1390698229275415852,
+      "signflip_seed": 7499389083603531985
+    },
+    {
+      "id": "closed_r0.5_load1.7",
+      "analysis": "closed_direct",
+      "rho": 0.5,
+      "condition": 1.7,
+      "bootstrap_seed": 10474756977368340912,
+      "signflip_seed": 12672496833513478354
+    },
+    {
+      "id": "closed_r0.75_load1.25",
+      "analysis": "closed_direct",
+      "rho": 0.75,
+      "condition": 1.25,
+      "bootstrap_seed": 18030135174011302797,
+      "signflip_seed": 9022483798570208909
+    },
+    {
+      "id": "closed_r0.75_load1.7",
+      "analysis": "closed_direct",
+      "rho": 0.75,
+      "condition": 1.7,
+      "bootstrap_seed": 16208303275098704807,
+      "signflip_seed": 8070050603380769710
+    },
+    {
+      "id": "closed_r1_load1.25",
+      "analysis": "closed_direct",
+      "rho": 1.0,
+      "condition": 1.25,
+      "bootstrap_seed": 15689825151313535495,
+      "signflip_seed": 16604984993082259616
+    },
+    {
+      "id": "closed_r1_load1.7",
+      "analysis": "closed_direct",
+      "rho": 1.0,
+      "condition": 1.7,
+      "bootstrap_seed": 12734001670582607971,
+      "signflip_seed": 12528537387170130163
+    },
+    {
+      "id": "fixed_interaction_r0",
+      "analysis": "fixed_feedback_interaction",
+      "rho": 0.0,
+      "condition": "late_sparse_minus_balanced",
+      "bootstrap_seed": 15145111794782815764,
+      "signflip_seed": 1842568134382161524
+    },
+    {
+      "id": "fixed_interaction_r0.25",
+      "analysis": "fixed_feedback_interaction",
+      "rho": 0.25,
+      "condition": "late_sparse_minus_balanced",
+      "bootstrap_seed": 5670205004465721563,
+      "signflip_seed": 13219235308046539159
+    },
+    {
+      "id": "fixed_interaction_r0.5",
+      "analysis": "fixed_feedback_interaction",
+      "rho": 0.5,
+      "condition": "late_sparse_minus_balanced",
+      "bootstrap_seed": 12881654932213995163,
+      "signflip_seed": 4650406105841323883
+    },
+    {
+      "id": "fixed_interaction_r0.75",
+      "analysis": "fixed_feedback_interaction",
+      "rho": 0.75,
+      "condition": "late_sparse_minus_balanced",
+      "bootstrap_seed": 10366881714032794992,
+      "signflip_seed": 13128346148760857086
+    },
+    {
+      "id": "fixed_interaction_r1",
+      "analysis": "fixed_feedback_interaction",
+      "rho": 1.0,
+      "condition": "late_sparse_minus_balanced",
+      "bootstrap_seed": 7914637443142690986,
+      "signflip_seed": 1259626221704992043
+    }
+  ],
+  "zero_definition": "abs(paired difference) <= 1e-12 in percentage-point units",
+  "scope": "read-only reanalysis of already completed tests; no new simulation; preserve original 30-comparison adaptive primary families separately"
+}

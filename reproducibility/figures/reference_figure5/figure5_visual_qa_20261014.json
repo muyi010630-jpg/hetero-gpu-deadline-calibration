@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-14",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "visual_check_passed": true,
+  "checks": [
+    "no figure-level title",
+    "no MAPE/SLA footer in image",
+    "only axes, panel labels and bar values",
+    "all labels and values readable without overlap or clipping",
+    "600 dpi PNG and vector PDF/SVG"
+  ],
+  "size_mm": [
+    180,
+    85
+  ],
+  "minimum_font_pt": 8.5
+}

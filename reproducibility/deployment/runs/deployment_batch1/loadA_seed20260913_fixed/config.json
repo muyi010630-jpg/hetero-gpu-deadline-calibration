@@ -1,0 +1,81 @@
+{
+  "created_at_unix": 1788711675.4720004,
+  "run_name": "loadA_seed20260913_fixed",
+  "strategy": "fixed",
+  "load": "A",
+  "seed": 20260913,
+  "order_index": 2,
+  "tasks_per_plan": 100,
+  "arrival_mean_s": 0.55,
+  "e2e_allowance_s": 5.0,
+  "worker_ids": [
+    "RTX5070",
+    "T4",
+    "A100"
+  ],
+  "contexts_used": [
+    "compute|2048|1|fp16",
+    "compute|2048|1|fp32",
+    "compute|4096|1|fp16",
+    "compute|4096|1|fp32",
+    "compute|6144|1|fp16",
+    "compute|6144|1|fp32",
+    "compute|8192|1|fp16",
+    "inference|224|1|fp16",
+    "inference|224|8|fp16",
+    "inference|224|32|fp16",
+    "inference|224|64|fp16",
+    "memory|256|1|fp32",
+    "memory|512|1|fp32",
+    "memory|1024|1|fp32",
+    "memory|1536|1|fp32"
+  ],
+  "context_count": 15,
+  "profile_csv": "reproducibility/deployment/profiles/P1.csv",
+  "profile_sha256": "643704fa8b8f1efe2115692b643a461ea7c514641ebcd941f70e0e561e2da116",
+  "worker_script_sha256": "ff29c27583d7165bbc2bc5ecd13264bc6a29756a4b865acb8939db54e000bfb3",
+  "params": {
+    "ema_rho": 0.3,
+    "window": 24,
+    "min_samples": 4,
+    "hier_tau": 1.5,
+    "risk_beta": 0.8,
+    "cold_uncertainty": 0.3,
+    "fixed_safety": 1.1,
+    "ema_kappa": 1.3,
+    "queue_wait_weight": 1.75,
+    "share_penalty_weight": 1.5,
+    "risk_weight_base": 1.0,
+    "risk_weight_qos": 0.55,
+    "fairness_floor": 0.2,
+    "fairness_floor_weight": 5.0,
+    "hard_fairness_floor": true,
+    "fairness_floor_min_tasks": 12,
+    "fairness_floor_max_queue_s": 0.35,
+    "fairness_floor_max_risk": 5.0
+  },
+  "workers": [
+    {
+      "worker_id": "RTX5070",
+      "python": "<PYTHON_ENV>/Scripts/python.exe",
+      "remote_dir": "<REMOTE_WORKDIR>/ema_multistrategy_online",
+      "local": true,
+      "local_out_dir": "<LOCAL_WORKDIR>/EMA/真实在线调度验证/固定任务流多策略真实对照_20260906/remote_logs/loadA_seed20260913_fixed/RTX5070"
+    },
+    {
+      "worker_id": "T4",
+      "python": "<PYTHON_ENV>/bin/python",
+      "remote_dir": "<REMOTE_WORKDIR>/loadA_seed20260913_fixed/T4",
+      "local": false,
+      "local_out_dir": ""
+    },
+    {
+      "worker_id": "A100",
+      "python": "<PYTHON_ENV>/bin/python",
+      "remote_dir": "<REMOTE_WORKDIR>/loadA_seed20260913_fixed/A100",
+      "local": false,
+      "local_out_dir": ""
+    }
+  ],
+  "passwords_recorded": false
+}

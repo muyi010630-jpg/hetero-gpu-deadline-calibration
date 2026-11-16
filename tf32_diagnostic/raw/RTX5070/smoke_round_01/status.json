@@ -1,0 +1,22 @@
+{
+  "protocol_id": "tf32_software_path_mechanism_20261018_v1",
+  "state": "completed",
+  "device_label": "RTX5070",
+  "round": 1,
+  "smoke": true,
+  "started_utc": "2026-10-18T10:27:09.494467+00:00",
+  "pid": 42220,
+  "window_rows": 12,
+  "completed_context_phases": 12,
+  "expected_window_rows": 12,
+  "expected_context_phases": 12,
+  "paired_output_differences": 4,
+  "external_compute_process_seen": false,
+  "telemetry_query_failure_seen": false,
+  "nonfinite_output_seen": false,
+  "run_directory": "tf32_diagnostic/raw/RTX5070/smoke_round_01",
+  "current_phase": 3,
+  "current_context": "fp16_n4096",
+  "current_mode": "ieee",
+  "completed_utc": "2026-10-18T10:27:14.844418+00:00"
+}

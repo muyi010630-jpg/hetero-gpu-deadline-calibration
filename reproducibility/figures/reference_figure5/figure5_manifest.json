@@ -1,0 +1,37 @@
+{
+  "source_sha256": "f7a2ebdf57fcd252bc9a2270464c4de3a63e23283b8a78a9bdbd9896d7272c90",
+  "script_sha256": "636be2ad761c51006fc444572dde991a906d4fd0ee84734a80e854962860d246",
+  "outputs": [
+    {
+      "path": "<LOCAL_WORKDIR>/论文撰写/图片/图5_覆盖率与假安全率_中文.png",
+      "bytes": 198060,
+      "sha256": "343d68e646d622050e929a79cd94a28d9324b81767e434b90867f3460d5b31dd"
+    },
+    {
+      "path": "<LOCAL_WORKDIR>/论文撰写/图片/图5_覆盖率与假安全率_中文.pdf",
+      "bytes": 25882,
+      "sha256": "c3a951643d10a41ad75547adc8c74f9893123421dd784d0a7b01674ea45fff43"
+    },
+    {
+      "path": "<LOCAL_WORKDIR>/论文撰写/图片/图5_覆盖率与假安全率_中文.svg",
+      "bytes": 44555,
+      "sha256": "501c293b5fa0d89b4df9e2a1f52fc14fa79991e553d28d43d65d28c300648c83"
+    },
+    {
+      "path": "<LOCAL_WORKDIR>/论文撰写/图片/图5_覆盖率与假安全率_英文.png",
+      "bytes": 198118,
+      "sha256": "51ca4c05ba1e7deb911510f4f424b8a1084ff5b25e9e4762c3f283f2b9e05b59"
+    },
+    {
+      "path": "<LOCAL_WORKDIR>/论文撰写/图片/图5_覆盖率与假安全率_英文.pdf",
+      "bytes": 40258,
+      "sha256": "8b93d25b2f21b03328a720d5f3647db37a3d3357aa7ce0a715ee978779f5b81c"
+    },
+    {
+      "path": "<LOCAL_WORKDIR>/论文撰写/图片/图5_覆盖率与假安全率_英文.svg",
+      "bytes": 45707,
+      "sha256": "d4200b2d282751f5a8f1e901753bc75709188919364e1181e64a431729183e98"
+    }
+  ],
+  "captions_sha256": "44293e5cade586114c49598d1671ae31167628fe1e8d78175d6cd30c879fc6ae"
+}

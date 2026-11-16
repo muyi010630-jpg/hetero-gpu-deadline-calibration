@@ -1,0 +1,13 @@
+{"event": "context_completed", "device": "A100", "round": 1, "phase": 1, "context": "fp32_n2048", "mode": "ieee", "median_ms": 0.9998847961425781, "window_rows": 20}
+{"event": "context_completed", "device": "A100", "round": 1, "phase": 1, "context": "fp32_n4096", "mode": "ieee", "median_ms": 7.636787414550781, "window_rows": 40}
+{"event": "context_completed", "device": "A100", "round": 1, "phase": 1, "context": "fp32_n6144", "mode": "ieee", "median_ms": 26.098739624023438, "window_rows": 60}
+{"event": "context_completed", "device": "A100", "round": 1, "phase": 1, "context": "fp16_n4096", "mode": "ieee", "median_ms": 0.6763007879257201, "window_rows": 80}
+{"event": "context_completed", "device": "A100", "round": 1, "phase": 2, "context": "fp32_n2048", "mode": "allow_tf32", "median_ms": 0.21099520921707154, "window_rows": 100}
+{"event": "context_completed", "device": "A100", "round": 1, "phase": 2, "context": "fp32_n4096", "mode": "allow_tf32", "median_ms": 1.349171209335327, "window_rows": 120}
+{"event": "context_completed", "device": "A100", "round": 1, "phase": 2, "context": "fp32_n6144", "mode": "allow_tf32", "median_ms": 4.361830520629883, "window_rows": 140}
+{"event": "context_completed", "device": "A100", "round": 1, "phase": 2, "context": "fp16_n4096", "mode": "allow_tf32", "median_ms": 0.6792192220687866, "window_rows": 160}
+{"event": "context_completed", "device": "A100", "round": 1, "phase": 3, "context": "fp32_n2048", "mode": "ieee", "median_ms": 1.0206208229064941, "window_rows": 180}
+{"event": "context_completed", "device": "A100", "round": 1, "phase": 3, "context": "fp32_n4096", "mode": "ieee", "median_ms": 7.7459968566894535, "window_rows": 200}
+{"event": "context_completed", "device": "A100", "round": 1, "phase": 3, "context": "fp32_n6144", "mode": "ieee", "median_ms": 26.406297302246095, "window_rows": 220}
+{"event": "context_completed", "device": "A100", "round": 1, "phase": 3, "context": "fp16_n4096", "mode": "ieee", "median_ms": 0.693606400489807, "window_rows": 240}
+{"protocol_id": "tf32_software_path_mechanism_20261018_v3", "state": "completed", "device_label": "A100", "round": 1, "smoke": false, "input_check": false, "started_utc": "2026-10-18T10:40:05.643135+00:00", "pid": 1755, "window_rows": 240, "completed_context_phases": 12, "expected_window_rows": 240, "expected_context_phases": 12, "paired_output_differences": 4, "external_compute_process_seen": false, "telemetry_query_failure_seen": false, "nonfinite_output_seen": false, "run_directory": "<REMOTE_WORKDIR>/raw/round_01", "current_phase": 3, "current_context": "fp16_n4096", "current_mode": "ieee", "completed_utc": "2026-10-18T10:41:08.801109+00:00"}

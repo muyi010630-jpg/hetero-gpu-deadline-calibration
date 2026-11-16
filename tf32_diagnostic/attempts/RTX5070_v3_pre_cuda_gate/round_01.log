@@ -1,0 +1,1 @@
+{"event": "failed", "run_directory": "tf32_diagnostic/raw/RTX5070/round_01", "error_type": "RuntimeError", "error": "A successful empty pre-CUDA compute-process baseline is required"}

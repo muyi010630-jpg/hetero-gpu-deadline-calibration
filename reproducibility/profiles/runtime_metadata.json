@@ -1,0 +1,43 @@
+{
+  "created_at": "2026-09-21 13:39:34",
+  "workers": [
+    "RTX5070",
+    "T4",
+    "A100"
+  ],
+  "contexts": [
+    "compute|2048|1|fp16",
+    "compute|2048|1|fp32",
+    "compute|4096|1|fp16",
+    "compute|4096|1|fp32",
+    "compute|6144|1|fp16",
+    "compute|6144|1|fp32",
+    "compute|8192|1|fp16",
+    "inference|224|1|fp16",
+    "inference|224|8|fp16",
+    "inference|224|32|fp16",
+    "inference|224|64|fp16",
+    "memory|256|1|fp32",
+    "memory|512|1|fp32",
+    "memory|1024|1|fp32",
+    "memory|1536|1|fp32"
+  ],
+  "warmups_per_context": 10,
+  "repeats_per_context": 8,
+  "profile_initial_biases": {
+    "RTX5070": {
+      "compute": 1.35,
+      "memory": 0.72,
+      "inference": 1.22
+    },
+    "T4": {
+      "compute": 0.82,
+      "memory": 1.22,
+      "inference": 0.9
+    }
+  },
+  "notes": [
+    "Runtime profile is a diagnostic calibration artifact, not a replacement of the canonical historical profile.",
+    "Initial predictions preserve the original family-level bias factors while true_s is measured in the current runtime."
+  ]
+}

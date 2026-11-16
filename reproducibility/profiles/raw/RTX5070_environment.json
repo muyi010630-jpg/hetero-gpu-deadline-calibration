@@ -1,0 +1,16 @@
+{
+  "name": "NVIDIA GeForce RTX 5070",
+  "driver_version": "610.88",
+  "memory_total_mib": "12227",
+  "memory_used_mib": "652",
+  "temperature_c": "51",
+  "power_draw_w": "36.72",
+  "power_limit_w": "250.00",
+  "utilization_gpu_pct": "2",
+  "utilization_memory_pct": "0",
+  "python": "3.12.10",
+  "torch": "2.13.0+cu132",
+  "torch_cuda": "13.2",
+  "device_name": "NVIDIA GeForce RTX 5070",
+  "compute_capability": "12.0"
+}

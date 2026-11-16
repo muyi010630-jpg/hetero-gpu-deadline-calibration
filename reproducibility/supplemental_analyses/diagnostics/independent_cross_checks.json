@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "same_plan_sha256_within_all_paired_conditions": true,
+  "max_public_panel_irreducible_term_spread_within_condition": 1.942890293094024e-16,
+  "max_mean_discrepancy_against_existing_analysis": 0.0,
+  "same_existing_code_fingerprint": true,
+  "probability_rows": 1728,
+  "new_significance_tests": false
+}

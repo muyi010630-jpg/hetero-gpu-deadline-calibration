@@ -1,0 +1,242 @@
+{
+  "status": "development_design_before_new_outcomes; final_test_requires_separate_freeze",
+  "authorization": "User authorized completing the proposed CPU experimental redesign and candidate method on 2026-10-09",
+  "scope": "CPU only; preserve previous experiment and manuscript",
+  "truth_source": "Previous profiles_P0/cluster_08_profile.csv true_s; 45 unique model-context medians; clones removed",
+  "image_generation": {
+    "mu": 0.0,
+    "sigma": 0.2,
+    "group": [
+      "device_model",
+      "family"
+    ],
+    "construction": "Weighted standardized group vector a; within-group centered standardized e; orthogonal over 45 unique cells; z=mu+sigma*(sqrt(rho)*a+sqrt(1-rho)*e); T0=Tmedian*exp(-z)",
+    "rho_interpretation": "Empirical between-group variance fraction; not pairwise correlation or statistical independence",
+    "same_base_vectors_within_image_across_rho": true,
+    "pilot_image_seeds": [
+      11001,
+      11002,
+      11003,
+      11004,
+      11005
+    ],
+    "validation_image_seeds": [
+      12001,
+      12002,
+      12003,
+      12004,
+      12005,
+      12006
+    ],
+    "test_image_seed_start": 13001,
+    "test_image_seed_end": 13020
+  },
+  "fixed_feedback": {
+    "pilot_rho": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "validation_and_test_rho": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "pilot_task_seeds": [
+      21001,
+      21002,
+      21003
+    ],
+    "validation_task_seeds": [
+      22001,
+      22002,
+      22003
+    ],
+    "test_task_seeds": [
+      23001,
+      23002,
+      23003,
+      23004,
+      23005
+    ],
+    "pilot_and_validation_events": 600,
+    "test_events": 1800,
+    "time_range_seconds": [
+      0.0,
+      12.0
+    ],
+    "noise_log_sd": 0.08,
+    "runtime_anomalies": false,
+    "flow_modes": [
+      "balanced",
+      "late_sparse"
+    ],
+    "late_sparse": "Outcome-independent deterministic half of contexts withheld before phase 0.4; later introduced with lower sampling frequency",
+    "all_methods_receive_same_stream": true,
+    "prediction_before_feedback": true,
+    "save_all_predictions_compressed": true
+  },
+  "main_modes": [
+    "full_original",
+    "local_ema",
+    "pool_ema",
+    "gated_point",
+    "local_window",
+    "adaptive_pool_local"
+  ],
+  "diagnostic_modes": [
+    "hierarchy_common_scope",
+    "pool_matched_dtype",
+    "full_no_neighbor_shrink",
+    "full_fresh_neighbors",
+    "pool_exposure_matched",
+    "adaptive_fixed_mix",
+    "adaptive_no_freshness"
+  ],
+  "common_calibration": {
+    "alpha_by_family": {
+      "compute": 0.35,
+      "memory": 0.45,
+      "inference": 0.22
+    },
+    "delta_clip": [
+      -0.35,
+      0.35
+    ],
+    "state_clip": [
+      -0.7,
+      0.7
+    ],
+    "window": 24,
+    "hier_tau": 1.5,
+    "min_samples": 4,
+    "risk_beta": 0.8,
+    "cold_uncertainty": 0.3,
+    "drift_detection": false
+  },
+  "candidate_validation_grid": {
+    "shrink_scale": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "freshness_half_life_s": [
+      1.5,
+      6.0,
+      1000000000.0
+    ],
+    "noise_variance_floor": 0.0025,
+    "window": 24,
+    "selection_objective": "All validation image blocks, rho levels and both flow modes equally weighted context-macro MAPE; one configuration selected before test",
+    "tie_break": "Lowest objective; deterministic parameter tuple order",
+    "baseline_alpha_and_window": "Frozen original family alpha and common 24-window; LocalWindow controls candidate's local window mean",
+    "no_test_driven_revision": true
+  },
+  "fixed_test_statistics": {
+    "experimental_unit": "20 independent image blocks; task seeds nested within block",
+    "primary_metric": "context-macro MAPE on common events",
+    "primary_family": "Adaptive minus Pool/LocalWindow/OriginalFull at five rho levels and two flow modes = 30 tests",
+    "bootstrap_draws": 5000,
+    "paired_signflip_draws": 100000,
+    "multiplicity": "Holm over the 30 primary tests",
+    "ci": "Marginal percentile intervals, not simultaneous",
+    "other_metrics": "Exploratory: event micro MAPE, first-k, own-feedback bands, early stream phase"
+  },
+  "closed_loop": {
+    "image_seeds": "same 20 heldout blocks",
+    "rho": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "task_seeds": [
+      23001,
+      23002,
+      23003,
+      23004,
+      23005
+    ],
+    "pool_size": 8,
+    "load_per_device": [
+      1.25,
+      1.7
+    ],
+    "horizon_seconds": 12.0,
+    "deadline_scale": 0.8,
+    "strict_qos_prob": 0.25,
+    "deadline_anchor": "median measured truth across actual resource pool instances",
+    "deadline_qos_factors": [
+      1.6,
+      1.3,
+      1.1
+    ],
+    "deadline_jitter": [
+      0.92,
+      1.08
+    ],
+    "burst_multiplier": 2.0,
+    "physical_drift": false,
+    "runtime_anomalies": false,
+    "scheduler": "Frozen full_qos configuration",
+    "risk": "Common original Full wrapper; point estimator replaced; feedback histories endogenous",
+    "evaluation_panels_seconds": [
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      6.0,
+      8.0,
+      10.0,
+      12.0
+    ],
+    "panel": "45 model-context units; one canonical instance per model; shared seeded noisy truth plus noiseless median; evaluate deep-copied state only, never update actual model or task queue",
+    "preserve_no_panel_endtime": true,
+    "primary_metric": "SLA violation rate",
+    "primary_family": "Adaptive minus Pool/LocalWindow/OriginalFull at five rho and two loads = 30 tests; separate family from fixed feedback",
+    "inference_unit": "20 image blocks",
+    "all_candidate_potential_times_hash_checked": true,
+    "no_adaptive_choice_of_formal_conditions": true
+  },
+  "drift_sensitivity": {
+    "image_seeds": "13001-13010 (prespecified subset)",
+    "rho": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "task_seeds": [
+      23001,
+      23002,
+      23003
+    ],
+    "flow_modes": [
+      "balanced",
+      "late_sparse"
+    ],
+    "events": 900,
+    "types": [
+      "group",
+      "context"
+    ],
+    "onset_fraction": 0.5,
+    "log_amplitude_sd": 0.15,
+    "detector": "All methods off; isolate response of estimation structures",
+    "statistics": "Image block inference; all conditions retained; exploratory sensitivity"
+  },
+  "implementation_checks_before_freeze": [
+    "Orthogonal image moments",
+    "No seed leakage",
+    "Group EMA direct recurrence",
+    "Candidate only uses observed history",
+    "Shared original risk rules",
+    "Clone-aware heterogeneity",
+    "Original Full and baseline smoke replication",
+    "Probe evaluation leaves actual state unchanged"
+  ],
+  "resource_limit": "At most six total Python experiment workers; independent stages scheduled without oversubscription",
+  "disclosure": "Follow-up exploratory design motivated by previous adverse results; this candidate is empirical-Bayes-style adaptive partial pooling, not assumed theoretically novel"
+}

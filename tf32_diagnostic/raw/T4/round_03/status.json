@@ -1,0 +1,23 @@
+{
+  "protocol_id": "tf32_software_path_mechanism_20261018_v3",
+  "state": "completed",
+  "device_label": "T4",
+  "round": 3,
+  "smoke": false,
+  "input_check": false,
+  "started_utc": "2026-10-18T10:45:05.041049+00:00",
+  "pid": 2073,
+  "window_rows": 240,
+  "completed_context_phases": 12,
+  "expected_window_rows": 240,
+  "expected_context_phases": 12,
+  "paired_output_differences": 4,
+  "external_compute_process_seen": false,
+  "telemetry_query_failure_seen": false,
+  "nonfinite_output_seen": false,
+  "run_directory": "<REMOTE_WORKDIR>/raw/round_03",
+  "current_phase": 3,
+  "current_context": "fp32_n6144",
+  "current_mode": "ieee",
+  "completed_utc": "2026-10-18T10:47:39.821114+00:00"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "verified_from_packaged_CSVs",
+  "analysis_nature": "post_hoc_supplementary_after_original_holdout",
+  "original_estimators_changed": false,
+  "new_simulation": false,
+  "rq2": {
+    "comparisons": 25,
+    "paired_differences": 500,
+    "original_input_hashes_match": true,
+    "saved_numbers_match": true
+  },
+  "probability": {
+    "input_run_rows": 1728,
+    "image_blocks_per_horizon": 16,
+    "horizons": [
+      24,
+      120,
+      600
+    ],
+    "saved_numbers_match": true,
+    "no_new_p_values": true
+  },
+  "heterogeneity": {
+    "streams": 1000,
+    "conditions": 10,
+    "mean_and_zero_fractions_match": true,
+    "event_quantiles_recomputed": false,
+    "reason": "1000 original NPZ shards omitted; source hashes and verified event-level summaries retained"
+  },
+  "numpy": "2.3.5",
+  "pandas": "3.0.1"
+}

@@ -1,0 +1,49 @@
+{
+  "source": "<LOCAL_WORKDIR>/修补实验2_deadline重设_20260907/experiment_C2_replay_deadline_fixed/per_seed_results.csv",
+  "source_sha256": "f7a2ebdf57fcd252bc9a2270464c4de3a63e23283b8a78a9bdbd9896d7272c90",
+  "source_rows": 32400,
+  "compared_strategies": [
+    "full_qos",
+    "full_no_risk"
+  ],
+  "seed_range": [
+    601,
+    620
+  ],
+  "scenario_count": 135,
+  "aggregation": "Within-scenario mean over seeds, then equal weight over 135 scenarios.",
+  "coverage": "Coverage is defined for strict-QoS tasks. Exclude 12 cells with no strict task, identified by zero Oracle coverage, before each scenario mean.",
+  "false_safe": "Retain all 2700 cells; stored false_safe_rate is conditional on predicted-safe tasks and can have a nonzero denominator without strict tasks.",
+  "excluded_coverage_cells": 12,
+  "descriptive_only": true,
+  "new_experiments": false,
+  "confidence_intervals_added": false,
+  "rows": [
+    {
+      "strategy": "full_qos",
+      "scenarios": 135,
+      "total_cells": 2700,
+      "coverage_defined_cells": 2688,
+      "coverage_pct": 95.95294578907315,
+      "false_safe_pct": 2.7473368019629625,
+      "mape_pct": 12.281644009,
+      "sla_pct": 19.621785906814814
+    },
+    {
+      "strategy": "full_no_risk",
+      "scenarios": 135,
+      "total_cells": 2700,
+      "coverage_defined_cells": 2688,
+      "coverage_pct": 63.649511134994604,
+      "false_safe_pct": 4.333140603592592,
+      "mape_pct": 12.28068651703704,
+      "sla_pct": 19.617897502185183
+    }
+  ],
+  "delta_no_upper_minus_full_pp": {
+    "coverage_pct": -32.30343465407855,
+    "false_safe_pct": 1.5858038016296296,
+    "mape_pct": -0.0009574919629606882,
+    "sla_pct": -0.003888404629631026
+  }
+}

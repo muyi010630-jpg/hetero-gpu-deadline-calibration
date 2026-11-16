@@ -1,0 +1,17 @@
+﻿stage,arm_id,mode,policy,eta,lambda_weight,margin
+validation,mode=boundary|policy=no_probe|eta=0.005|lambda_weight=1|margin=null,boundary,no_probe,0.005,1.0,
+validation,mode=boundary|policy=no_probe|eta=0.005|lambda_weight=3|margin=null,boundary,no_probe,0.005,3.0,
+validation,mode=boundary|policy=no_probe|eta=0.02|lambda_weight=1|margin=null,boundary,no_probe,0.02,1.0,
+validation,mode=boundary|policy=no_probe|eta=0.02|lambda_weight=3|margin=null,boundary,no_probe,0.02,3.0,
+validation,mode=boundary|policy=no_probe|eta=0.08|lambda_weight=1|margin=null,boundary,no_probe,0.08,1.0,
+validation,mode=boundary|policy=no_probe|eta=0.08|lambda_weight=3|margin=null,boundary,no_probe,0.08,3.0,
+validation,mode=fixed_margin_0.05|policy=no_probe|eta=0|lambda_weight=0|margin=0.05,fixed_margin_0.05,no_probe,0.0,0.0,0.05
+validation,mode=fixed_margin_0.15|policy=no_probe|eta=0|lambda_weight=0|margin=0.15,fixed_margin_0.15,no_probe,0.0,0.0,0.15
+validation,mode=fixed_margin_0.3|policy=no_probe|eta=0|lambda_weight=0|margin=0.3,fixed_margin_0.3,no_probe,0.0,0.0,0.3
+validation,mode=mean_oracle_original|policy=no_probe|eta=0|lambda_weight=0|margin=null,mean_oracle_original,no_probe,0.0,0.0,
+validation,mode=rolling_cdf|policy=no_probe|eta=0|lambda_weight=0|margin=null,rolling_cdf,no_probe,0.0,0.0,
+validation,mode=uncalibrated|policy=no_probe|eta=0|lambda_weight=0|margin=null,uncalibrated,no_probe,0.0,0.0,
+validation,mode=uniform|policy=no_probe|eta=0.005|lambda_weight=0|margin=null,uniform,no_probe,0.005,0.0,
+validation,mode=uniform|policy=no_probe|eta=0.02|lambda_weight=0|margin=null,uniform,no_probe,0.02,0.0,
+validation,mode=uniform|policy=no_probe|eta=0.08|lambda_weight=0|margin=null,uniform,no_probe,0.08,0.0,
+validation,mode=window_original|policy=no_probe|eta=0|lambda_weight=0|margin=null,window_original,no_probe,0.0,0.0,

@@ -1,0 +1,3 @@
+# Only portable CSV recomputation; not the full CPU/GPU simulation environment.
+numpy==2.3.5
+pandas==3.0.1

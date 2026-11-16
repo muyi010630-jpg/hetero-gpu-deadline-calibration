@@ -1,0 +1,209 @@
+{
+  "query": {
+    "command": [
+      "nvidia-smi",
+      "--query-compute-apps=gpu_uuid,pid,process_name,used_gpu_memory",
+      "--format=csv,noheader,nounits"
+    ],
+    "started_utc": "2026-10-18T10:40:06.327962+00:00",
+    "completed_utc": "2026-10-18T10:40:06.366933+00:00",
+    "returncode": 0,
+    "stdout": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 56088, <SYSTEM_ROOT>/System32/ShellHost.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 19248, <SYSTEM_ROOT>/explorer.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 15376, <SYSTEM_ROOT>/SystemApps/MicrosoftWindows.Client.CBS_cw5n1h2txyewy/CrossDeviceResume.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 22332, <SYSTEM_ROOT>/SystemApps/MicrosoftWindows.Client.CBS_cw5n1h2txyewy/SearchHost.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 13036, <SYSTEM_ROOT>/SystemApps/Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy/StartMenuExperienceHost.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 31916, <PROGRAM_FILES>/Microsoft/EdgeWebView/Application/155.0.4283.60/msedgewebview2.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 15884, <SYSTEM_ROOT>/SystemApps/Microsoft.LockApp_cw5n1h2txyewy/LockApp.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 43120, <PROGRAM_FILES>/WindowsApps/Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe/PhoneExperienceHost.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 28964, <SYSTEM_ROOT>/SystemApps/MicrosoftWindows.Client.CBS_cw5n1h2txyewy/TextInputHost.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 14560, <PROGRAM_FILES>/Microsoft/EdgeWebView/Application/155.0.4283.60/msedgewebview2.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 21368, <PROGRAM_FILES>/Microsoft/EdgeWebView/Application/155.0.4283.60/msedgewebview2.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 55352, <PROGRAM_FILES>/Microsoft/EdgeWebView/Application/155.0.4283.60/msedgewebview2.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 47472, <PROGRAM_FILES>/WindowsApps/OpenAI.Codex_26.1013.4894.0_x64__2p2nqsd0c76g0/app/ChatGPT.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 22420, <USER_HOME>/AppData/Local/OpenAI/Codex/runtimes/cua_node/78fb63cda1a9e2b2/bin/node_modules/@oai/sky/bin/windows/swift/x64/codex-computer-use-swift.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 56060, <LOCAL_WORKDIR>/D-drive-14921/workbuddy/WorkBuddy.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 8100, <LOCAL_WORKDIR>/D-drive-14921/workbuddy/WorkBuddy.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 31564, <PROGRAM_FILES>/WindowsApps/AdvancedMicroDevicesInc-2.AMDRadeonSoftware_10.24.30026.0_x64__0a9344xs7nr4m/radeonsoftware/RadeonSoftware.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 12812, <SYSTEM_ROOT>/System32/ApplicationFrameHost.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 20968, <SYSTEM_ROOT>/ImmersiveControlPanel/SystemSettings.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 50220, <PROGRAM_FILES>/WindowsApps/OpenAI.Codex_26.1013.4894.0_x64__2p2nqsd0c76g0/app/ChatGPT.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 29236, <SYSTEM_ROOT>/SystemApps/ShellExperienceHost_cw5n1h2txyewy/ShellExperienceHost.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 38880, <USER_HOME>/AppData/Local/Programs/DeepSeek Harness/DeepSeek Harness.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 34152, <USER_HOME>/AppData/Local/Programs/DeepSeek Harness/DeepSeek Harness.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 28604, <PROGRAM_FILES>/Tencent/Weixin/Weixin.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 11900, <USER_HOME>/AppData/Roaming/Tencent/xwechat/XPlugin/Plugins/RadiumWMPF/WeChatAppEx.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 33924, <PROGRAM_FILES>/Tencent/Weixin/Weixin.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 39724, <PROGRAM_FILES>/(x86)/Steam/steamapps/common/wallpaper_engine/wallpaper64.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 47632, <PROGRAM_FILES>/Microsoft Office/root/Office16/WINWORD.EXE, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 55084, <PROGRAM_FILES>/Microsoft/Edge/Application/msedge.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 25596, <PROGRAM_FILES>/Microsoft/Edge/Application/msedge.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 45968, <PROGRAM_FILES>/Microsoft/Edge/Application/msedge.exe, [N/A]\nGPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 55660, <PROGRAM_FILES>/QuarkCloudDrive/quark_cloud_drive.exe, [N/A]\n",
+    "stderr": ""
+  },
+  "processes": [
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 56088,
+      "process_name": "<SYSTEM_ROOT>/System32/ShellHost.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 19248,
+      "process_name": "<SYSTEM_ROOT>/explorer.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 15376,
+      "process_name": "<SYSTEM_ROOT>/SystemApps/MicrosoftWindows.Client.CBS_cw5n1h2txyewy/CrossDeviceResume.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 22332,
+      "process_name": "<SYSTEM_ROOT>/SystemApps/MicrosoftWindows.Client.CBS_cw5n1h2txyewy/SearchHost.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 13036,
+      "process_name": "<SYSTEM_ROOT>/SystemApps/Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy/StartMenuExperienceHost.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 31916,
+      "process_name": "<PROGRAM_FILES>/Microsoft/EdgeWebView/Application/155.0.4283.60/msedgewebview2.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 15884,
+      "process_name": "<SYSTEM_ROOT>/SystemApps/Microsoft.LockApp_cw5n1h2txyewy/LockApp.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 43120,
+      "process_name": "<PROGRAM_FILES>/WindowsApps/Microsoft.YourPhone_1.26082.121.0_x64__8wekyb3d8bbwe/PhoneExperienceHost.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 28964,
+      "process_name": "<SYSTEM_ROOT>/SystemApps/MicrosoftWindows.Client.CBS_cw5n1h2txyewy/TextInputHost.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 14560,
+      "process_name": "<PROGRAM_FILES>/Microsoft/EdgeWebView/Application/155.0.4283.60/msedgewebview2.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 21368,
+      "process_name": "<PROGRAM_FILES>/Microsoft/EdgeWebView/Application/155.0.4283.60/msedgewebview2.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 55352,
+      "process_name": "<PROGRAM_FILES>/Microsoft/EdgeWebView/Application/155.0.4283.60/msedgewebview2.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 47472,
+      "process_name": "<PROGRAM_FILES>/WindowsApps/OpenAI.Codex_26.1013.4894.0_x64__2p2nqsd0c76g0/app/ChatGPT.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 22420,
+      "process_name": "<USER_HOME>/AppData/Local/OpenAI/Codex/runtimes/cua_node/78fb63cda1a9e2b2/bin/node_modules/@oai/sky/bin/windows/swift/x64/codex-computer-use-swift.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 56060,
+      "process_name": "<LOCAL_WORKDIR>/D-drive-14921/workbuddy/WorkBuddy.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 8100,
+      "process_name": "<LOCAL_WORKDIR>/D-drive-14921/workbuddy/WorkBuddy.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 31564,
+      "process_name": "<PROGRAM_FILES>/WindowsApps/AdvancedMicroDevicesInc-2.AMDRadeonSoftware_10.24.30026.0_x64__0a9344xs7nr4m/radeonsoftware/RadeonSoftware.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 12812,
+      "process_name": "<SYSTEM_ROOT>/System32/ApplicationFrameHost.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 20968,
+      "process_name": "<SYSTEM_ROOT>/ImmersiveControlPanel/SystemSettings.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 50220,
+      "process_name": "<PROGRAM_FILES>/WindowsApps/OpenAI.Codex_26.1013.4894.0_x64__2p2nqsd0c76g0/app/ChatGPT.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 29236,
+      "process_name": "<SYSTEM_ROOT>/SystemApps/ShellExperienceHost_cw5n1h2txyewy/ShellExperienceHost.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 38880,
+      "process_name": "<USER_HOME>/AppData/Local/Programs/DeepSeek Harness/DeepSeek Harness.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 34152,
+      "process_name": "<USER_HOME>/AppData/Local/Programs/DeepSeek Harness/DeepSeek Harness.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 28604,
+      "process_name": "<PROGRAM_FILES>/Tencent/Weixin/Weixin.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 11900,
+      "process_name": "<USER_HOME>/AppData/Roaming/Tencent/xwechat/XPlugin/Plugins/RadiumWMPF/WeChatAppEx.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 33924,
+      "process_name": "<PROGRAM_FILES>/Tencent/Weixin/Weixin.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 39724,
+      "process_name": "<PROGRAM_FILES>/(x86)/Steam/steamapps/common/wallpaper_engine/wallpaper64.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 47632,
+      "process_name": "<PROGRAM_FILES>/Microsoft Office/root/Office16/WINWORD.EXE",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 55084,
+      "process_name": "<PROGRAM_FILES>/Microsoft/Edge/Application/msedge.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 25596,
+      "process_name": "<PROGRAM_FILES>/Microsoft/Edge/Application/msedge.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 45968,
+      "process_name": "<PROGRAM_FILES>/Microsoft/Edge/Application/msedge.exe",
+      "used_gpu_memory": "[N/A]"
+    },
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 55660,
+      "process_name": "<PROGRAM_FILES>/QuarkCloudDrive/quark_cloud_drive.exe",
+      "used_gpu_memory": "[N/A]"
+    }
+  ],
+  "parse_errors": []
+}

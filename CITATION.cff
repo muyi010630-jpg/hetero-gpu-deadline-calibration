@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use these data and code, please cite the accompanying article; the article DOI will be added when it is assigned."
+title: "Data and code for: When Do Online Calibration Gains Carry through to Deadline Outcomes in Heterogeneous GPU Pools?"
+type: software
+authors:
+  - family-names: Pang
+    given-names: Yujie
+    affiliation: "North Automatic Control Technology Institute, Taiyuan, China"
+  - family-names: Guo
+    given-names: Jiangyu
+    affiliation: "North Automatic Control Technology Institute, Taiyuan, China"
+  - family-names: Hao
+    given-names: Zhichao
+    affiliation: "North Automatic Control Technology Institute, Taiyuan, China"
+  - family-names: Guo
+    given-names: Xiao
+    affiliation: "North Automatic Control Technology Institute, Taiyuan, China"
+  - family-names: Huang
+    given-names: Mingjie
+    affiliation: "North Automatic Control Technology Institute, Taiyuan, China"
+  - family-names: Lü
+    given-names: Hao
+    affiliation: "North Automatic Control Technology Institute, Taiyuan, China"
+version: "20261109"
+date-released: "2026-11-16"
+license:
+  - MIT
+  - CC-BY-4.0
+repository-code: "https://github.com/muyi010630-jpg/hetero-gpu-deadline-calibration"
+url: "https://github.com/muyi010630-jpg/hetero-gpu-deadline-calibration"
+keywords:
+  - heterogeneous GPU pools
+  - deadline-aware scheduling
+  - online performance calibration
+  - reproducibility
+  - TF32
+abstract: >-
+  Experimental records, reference implementations, analysis and recomputation scripts,
+  derived data, and figure plotting data for a study of online execution-time calibration
+  and its effect on deadline outcomes in heterogeneous GPU pools. The repository contains
+  the two archives supplied with the manuscript, extracted: the main reproducibility
+  package (three-host deployment records, replay results, four CPU experiment sets,
+  supplemental analyses, H-event extracts) and the TF32 software-path diagnostic package.

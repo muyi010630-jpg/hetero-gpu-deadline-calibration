@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "created_at_utc": "2026-10-13T08:42:08.187824+00:00",
+  "original_sources_modified": false,
+  "new_experiments": false,
+  "diagnostic_streams": 1000,
+  "prediction_events": 1800000,
+  "probability_image_blocks_per_horizon": 16
+}

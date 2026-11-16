@@ -1,0 +1,189 @@
+{
+  "status": "pass",
+  "n_comparisons": 25,
+  "checks": [
+    {
+      "id": "fixed_r0_balanced",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "fixed_r0_late_sparse",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "fixed_r0.25_balanced",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "fixed_r0.25_late_sparse",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "fixed_r0.5_balanced",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "fixed_r0.5_late_sparse",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "fixed_r0.75_balanced",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "fixed_r0.75_late_sparse",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "fixed_r1_balanced",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "fixed_r1_late_sparse",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "closed_r0_load1.25",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "closed_r0_load1.7",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "closed_r0.25_load1.25",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "closed_r0.25_load1.7",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "closed_r0.5_load1.25",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "closed_r0.5_load1.7",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "closed_r0.75_load1.25",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "closed_r0.75_load1.7",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "closed_r1_load1.25",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "closed_r1_load1.7",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "pass"
+    },
+    {
+      "id": "fixed_interaction_r0",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "not_applicable"
+    },
+    {
+      "id": "fixed_interaction_r0.25",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "not_applicable"
+    },
+    {
+      "id": "fixed_interaction_r0.5",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "not_applicable"
+    },
+    {
+      "id": "fixed_interaction_r0.75",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "not_applicable"
+    },
+    {
+      "id": "fixed_interaction_r1",
+      "mean_fsum": "pass",
+      "bootstrap_manual_quantile": "pass",
+      "signflip_longdouble": "pass",
+      "source_summary_and_current_word_table": "not_applicable"
+    }
+  ],
+  "holm_independent_sorted_cumulative_max": "pass",
+  "mean_unit_fixed": "percentage-point source values unchanged",
+  "mean_unit_closed": "proportion multiplied by 100",
+  "source_hashes_unchanged": {
+    "fixed": true,
+    "closed": true
+  },
+  "validation_script_sha256": "fa248e71fe6a1a8264faaaf9cd53eaf913201e2a60d3cb7a40fd09c10d13db1f"
+}

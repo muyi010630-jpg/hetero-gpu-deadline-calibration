@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "runs": 60,
+  "planned_tasks": 6000,
+  "successful_tasks": 6000,
+  "failed_missing_or_duplicate": 0,
+  "batch_metric_rows": 12,
+  "profile_cells": 45,
+  "descriptive_percentage_shares": {
+    "device": 19.400831518843205,
+    "family": 19.11449584227825,
+    "interaction": 33.20263696076649,
+    "within_group": 28.28203567811205
+  },
+  "scope": "Saved task records, saved configurations and profile samples; no new experiments or tests."
+}

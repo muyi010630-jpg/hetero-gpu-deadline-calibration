@@ -1,0 +1,60 @@
+{
+  "created_utc": "2026-10-18T10:45:50.463066+00:00",
+  "device_label": "RTX5070",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "python_executable": "<PYTHON_ENV>/Scripts/python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "hostname": "DESKTOP-M185D7V",
+  "torch": "2.11.0+cu128",
+  "torch_cuda_build": "12.8",
+  "numpy": "2.5.2",
+  "cudnn": 91900,
+  "cuda_device_index": 0,
+  "gpu_name": "NVIDIA GeForce RTX 5070",
+  "gpu_uuid": "45713cc0-b0a6-989e-0c3e-fb973962e74d",
+  "compute_capability": [
+    12,
+    0
+  ],
+  "total_memory_bytes": 12792037376,
+  "cuda_visible_device_count": 1,
+  "pid": 55184,
+  "precision_api": "fp32_precision",
+  "other_matmul_settings": {
+    "allow_fp16_reduced_precision_reduction": true,
+    "allow_bf16_reduced_precision_reduction": true,
+    "allow_fp16_accumulation": false
+  },
+  "torch_intraop_threads": 6,
+  "torch_interop_threads": 6,
+  "environment_variables": {
+    "CUDA_VISIBLE_DEVICES": null,
+    "NVIDIA_VISIBLE_DEVICES": null,
+    "NVIDIA_TF32_OVERRIDE": null,
+    "TORCH_ALLOW_TF32_CUBLAS_OVERRIDE": null,
+    "CUBLAS_WORKSPACE_CONFIG": null,
+    "CUDA_LAUNCH_BLOCKING": null,
+    "PYTORCH_CUDA_ALLOC_CONF": null
+  },
+  "driver_query": {
+    "command": [
+      "nvidia-smi",
+      "--query-gpu=index,uuid,name,driver_version",
+      "--format=csv,noheader,nounits"
+    ],
+    "started_utc": "2026-10-18T10:45:50.803064+00:00",
+    "completed_utc": "2026-10-18T10:45:50.845178+00:00",
+    "returncode": 0,
+    "stdout": "0, GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, NVIDIA GeForce RTX 5070, 616.92\n",
+    "stderr": ""
+  },
+  "process_ownership": {
+    "benchmark_pid": 55184,
+    "owned_nvml_pid": 55184,
+    "inferred": false,
+    "ownership_basis": "direct Windows NVML PID equals Python PID; preexisting background inventory retained"
+  },
+  "background_inventory_present": false,
+  "background_inventory_count": 0,
+  "background_interference_limitation": "Windows baseline inventory may include processes performing GPU work; it does not prove graphics-only activity or an interference-free GPU. Phase snapshots cannot exclude transient processes or activity changes inside already-listed processes."
+}

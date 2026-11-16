@@ -1,0 +1,23 @@
+{
+  "query": {
+    "command": [
+      "nvidia-smi",
+      "--query-compute-apps=gpu_uuid,pid,process_name,used_gpu_memory",
+      "--format=csv,noheader,nounits"
+    ],
+    "started_utc": "2026-10-18T10:40:12.655377+00:00",
+    "completed_utc": "2026-10-18T10:40:12.681044+00:00",
+    "returncode": 0,
+    "stdout": "GPU-322b1982-4898-e85f-0211-74f67db9d6ec, 482693, [Not Found], 926\n",
+    "stderr": ""
+  },
+  "processes": [
+    {
+      "gpu_uuid": "GPU-322b1982-4898-e85f-0211-74f67db9d6ec",
+      "pid": 482693,
+      "process_name": "[Not Found]",
+      "used_gpu_memory": "926"
+    }
+  ],
+  "parse_errors": []
+}

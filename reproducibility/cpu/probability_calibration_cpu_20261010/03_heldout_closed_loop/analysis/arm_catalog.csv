@@ -1,0 +1,8 @@
+﻿stage,arm_id,mode,policy,eta,lambda_weight,margin
+test,mode=boundary|policy=no_probe|eta=0.005|lambda_weight=1|margin=null,boundary,no_probe,0.005,1.0,
+test,mode=fixed_margin_0.3|policy=no_probe|eta=0|lambda_weight=0|margin=0.3,fixed_margin_0.3,no_probe,0.0,0.0,0.3
+test,mode=mean_oracle_original|policy=no_probe|eta=0|lambda_weight=0|margin=null,mean_oracle_original,no_probe,0.0,0.0,
+test,mode=rolling_cdf|policy=no_probe|eta=0|lambda_weight=0|margin=null,rolling_cdf,no_probe,0.0,0.0,
+test,mode=uncalibrated|policy=no_probe|eta=0|lambda_weight=0|margin=null,uncalibrated,no_probe,0.0,0.0,
+test,mode=uniform|policy=no_probe|eta=0.005|lambda_weight=0|margin=null,uniform,no_probe,0.005,0.0,
+test,mode=window_original|policy=no_probe|eta=0|lambda_weight=0|margin=null,window_original,no_probe,0.0,0.0,

@@ -1,0 +1,51 @@
+{
+  "recorded_at_utc": "2026-10-13T08:42:05.515921+00:00",
+  "nature": "post hoc descriptive reanalysis of saved outputs; not preregistered before original holdout",
+  "prohibition": "No simulation, cloud use, hyperparameter change, or new main significance test",
+  "probability": {
+    "arms": [
+      "uncalibrated",
+      "uniform",
+      "boundary"
+    ],
+    "horizons": [
+      24,
+      120,
+      600
+    ],
+    "units": "16 image blocks; each block averages two task seeds within rho x load, then six conditions",
+    "metrics": [
+      "panel_prob_brier",
+      "sla_violation_rate"
+    ],
+    "comparisons": [
+      "uniform - uncalibrated",
+      "boundary - uniform"
+    ],
+    "sla_scale": "per_run fractions multiplied by 100, paired differences in percentage points",
+    "bootstrap_repetitions": 5000,
+    "bootstrap_seed": 2026101307,
+    "intervals": "marginal 95% percentile intervals over image blocks; descriptive, no p values",
+    "caveat": "Panel evaluation times differ by horizon: 24=[2,6,12,24],120 adds[60,120],600 adds[300,600]. Absolute horizon differences are not a controlled learning effect."
+  },
+  "heterogeneity": {
+    "arm": "adaptive_pool_local",
+    "params": {
+      "shrink_scale": 0.5,
+      "freshness_half_life_s": 1000000000.0
+    },
+    "conditions": "rho=0,.25,.5,.75,1 x balanced/late_sparse; 20 images x 5 task seeds x 1800 prediction-before-update events each",
+    "local_weight": "heterogeneity_local_weight = H/(H+0.5*v) only when n_local>0 and H>0, else 0",
+    "effective_weight": "heterogeneity weight times saved local_freshness_factor",
+    "separations": "n_local=0; n_local>0 and H=0; n_local>0 and H>0; insufficient observed group contexts also reported",
+    "means": "stream event means, then five seeds per image, then twenty images equally; equal stream lengths make pooled mean identical",
+    "quantiles": "pooled empirical quantiles of prediction-before-update events in each rho x flow; separate all-event and local-history-only denominators",
+    "inference": "none; prediction events are not independent inferential units"
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "platform": "Windows-11-10.0.26200-SP0"
+  }
+}

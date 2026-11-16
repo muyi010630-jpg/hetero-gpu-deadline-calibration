@@ -1,0 +1,4 @@
+﻿worker_id,ready_name,ready_driver_version,ready_memory_total_mib,ready_memory_used_mib,ready_temperature_c,ready_power_draw_w,ready_power_limit_w,ready_utilization_gpu_pct,ready_utilization_memory_pct
+RTX5070,NVIDIA GeForce RTX 5070,616.64,12227,1784,43,30.74,250.00,0,0
+T4,Tesla T4,550.107.02,15360,3,56,16.71,70.00,0,0
+A100,NVIDIA A100-PCIE-40GB,550.90.07,40960,4,27,32.21,250.00,0,0

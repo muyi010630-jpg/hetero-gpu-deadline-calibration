@@ -1,0 +1,23 @@
+{
+  "query": {
+    "command": [
+      "nvidia-smi",
+      "--query-compute-apps=gpu_uuid,pid,process_name,used_gpu_memory",
+      "--format=csv,noheader,nounits"
+    ],
+    "started_utc": "2026-10-18T10:44:43.819031+00:00",
+    "completed_utc": "2026-10-18T10:44:43.854031+00:00",
+    "returncode": 0,
+    "stdout": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 10816, <USER_HOME>/AppData/Local/Programs/Python/Python312/python.exe, [N/A]\n",
+    "stderr": ""
+  },
+  "processes": [
+    {
+      "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+      "pid": 10816,
+      "process_name": "<USER_HOME>/AppData/Local/Programs/Python/Python312/python.exe",
+      "used_gpu_memory": "[N/A]"
+    }
+  ],
+  "parse_errors": []
+}

@@ -1,0 +1,13 @@
+﻿strategy,strategy_label,scenario_count
+edf,EDF,135
+ema,Original EMA-QoS,135
+ema_risk,EMA + risk bound,135
+family_ema_qos,Family EMA-QoS,135
+fcfs,FCFS,135
+fixed,Fixed-QoS,135
+full_no_drift,Full w/o drift-aware alpha,135
+full_no_hier,Full w/o hierarchical borrowing,135
+full_no_risk,Full w/o risk upper bound,135
+full_qos,Full method,135
+hier_qos,Hierarchical EMA-QoS,135
+oracle,Oracle reference,135

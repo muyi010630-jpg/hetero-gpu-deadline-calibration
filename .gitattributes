@@ -1,0 +1,7 @@
+# Store every file exactly as shipped, byte for byte.
+#
+# Each package carries SHA-256 manifests over its own files, and the CSV/JSON records are
+# numerical evidence. Any end-of-line conversion would change those bytes on clone, so no
+# text normalisation is applied to anything (`-text` disables EOL conversion and CRLF
+# smuggling for all paths). Git detects binary content on its own.
+* -text

@@ -1,0 +1,35 @@
+{
+  "protocol_id": "tf32_software_path_mechanism_20261018_v1",
+  "purpose": "Within-device controlled diagnostic; no scheduler and no historical-cause attribution",
+  "devices": ["A100", "T4", "RTX5070"],
+  "contexts": [
+    {"id": "fp32_n2048", "n": 2048, "dtype": "float32", "input_stream_id": 0},
+    {"id": "fp32_n4096", "n": 4096, "dtype": "float32", "input_stream_id": 1},
+    {"id": "fp32_n6144", "n": 6144, "dtype": "float32", "input_stream_id": 2},
+    {"id": "fp16_n4096", "n": 4096, "dtype": "float16", "input_stream_id": 3}
+  ],
+  "rounds": [
+    {"round": 1, "seed": 2026101801, "phases": ["ieee", "allow_tf32", "ieee"], "context_order": ["fp32_n2048", "fp32_n4096", "fp32_n6144", "fp16_n4096"]},
+    {"round": 2, "seed": 2026101802, "phases": ["allow_tf32", "ieee", "allow_tf32"], "context_order": ["fp16_n4096", "fp32_n6144", "fp32_n2048", "fp32_n4096"]},
+    {"round": 3, "seed": 2026101803, "phases": ["ieee", "allow_tf32", "ieee"], "context_order": ["fp32_n4096", "fp32_n2048", "fp16_n4096", "fp32_n6144"]}
+  ],
+  "input_generation": {
+    "generator": "numpy.random.Generator(numpy.random.PCG64(numpy.random.SeedSequence([round_seed, input_stream_id])))",
+    "distribution": "standard_normal(shape=(N,N), dtype=numpy.float32); A then B from the same context-specific stream",
+    "dtype_conversion": "Generate float32 on CPU, cast once to context dtype on CPU, hash exact contiguous post-cast CPU bytes",
+    "placement": "Generate all four context input pairs on CPU first, then copy each pair to CUDA once; reuse the same tensors in every phase",
+    "cross_device_identity": "Verify A/B SHA256 rather than assume version-independent normal sampling"
+  },
+  "operator": "torch.mm(A, B) returning a newly allocated output; no out= argument",
+  "inference_context": "torch.inference_mode()",
+  "warmup": {"minimum_calls": 20, "minimum_seconds": 3.0, "batch_calls": 10, "synchronize_each_batch": true},
+  "measurement": {"windows_per_context_phase": 20, "calls_per_window": 10, "timer": "CUDA start/end Events; synchronize end Event; elapsed_ms divided by 10", "excluded": ["input generation", "host-device copies", "output checks", "file writes", "network"]},
+  "precision_api": {"new": "Set torch.backends.fp32_precision='ieee', switch only torch.backends.cuda.matmul.fp32_precision='ieee'/'tf32'", "legacy": "Switch only torch.backends.cuda.matmul.allow_tf32=False/True", "selection": "PyTorch >=2.9 with both new properties uses new API; otherwise legacy; never mix in one process", "other_settings": "Snapshot existing FP16/BF16 reduced-precision reduction and accumulation settings; assert unchanged throughout", "forbidden": ["set_float32_matmul_precision", "autocast", "torch.compile", "extra CUDA streams", "old Worker imports", "GPU power/frequency changes"]},
+  "environment_override_policy": "Abort before CUDA work if NVIDIA_TF32_OVERRIDE or TORCH_ALLOW_TF32_CUBLAS_OVERRIDE is nonempty; do not modify either",
+  "outputs": {"matrix_retention": "No full output matrices written; first output of each mode retained in CPU RAM only until paired difference is calculated", "checks_every_context_phase": ["post-copy CPU output SHA256", "finite element count", "shape", "dtype"], "delta": "CPU float64 chunked Frobenius norm of C_on-C_off divided by norm(C_off); check finite values and positive denominator; C_off is reference, not mathematical truth", "repeated_phase": "Record output hash and finiteness; do not replace first paired output"},
+  "estimands": {"stage_time": "median of 20 window per-call times", "mode_time": "geometric mean of stage medians when a mode appears twice; direct stage median otherwise", "R": "T_off / T_on", "recovery_ratio": "stage3_median / stage1_median", "descriptive_scope": "Report all three round-level R and recovery ratios; windows are within-round stability observations, not independent hardware replicates; no post-hoc deletion or significance threshold"},
+  "telemetry": "nvidia-smi read-only snapshots before and after each phase; record failures and external compute PIDs without killing processes",
+  "expected": {"windows_per_round": 240, "windows_per_device": 720, "windows_all_devices": 2160, "stages_per_round": 12, "paired_output_differences_per_round": 4},
+  "smoke": "Separate smoke_round_XX output directory; same four contexts but 2 warmup calls, 1 window and 1 call; not formal data; do not use effect size to choose contexts",
+  "failure_policy": "Incrementally flush CSV/status/telemetry. Preserve every failed or interfered round, never overwrite an existing round directory. Any rerun uses a separate output root and an explicit reason."
+}

@@ -1,0 +1,44 @@
+{
+  "stage": "structure",
+  "run_mode": "full",
+  "modes": [
+    "full",
+    "pool_ema",
+    "local_matched",
+    "gated_pred"
+  ],
+  "total_units": 2400,
+  "total_runs": 9600,
+  "workers": 6,
+  "seed_range": [
+    601,
+    640
+  ],
+  "frozen_simulator_sha256": "bc27f8dbf77bab7b453aa3a98df10811b3484e2b7e8301109056ed0c0799b3a6",
+  "adapter_sha256": "6a6182d7a4030c78b92d140fba7fc6f367074c85f966966c4375573059211244",
+  "runner_sha256": "3b6a132c090fc4382b8dafdb793240067ec5d39c4ba41dbfe65287e7c78fc086",
+  "statistics_sha256": "5a5008f8b1fcf65a67e84a8493a39f8b594ccf8673a5f59add6a21d5f5e11693",
+  "full_params": {
+    "horizon": 12.0,
+    "cal_window": 24,
+    "min_samples": 4,
+    "ema_rho": 0.3,
+    "kappa_qos": 0.0,
+    "hier_tau": 1.5,
+    "risk_beta": 0.8,
+    "cold_uncertainty": 0.3,
+    "anomaly_rate": 0.006,
+    "anomaly_slowdown": 1.6,
+    "burst": 2.0,
+    "alpha_by_family": {
+      "compute": 0.35,
+      "memory": 0.45,
+      "inference": 0.22
+    }
+  },
+  "grouping": "measured_device_type(device) × family; no precision split",
+  "common_risk": "frozen Full _effective_state including sigma, self_weight and cold bonus; local states retained for this common wrapper",
+  "intrinsic_differences": "pool updates once per completed group event; group mixes precision; Full has precision-preferred neighbors and cross-type fallback",
+  "feedback": "only selected completed device execution is observed; histories are endogenous and differ between strategies",
+  "stream": "all potential device service times generated before dispatch, same input seed; hashes checked every unit"
+}

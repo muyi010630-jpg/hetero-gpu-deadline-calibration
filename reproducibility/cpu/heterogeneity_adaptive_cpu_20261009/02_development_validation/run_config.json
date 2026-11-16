@@ -1,0 +1,173 @@
+{
+  "stage": "validation",
+  "image_seeds": [
+    12001,
+    12002,
+    12003,
+    12004,
+    12005,
+    12006
+  ],
+  "rhos": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "task_seeds": [
+    22001,
+    22002,
+    22003
+  ],
+  "n_events": 600,
+  "flow_definition": {
+    "version": "controlled_flows_v1",
+    "balanced": "independent randomized permutations of all 45 unique cells",
+    "late_count": 22,
+    "late_onset_fraction": 0.4,
+    "late_per_cell_weight": 0.25,
+    "noise_log_sd": 0.08,
+    "now_end_s": 12.0,
+    "drift_onset_fraction": 0.5,
+    "drift_log_amplitude": 0.15,
+    "rng": "numpy.PCG64",
+    "source": "reproducibility/cpu/pooled_ema_cpu_20261009/00_configuration_sources/profiles_P0/cluster_08_profile.csv"
+  },
+  "configurations": [
+    {
+      "label": "full_original",
+      "mode": "full_original",
+      "params": {}
+    },
+    {
+      "label": "local_ema",
+      "mode": "local_ema",
+      "params": {}
+    },
+    {
+      "label": "pool_ema",
+      "mode": "pool_ema",
+      "params": {}
+    },
+    {
+      "label": "gated_point",
+      "mode": "gated_point",
+      "params": {}
+    },
+    {
+      "label": "local_window",
+      "mode": "local_window",
+      "params": {}
+    },
+    {
+      "label": "adaptive_s0.5_h1.5",
+      "mode": "adaptive_pool_local",
+      "params": {
+        "shrink_scale": 0.5,
+        "freshness_half_life_s": 1.5
+      }
+    },
+    {
+      "label": "adaptive_s0.5_h6",
+      "mode": "adaptive_pool_local",
+      "params": {
+        "shrink_scale": 0.5,
+        "freshness_half_life_s": 6.0
+      }
+    },
+    {
+      "label": "adaptive_s0.5_h1e+09",
+      "mode": "adaptive_pool_local",
+      "params": {
+        "shrink_scale": 0.5,
+        "freshness_half_life_s": 1000000000.0
+      }
+    },
+    {
+      "label": "adaptive_s1_h1.5",
+      "mode": "adaptive_pool_local",
+      "params": {
+        "shrink_scale": 1.0,
+        "freshness_half_life_s": 1.5
+      }
+    },
+    {
+      "label": "adaptive_s1_h6",
+      "mode": "adaptive_pool_local",
+      "params": {
+        "shrink_scale": 1.0,
+        "freshness_half_life_s": 6.0
+      }
+    },
+    {
+      "label": "adaptive_s1_h1e+09",
+      "mode": "adaptive_pool_local",
+      "params": {
+        "shrink_scale": 1.0,
+        "freshness_half_life_s": 1000000000.0
+      }
+    },
+    {
+      "label": "adaptive_s2_h1.5",
+      "mode": "adaptive_pool_local",
+      "params": {
+        "shrink_scale": 2.0,
+        "freshness_half_life_s": 1.5
+      }
+    },
+    {
+      "label": "adaptive_s2_h6",
+      "mode": "adaptive_pool_local",
+      "params": {
+        "shrink_scale": 2.0,
+        "freshness_half_life_s": 6.0
+      }
+    },
+    {
+      "label": "adaptive_s2_h1e+09",
+      "mode": "adaptive_pool_local",
+      "params": {
+        "shrink_scale": 2.0,
+        "freshness_half_life_s": 1000000000.0
+      }
+    }
+  ],
+  "source_hashes": {
+    "reproducibility/cpu/pooled_ema_cpu_20261009/00_configuration_sources/profiles_P0/cluster_08_profile.csv": "aba668df65d8273c63bba5e920f1815d83ab1b3cbf9ebc0d65a307e5bb15f5e3",
+    "reproducibility/cpu/heterogeneity_adaptive_cpu_20261009/scripts/run_fixed_feedback.py": "84dc477f3a1276b0223f2628d1ec28ad657a306f2c7c9bb9abf773f86421a1a2",
+    "reproducibility/cpu/heterogeneity_adaptive_cpu_20261009/scripts/profile_flows.py": "3987b696f4877e0db066e3b2ec47a71baef2d16e9ca8a8c2904cf68925a59c57",
+    "reproducibility/cpu/heterogeneity_adaptive_cpu_20261009/scripts/calibrator_core.py": "e69136779a14ff01aedd2e26cfa3ea6d64f9a7589d240011108c083cd71e079e",
+    "reproducibility/cpu/heterogeneity_adaptive_cpu_20261009/00_protocol_sources/development_protocol.json": "6b54b3c9c4930cc0dbc384f6dd5a2626e5190f65592550e45cfadaad24567ba5",
+    "reproducibility/cpu/heterogeneity_adaptive_cpu_20261009/00_protocol_sources/frozen_sources/hetero_qos_sim_n2.py": "bc27f8dbf77bab7b453aa3a98df10811b3484e2b7e8301109056ed0c0799b3a6"
+  },
+  "freeze": null,
+  "processes": 3,
+  "primary_metric": "context-macro MAPE over observed common context cells; report observed cell count",
+  "first_k": "own prior actual feedback count n_before<k",
+  "diagnostic_fields": [
+    "local_n_window",
+    "local_updates_count",
+    "unique_contexts",
+    "effective_group_samples",
+    "heterogeneity",
+    "local_sampling_variance",
+    "age_s",
+    "heterogeneity_local_weight",
+    "local_freshness_factor",
+    "effective_local_weight",
+    "group_updates_count",
+    "group_z",
+    "point_z",
+    "raw_point_z",
+    "point_clipped",
+    "risk_sigma",
+    "risk_self_weight",
+    "guard_log",
+    "guarded_output_clipped",
+    "local_window_mean_clipped",
+    "point_borrowing_active",
+    "point_self_weight"
+  ],
+  "run_fingerprint": "9c315164c9e90d9c472f7c831a8c91e63c5a2f10a0b57672152a79959aa036f0"
+}

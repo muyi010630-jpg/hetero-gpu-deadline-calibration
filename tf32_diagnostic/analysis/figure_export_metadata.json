@@ -1,0 +1,21 @@
+{
+  "paths": [
+    "tf32_diagnostic/analysis/figure7_tf32_zh.png",
+    "tf32_diagnostic/analysis/figure7_tf32_zh.pdf",
+    "tf32_diagnostic/analysis/figure7_tf32_zh.svg",
+    "tf32_diagnostic/analysis/figure7_tf32_en.png",
+    "tf32_diagnostic/analysis/figure7_tf32_en.pdf",
+    "tf32_diagnostic/analysis/figure7_tf32_en.svg"
+  ],
+  "width_mm": 180,
+  "height_mm": 75,
+  "png_dpi": 600,
+  "common_y_scale": "log2",
+  "common_y_limits": [
+    0.6372803136596311,
+    8.876555776542759
+  ],
+  "each_point": "one paired measurement round, not a timing window",
+  "summary_mark": "median of three round-level R values",
+  "confidence_intervals": "none"
+}

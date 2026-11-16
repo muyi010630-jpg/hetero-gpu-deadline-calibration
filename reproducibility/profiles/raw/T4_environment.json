@@ -1,0 +1,21 @@
+{
+  "name": "Tesla T4",
+  "driver_version": "550.107.02",
+  "memory_total_mib": "15360",
+  "memory_used_mib": "3",
+  "temperature_c": "35",
+  "power_draw_w": "14.77",
+  "power_limit_w": "70.00",
+  "utilization_gpu_pct": "0",
+  "utilization_memory_pct": "0",
+  "platform": "Linux-5.15.0-86-generic-x86_64-with-glibc2.35",
+  "python": "3.12.3",
+  "torch": "2.5.1+cu124",
+  "torch_cuda": "12.4",
+  "torchvision": "0.20.1+cu124",
+  "cuda_available": true,
+  "device_name": "Tesla T4",
+  "compute_capability": "7.5",
+  "benchmark_note": "New T4 profile replacing previous high-latency/cost T4; inference uses random ResNet18 weights with same CIFAR-10 architecture.",
+  "repeats_per_context": 10
+}

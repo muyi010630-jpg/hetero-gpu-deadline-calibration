@@ -1,0 +1,9 @@
+{
+  "utc": "2026-10-18T10:43:57.265992+00:00",
+  "preserved_failed_attempt": "tf32_diagnostic/attempts/RTX5070_v3_pre_cuda_gate",
+  "failed_timing_rows": 0,
+  "recovery_reason": "Windows WDDM enumerates desktop applications in compute-process query; use explicit baseline inventory and direct own PID association",
+  "no_timing_selected_or_replaced": true,
+  "formal_windows_measurement": "tf32_diagnostic/scripts/windows_v4/tf32_measure.py",
+  "background_limitation": "Baseline app inventory cannot prove graphics-only or absence of compute interference. Keep all subsequent measured rounds, including any later external-process warning."
+}

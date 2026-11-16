@@ -1,0 +1,62 @@
+[
+  {
+    "context": "fp16_n4096",
+    "round_seed": 2026101802,
+    "input_stream_id": 3,
+    "shape": [
+      4096,
+      4096
+    ],
+    "dtype": "float16",
+    "a_sha256": "14e6596e6e290adf6a19dedf3b758ada6017d796cd50e410b10bb9e07c1e3901",
+    "b_sha256": "a4e709d909b74dc7c4c5744bd7c705fca90498a2c667830e0ad933366a1e7a39",
+    "contiguous": true,
+    "generator": "PCG64 raw uint64 high24 / 2**23 - 1",
+    "numpy_version": "2.5.2"
+  },
+  {
+    "context": "fp32_n6144",
+    "round_seed": 2026101802,
+    "input_stream_id": 2,
+    "shape": [
+      6144,
+      6144
+    ],
+    "dtype": "float32",
+    "a_sha256": "e2ecd5bf4db0bf58bb4fcf515a93ebb5fb94303be87630d54632c959abfc48d6",
+    "b_sha256": "4c841a6f61163f63a92de2003bf1a96d30e9aa4ebbdf132e2d0c5e505c46df64",
+    "contiguous": true,
+    "generator": "PCG64 raw uint64 high24 / 2**23 - 1",
+    "numpy_version": "2.5.2"
+  },
+  {
+    "context": "fp32_n2048",
+    "round_seed": 2026101802,
+    "input_stream_id": 0,
+    "shape": [
+      2048,
+      2048
+    ],
+    "dtype": "float32",
+    "a_sha256": "ef68384c9f1cb2f5f3d895e73dfd9ef53399e98cbc12bcc42575555b84be88cc",
+    "b_sha256": "e8ef208069b1df18c38eaf8e782234ab6051f67e0b683695eb9b4bd6af1ad4c1",
+    "contiguous": true,
+    "generator": "PCG64 raw uint64 high24 / 2**23 - 1",
+    "numpy_version": "2.5.2"
+  },
+  {
+    "context": "fp32_n4096",
+    "round_seed": 2026101802,
+    "input_stream_id": 1,
+    "shape": [
+      4096,
+      4096
+    ],
+    "dtype": "float32",
+    "a_sha256": "ea64f04caae8504ca64c70452020fe1be90dfd55ad000e63a8b4c351c241e707",
+    "b_sha256": "950b39ec6115eec5c3368830d5678a47f959603de4085eefae6edd662c333b59",
+    "contiguous": true,
+    "generator": "PCG64 raw uint64 high24 / 2**23 - 1",
+    "numpy_version": "2.5.2"
+  }
+]

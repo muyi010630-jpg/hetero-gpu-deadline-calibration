@@ -1,0 +1,13 @@
+device,round,phase,context,seed,mode,precision_api,readback_json,window,calls,gpu_window_ms,gpu_per_call_ms,success,completed_utc
+RTX5070,1,1,fp32_n2048,2026101801,ieee,fp32_precision,"{""global_fp32_precision"": ""ieee"", ""matmul_fp32_precision"": ""ieee""}",1,1,0.7945600152015686,0.7945600152015686,True,2026-10-18T10:27:12.576941+00:00
+RTX5070,1,1,fp32_n4096,2026101801,ieee,fp32_precision,"{""global_fp32_precision"": ""ieee"", ""matmul_fp32_precision"": ""ieee""}",1,1,5.8114237785339355,5.8114237785339355,True,2026-10-18T10:27:12.617444+00:00
+RTX5070,1,1,fp32_n6144,2026101801,ieee,fp32_precision,"{""global_fp32_precision"": ""ieee"", ""matmul_fp32_precision"": ""ieee""}",1,1,21.810495376586914,21.810495376586914,True,2026-10-18T10:27:12.737473+00:00
+RTX5070,1,1,fp16_n4096,2026101801,ieee,fp32_precision,"{""global_fp32_precision"": ""ieee"", ""matmul_fp32_precision"": ""ieee""}",1,1,1.985856056213379,1.985856056213379,True,2026-10-18T10:27:13.140771+00:00
+RTX5070,1,2,fp32_n2048,2026101801,allow_tf32,fp32_precision,"{""global_fp32_precision"": ""ieee"", ""matmul_fp32_precision"": ""tf32""}",1,1,0.5764480233192444,0.5764480233192444,True,2026-10-18T10:27:13.372230+00:00
+RTX5070,1,2,fp32_n4096,2026101801,allow_tf32,fp32_precision,"{""global_fp32_precision"": ""ieee"", ""matmul_fp32_precision"": ""tf32""}",1,1,4.268799781799316,4.268799781799316,True,2026-10-18T10:27:13.440747+00:00
+RTX5070,1,2,fp32_n6144,2026101801,allow_tf32,fp32_precision,"{""global_fp32_precision"": ""ieee"", ""matmul_fp32_precision"": ""tf32""}",1,1,13.902239799499512,13.902239799499512,True,2026-10-18T10:27:13.677945+00:00
+RTX5070,1,2,fp16_n4096,2026101801,allow_tf32,fp32_precision,"{""global_fp32_precision"": ""ieee"", ""matmul_fp32_precision"": ""tf32""}",1,1,2.16428804397583,2.16428804397583,True,2026-10-18T10:27:14.129260+00:00
+RTX5070,1,3,fp32_n2048,2026101801,ieee,fp32_precision,"{""global_fp32_precision"": ""ieee"", ""matmul_fp32_precision"": ""ieee""}",1,1,0.730783998966217,0.730783998966217,True,2026-10-18T10:27:14.453757+00:00
+RTX5070,1,3,fp32_n4096,2026101801,ieee,fp32_precision,"{""global_fp32_precision"": ""ieee"", ""matmul_fp32_precision"": ""ieee""}",1,1,5.752799987792969,5.752799987792969,True,2026-10-18T10:27:14.486775+00:00
+RTX5070,1,3,fp32_n6144,2026101801,ieee,fp32_precision,"{""global_fp32_precision"": ""ieee"", ""matmul_fp32_precision"": ""ieee""}",1,1,21.6713924407959,21.6713924407959,True,2026-10-18T10:27:14.599583+00:00
+RTX5070,1,3,fp16_n4096,2026101801,ieee,fp32_precision,"{""global_fp32_precision"": ""ieee"", ""matmul_fp32_precision"": ""ieee""}",1,1,2.0312321186065674,2.0312321186065674,True,2026-10-18T10:27:14.717611+00:00

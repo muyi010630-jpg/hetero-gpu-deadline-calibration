@@ -1,0 +1,54 @@
+{
+  "benchmark_pid": 55184,
+  "owned_nvml_pid": 55184,
+  "selected_gpu_uuid": "45713cc0-b0a6-989e-0c3e-fb973962e74d",
+  "inferred": false,
+  "ownership_basis": "direct Windows NVML PID equals Python PID; preexisting background inventory retained",
+  "background_inventory_pids": [],
+  "background_inventory_processes": [],
+  "background_inventory_present": false,
+  "background_inventory_count": 0,
+  "background_interference_limitation": "Windows baseline inventory may include processes performing GPU work; it does not prove graphics-only activity or an interference-free GPU. Phase snapshots cannot exclude transient processes or activity changes inside already-listed processes.",
+  "pre_cuda_baseline": {
+    "query": {
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid,process_name,used_gpu_memory",
+        "--format=csv,noheader,nounits"
+      ],
+      "started_utc": "2026-10-18T10:45:48.793334+00:00",
+      "completed_utc": "2026-10-18T10:45:48.830887+00:00",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "processes": [],
+    "parse_errors": []
+  },
+  "post_context_query": {
+    "query": {
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid,process_name,used_gpu_memory",
+        "--format=csv,noheader,nounits"
+      ],
+      "started_utc": "2026-10-18T10:45:51.741823+00:00",
+      "completed_utc": "2026-10-18T10:45:51.787633+00:00",
+      "returncode": 0,
+      "stdout": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d, 55184, <USER_HOME>/AppData/Local/Programs/Python/Python312/python.exe, [N/A]\n",
+      "stderr": ""
+    },
+    "processes": [
+      {
+        "gpu_uuid": "GPU-45713cc0-b0a6-989e-0c3e-fb973962e74d",
+        "pid": 55184,
+        "process_name": "<USER_HOME>/AppData/Local/Programs/Python/Python312/python.exe",
+        "used_gpu_memory": "[N/A]"
+      }
+    ],
+    "parse_errors": []
+  },
+  "fixed_for_entire_round": true,
+  "created_utc": "2026-10-18T10:45:51.790826+00:00",
+  "namespace_status": null
+}

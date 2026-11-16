@@ -1,0 +1,21 @@
+Data and documentation license
+
+Copyright (c) 2026 Yujie Pang, Jiangyu Guo, Zhichao Hao, Xiao Guo, Mingjie Huang, and Hao Lü
+
+The author-created experimental records, derived data, figures, and explanatory
+documents in this archive are licensed under the Creative Commons Attribution
+4.0 International License (CC BY 4.0).
+
+License and legal terms
+https://creativecommons.org/licenses/by/4.0/
+https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+Attribution
+Yujie Pang, Jiangyu Guo, Zhichao Hao, Xiao Guo, Mingjie Huang, and Hao Lü. Closed-Loop Online Performance Calibration for Deadline-Aware Scheduling in Heterogeneous GPU Pools. Data and code accompanying the manuscript, delivery version
+20261109. Add the published article DOI when it becomes available.
+
+Retain attribution and the license link, and indicate modifications as required
+by the license. Author-created source code is covered by LICENSE_CODE.txt.
+Third-party materials and external dependencies retain their original terms.
+The license applies to rights held by the contributors and does not license
+third-party rights, trademarks, or patents.

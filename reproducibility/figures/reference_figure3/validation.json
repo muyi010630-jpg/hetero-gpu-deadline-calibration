@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "source_prediction_rows_checked": 216000,
+  "max_recomputed_ape_delta_pp": 0.0,
+  "summary_crosschecks": 24,
+  "summary_max_delta_pp": 3.552713678800501e-15,
+  "new_experiments": false,
+  "predictor_reconstructed": false,
+  "n_streams": 30,
+  "events_per_stream": 1800,
+  "target_cells_per_stream": 45,
+  "k_range": [
+    1,
+    10
+  ],
+  "scope": "target first-k cumulative predictions over full archived stream",
+  "bootstrap_reps": 5000,
+  "bootstrap_seed": 20261009,
+  "confidence_interval": "pointwise percentile 95%, resampling task streams; conditional on one fixed mismatch environment"
+}

@@ -1,0 +1,9 @@
+{
+  "started_utc": "2026-10-18T10:29:41.225889+00:00",
+  "state": "needs_inspection",
+  "remote_root": "<REMOTE_WORKDIR>/ei_tf32_mechanism_20261018",
+  "devices": {},
+  "error": "AssertionError('Cross-device input mismatch; stop before formal collection')",
+  "traceback": "Traceback (most recent call last):\n  File \"tf32_diagnostic/scripts/orchestrate_tf32.py\", line 124, in main\n    assert norm(manifests[0])==norm(manifests[1])==norm(manifests[2]),'Cross-device input mismatch; stop before formal collection'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Cross-device input mismatch; stop before formal collection\n",
+  "updated_utc": "2026-10-18T10:29:43.190695+00:00"
+}

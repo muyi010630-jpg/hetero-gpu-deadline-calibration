@@ -1,0 +1,13 @@
+{"event": "context_completed", "device": "T4", "round": 2, "phase": 1, "context": "fp16_n4096", "mode": "allow_tf32", "median_ms": 5.820160102844238, "window_rows": 20}
+{"event": "context_completed", "device": "T4", "round": 2, "phase": 1, "context": "fp32_n6144", "mode": "allow_tf32", "median_ms": 126.59086914062499, "window_rows": 40}
+{"event": "context_completed", "device": "T4", "round": 2, "phase": 1, "context": "fp32_n2048", "mode": "allow_tf32", "median_ms": 4.1065679550170895, "window_rows": 60}
+{"event": "context_completed", "device": "T4", "round": 2, "phase": 1, "context": "fp32_n4096", "mode": "allow_tf32", "median_ms": 32.64321441650391, "window_rows": 80}
+{"event": "context_completed", "device": "T4", "round": 2, "phase": 2, "context": "fp16_n4096", "mode": "ieee", "median_ms": 5.962388801574707, "window_rows": 100}
+{"event": "context_completed", "device": "T4", "round": 2, "phase": 2, "context": "fp32_n6144", "mode": "ieee", "median_ms": 128.19823608398437, "window_rows": 120}
+{"event": "context_completed", "device": "T4", "round": 2, "phase": 2, "context": "fp32_n2048", "mode": "ieee", "median_ms": 4.177126502990722, "window_rows": 140}
+{"event": "context_completed", "device": "T4", "round": 2, "phase": 2, "context": "fp32_n4096", "mode": "ieee", "median_ms": 33.220068359375, "window_rows": 160}
+{"event": "context_completed", "device": "T4", "round": 2, "phase": 3, "context": "fp16_n4096", "mode": "allow_tf32", "median_ms": 6.139447975158691, "window_rows": 180}
+{"event": "context_completed", "device": "T4", "round": 2, "phase": 3, "context": "fp32_n6144", "mode": "allow_tf32", "median_ms": 130.98081665039064, "window_rows": 200}
+{"event": "context_completed", "device": "T4", "round": 2, "phase": 3, "context": "fp32_n2048", "mode": "allow_tf32", "median_ms": 4.234491157531739, "window_rows": 220}
+{"event": "context_completed", "device": "T4", "round": 2, "phase": 3, "context": "fp32_n4096", "mode": "allow_tf32", "median_ms": 33.988914489746094, "window_rows": 240}
+{"protocol_id": "tf32_software_path_mechanism_20261018_v3", "state": "completed", "device_label": "T4", "round": 2, "smoke": false, "input_check": false, "started_utc": "2026-10-18T10:42:31.996491+00:00", "pid": 1969, "window_rows": 240, "completed_context_phases": 12, "expected_window_rows": 240, "expected_context_phases": 12, "paired_output_differences": 4, "external_compute_process_seen": false, "telemetry_query_failure_seen": false, "nonfinite_output_seen": false, "run_directory": "<REMOTE_WORKDIR>/raw/round_02", "current_phase": 3, "current_context": "fp32_n4096", "current_mode": "allow_tf32", "completed_utc": "2026-10-18T10:45:04.431556+00:00"}

@@ -1,0 +1,8 @@
+{
+  "completed_at_asia_shanghai": "2026-10-13T16:36:21.862775+08:00",
+  "plan_sha256": "496b5b7a2e7f2c0514064947ac3f320edc51a25462803fba6eebfa85b4229829",
+  "script_sha256": "d7602260267c5dc56e920697cafc138caa3bf0f2a9ec2662d7904544d08042e8",
+  "numpy": "2.3.5",
+  "n_comparisons": 25,
+  "n_block_differences": 500
+}

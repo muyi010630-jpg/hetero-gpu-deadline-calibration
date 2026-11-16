@@ -1,0 +1,50 @@
+{
+  "stage": "test",
+  "units": 576,
+  "runs": 4032,
+  "arms": [
+    {
+      "mode": "window_original",
+      "eta": 0.0,
+      "weight": 0.0
+    },
+    {
+      "mode": "uncalibrated",
+      "eta": 0.0,
+      "weight": 0.0
+    },
+    {
+      "mode": "rolling_cdf",
+      "eta": 0.0,
+      "weight": 0.0
+    },
+    {
+      "mode": "fixed_margin_0.3",
+      "eta": 0.0,
+      "weight": 0.0,
+      "margin": 0.3
+    },
+    {
+      "mode": "mean_oracle_original",
+      "eta": 0.0,
+      "weight": 0.0
+    },
+    {
+      "mode": "uniform",
+      "eta": 0.005,
+      "weight": 0.0
+    },
+    {
+      "mode": "boundary",
+      "eta": 0.005,
+      "weight": 1.0
+    }
+  ],
+  "workers": 3,
+  "source_fingerprint": "dc4298bdfc24befa18bd235590239b4226132c1b746926cc9dad79f1477994d1",
+  "horizons": [
+    24.0,
+    120.0,
+    600.0
+  ]
+}

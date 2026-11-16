@@ -1,0 +1,23 @@
+{
+  "protocol_id": "tf32_software_path_mechanism_20261018_v3",
+  "state": "failed",
+  "device_label": "RTX5070",
+  "round": 1,
+  "smoke": false,
+  "input_check": false,
+  "started_utc": "2026-10-18T10:40:06.248198+00:00",
+  "pid": 32056,
+  "window_rows": 0,
+  "completed_context_phases": 0,
+  "expected_window_rows": 240,
+  "expected_context_phases": 12,
+  "paired_output_differences": 0,
+  "external_compute_process_seen": false,
+  "telemetry_query_failure_seen": false,
+  "nonfinite_output_seen": false,
+  "run_directory": "tf32_diagnostic/raw/RTX5070/round_01",
+  "failed_utc": "2026-10-18T10:40:06.370213+00:00",
+  "error_type": "RuntimeError",
+  "error": "A successful empty pre-CUDA compute-process baseline is required",
+  "traceback": "Traceback (most recent call last):\n  File \"tf32_diagnostic/scripts/tf32_measure.py\", line 361, in main\n    raise RuntimeError(\"A successful empty pre-CUDA compute-process baseline is required\")\nRuntimeError: A successful empty pre-CUDA compute-process baseline is required\n"
+}

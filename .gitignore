@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+.vscode/
+.idea/
+
+# Note: reproducibility/recomputed/ ships with the package and is tracked on purpose.
+# The entry points regenerate those files; rerunning them is expected to leave the
+# working tree clean when the recomputation reproduces the shipped results.

@@ -1,0 +1,49 @@
+{
+  "benchmark_pid": 1755,
+  "owned_nvml_pid": 482693,
+  "selected_gpu_uuid": "322b1982-4898-e85f-0211-74f67db9d6ec",
+  "inferred": true,
+  "ownership_basis": "sole process appearing after own CUDA initialization with empty baseline",
+  "pre_cuda_baseline": {
+    "query": {
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid,process_name,used_gpu_memory",
+        "--format=csv,noheader,nounits"
+      ],
+      "started_utc": "2026-10-18T10:40:05.773978+00:00",
+      "completed_utc": "2026-10-18T10:40:05.799855+00:00",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "processes": [],
+    "parse_errors": []
+  },
+  "post_context_query": {
+    "query": {
+      "command": [
+        "nvidia-smi",
+        "--query-compute-apps=gpu_uuid,pid,process_name,used_gpu_memory",
+        "--format=csv,noheader,nounits"
+      ],
+      "started_utc": "2026-10-18T10:40:12.655377+00:00",
+      "completed_utc": "2026-10-18T10:40:12.681044+00:00",
+      "returncode": 0,
+      "stdout": "GPU-322b1982-4898-e85f-0211-74f67db9d6ec, 482693, [Not Found], 926\n",
+      "stderr": ""
+    },
+    "processes": [
+      {
+        "gpu_uuid": "GPU-322b1982-4898-e85f-0211-74f67db9d6ec",
+        "pid": 482693,
+        "process_name": "[Not Found]",
+        "used_gpu_memory": "926"
+      }
+    ],
+    "parse_errors": []
+  },
+  "fixed_for_entire_round": true,
+  "created_utc": "2026-10-18T10:40:12.686488+00:00",
+  "namespace_status": "Name:\tpython\nUmask:\t0022\nState:\tR (running)\nTgid:\t1755\nNgid:\t0\nPid:\t1755\nPPid:\t1754\nTracerPid:\t0\nUid:\t0\t0\t0\t0\nGid:\t0\t0\t0\t0\nFDSize:\t64\nGroups:\t0 \nNStgid:\t1755\nNSpid:\t1755\nNSpgid:\t1754\nNSsid:\t1754\nVmPeak:\t12253384 kB\nVmSize:\t11696300 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t 1148308 kB\nVmRSS:\t  505128 kB\nRssAnon:\t  238496 kB\nRssFile:\t  258440 kB\nRssShmem:\t    8192 kB\nVmData:\t 3256260 kB\nVmStk:\t     132 kB\nVmExe:\t    2412 kB\nVmLib:\t 1701156 kB\nVmPTE:\t    1932 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nThreads:\t66\nSigQ:\t7/2579474\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000001001000\nSigCgt:\t0000000100000002\nCapInh:\t0000000000000000\nCapPrm:\t00000000a80425fb\nCapEff:\t00000000a80425fb\nCapBnd:\t00000000a80425fb\nCapAmb:\t0000000000000000\nNoNewPrivs:\t0\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tvulnerable\nSpeculationIndirectBranch:\tconditional force disabled\nCpus_allowed:\tffff,ffffffff,ffffffff\nCpus_allowed_list:\t0-79\nMems_allowed:\t00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000003\nMems_allowed_list:\t0-1\nvoluntary_ctxt_switches:\t127\nnonvoluntary_ctxt_switches:\t110\n"
+}

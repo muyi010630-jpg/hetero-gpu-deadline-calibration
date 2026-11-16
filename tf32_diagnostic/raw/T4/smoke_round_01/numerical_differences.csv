@@ -1,0 +1,5 @@
+device,round,context,seed,off_phase,on_phase,off_sha256,on_sha256,valid,reason,delta,off_frobenius,difference_frobenius,arithmetic
+T4,1,fp32_n2048,2026101801,1,2,d09f1d3c7882d1a5706f425e8ccb0e38aa7e3551a94a74f1e835e66ee26bcfee,d09f1d3c7882d1a5706f425e8ccb0e38aa7e3551a94a74f1e835e66ee26bcfee,True,,0.0,92665.47694589342,0.0,CPU float64 before subtraction; chunked Frobenius norm
+T4,1,fp32_n4096,2026101801,1,2,c1a2cfb45360d2c01c786a3973856d717000324e7f8126cd11ea8373396cda71,c1a2cfb45360d2c01c786a3973856d717000324e7f8126cd11ea8373396cda71,True,,0.0,262179.67339306953,0.0,CPU float64 before subtraction; chunked Frobenius norm
+T4,1,fp32_n6144,2026101801,1,2,005d286eae0c1af41e8980ff441f689e9515266a6b8388456cfc906fda0c12e9,005d286eae0c1af41e8980ff441f689e9515266a6b8388456cfc906fda0c12e9,True,,0.0,481477.38839078817,0.0,CPU float64 before subtraction; chunked Frobenius norm
+T4,1,fp16_n4096,2026101801,1,2,fbbe91599c44e12921b4acfa55129067da42e7089a96014991abc3dcd6b1d9f5,fbbe91599c44e12921b4acfa55129067da42e7089a96014991abc3dcd6b1d9f5,True,,0.0,262189.6805610873,0.0,CPU float64 before subtraction; chunked Frobenius norm

@@ -1,0 +1,4 @@
+﻿comparator,difference_pp,ci_lower_pp,ci_upper_pp,n_image_blocks,metric,interpretation,bootstrap_draws,rng_seed,p_value_reported
+pool_ema,-6.74384528958876,-6.8442215392838115,-6.631626909059774,20,all 10 rho/flow conditions equally weighted context-macro MAPE,exploratory aggregate marginal CI; not an additional primary test,5000,20261011,False
+local_window,-0.00987639713051407,-0.0311366041304569,0.01368717054745769,20,all 10 rho/flow conditions equally weighted context-macro MAPE,exploratory aggregate marginal CI; not an additional primary test,5000,20261011,False
+full_original,-1.0591863070600522,-1.0964400766205484,-1.0215905117897215,20,all 10 rho/flow conditions equally weighted context-macro MAPE,exploratory aggregate marginal CI; not an additional primary test,5000,20261011,False

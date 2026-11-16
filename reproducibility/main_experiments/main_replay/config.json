@@ -1,0 +1,273 @@
+{
+  "created_at_unix": 1788787105.815439,
+  "profile_csv": "reproducibility/deployment/profiles/P1.csv",
+  "simulator": "<LOCAL_WORKDIR>/修补实验2_deadline重设_20260907/scripts/hetero_qos_sim_c2.py",
+  "simulator_sha256": "bc27f8dbf77bab7b453aa3a98df10811b3484e2b7e8301109056ed0c0799b3a6",
+  "original_simulator_readonly": "<LOCAL_WORKDIR>/创新机制补充实验/修补实验1_20260905/scripts/hetero_qos_sim_repair.py",
+  "fixes": {
+    "deadline_anchor": {
+      "before": "best",
+      "after": "median"
+    },
+    "deadline_qos_factors": {
+      "before": [
+        5.0,
+        3.2,
+        2.0
+      ],
+      "after": [
+        1.6,
+        1.3,
+        1.1
+      ]
+    },
+    "deadline_scales": {
+      "before": {
+        "loose": 2.6,
+        "base": 2.0,
+        "tight": 1.45
+      },
+      "after": {
+        "loose": 1.0,
+        "base": 0.8,
+        "tight": 0.64
+      }
+    },
+    "deadline_jitter": [
+      0.92,
+      1.08
+    ],
+    "oracle_device_selection": "unified scoring path incl. load-balancing term"
+  },
+  "seeds": [
+    601,
+    602,
+    603,
+    604,
+    605,
+    606,
+    607,
+    608,
+    609,
+    610,
+    611,
+    612,
+    613,
+    614,
+    615,
+    616,
+    617,
+    618,
+    619,
+    620
+  ],
+  "horizon": 12.0,
+  "loads": [
+    [
+      "low",
+      0.8
+    ],
+    [
+      "mid",
+      1.25
+    ],
+    [
+      "high",
+      1.7
+    ]
+  ],
+  "deadline_scales": [
+    [
+      "loose",
+      1.0
+    ],
+    [
+      "base",
+      0.8
+    ],
+    [
+      "tight",
+      0.64
+    ]
+  ],
+  "strict_qos_probabilities": [
+    [
+      "strict10",
+      0.1
+    ],
+    [
+      "strict25",
+      0.25
+    ],
+    [
+      "strict40",
+      0.4
+    ]
+  ],
+  "pool_mix": {
+    "2": {
+      "RTX5070": 1,
+      "T4": 1
+    },
+    "4": {
+      "RTX5070": 1,
+      "T4": 2,
+      "A100": 1
+    },
+    "8": {
+      "RTX5070": 2,
+      "T4": 3,
+      "A100": 3
+    },
+    "16": {
+      "RTX5070": 5,
+      "T4": 6,
+      "A100": 5
+    },
+    "32": {
+      "RTX5070": 10,
+      "T4": 12,
+      "A100": 10
+    }
+  },
+  "strategies": [
+    "fcfs",
+    "edf",
+    "fixed",
+    "ema",
+    "family_ema_qos",
+    "hier_qos",
+    "ema_risk",
+    "full_qos",
+    "oracle",
+    "full_no_hier",
+    "full_no_risk",
+    "full_no_drift"
+  ],
+  "strategy_params": {
+    "fcfs": {
+      "label": "FCFS",
+      "kappa_qos": 0.0
+    },
+    "edf": {
+      "label": "EDF",
+      "kappa_qos": 0.0
+    },
+    "fixed": {
+      "label": "Fixed-QoS",
+      "kappa_qos": 0.0
+    },
+    "ema": {
+      "label": "Original EMA-QoS",
+      "ema_rho": 0.3,
+      "kappa_qos": 1.3
+    },
+    "family_ema_qos": {
+      "label": "Family EMA-QoS",
+      "ema_rho": 0.3,
+      "kappa_qos": 1.3
+    },
+    "hier_qos": {
+      "label": "Hierarchical EMA-QoS",
+      "ema_rho": 0.3,
+      "kappa_qos": 1.3,
+      "hier_tau": 1.5
+    },
+    "ema_risk": {
+      "label": "EMA + risk bound",
+      "ema_rho": 0.3,
+      "kappa_qos": 0.0,
+      "risk_beta": 0.8
+    },
+    "full_qos": {
+      "label": "Full method",
+      "ema_rho": 0.3,
+      "kappa_qos": 0.0,
+      "hier_tau": 1.5,
+      "risk_beta": 0.8,
+      "cold_uncertainty": 0.3
+    },
+    "oracle": {
+      "label": "Oracle reference",
+      "kappa_qos": 0.0
+    },
+    "full_no_hier": {
+      "label": "Full w/o hierarchical borrowing",
+      "ema_rho": 0.3,
+      "kappa_qos": 0.0,
+      "hier_tau": 1.5,
+      "risk_beta": 0.8,
+      "cold_uncertainty": 0.3
+    },
+    "full_no_risk": {
+      "label": "Full w/o risk upper bound",
+      "ema_rho": 0.3,
+      "kappa_qos": 0.0,
+      "hier_tau": 1.5,
+      "risk_beta": 0.8,
+      "cold_uncertainty": 0.3
+    },
+    "full_no_drift": {
+      "label": "Full w/o drift-aware alpha",
+      "ema_rho": 0.3,
+      "kappa_qos": 0.0,
+      "hier_tau": 1.5,
+      "risk_beta": 0.8,
+      "cold_uncertainty": 0.3
+    }
+  },
+  "predefined_pairs": [
+    "fixed_vs_full_qos",
+    "ema_vs_full_qos",
+    "edf_vs_full_qos",
+    "hier_qos_vs_full_qos",
+    "ema_risk_vs_full_qos",
+    "ema_vs_hier_qos",
+    "fixed_vs_ema",
+    "full_qos_vs_full_no_hier",
+    "full_qos_vs_full_no_risk",
+    "full_qos_vs_full_no_drift"
+  ],
+  "key_metrics": [
+    "prediction_mape",
+    "sla_violation_rate",
+    "strict_qos_violation_rate",
+    "qos_bound_coverage",
+    "false_safe_rate",
+    "mean_completion",
+    "p95_completion",
+    "p99_completion",
+    "mean_wait",
+    "throughput",
+    "window_jain_fairness_mean",
+    "user_slowdown_mean",
+    "device_regret",
+    "optimal_device_rate"
+  ],
+  "multiple_comparison": "Holm-Bonferroni within scenario x pair",
+  "trace_sampling": {
+    "scenarios": [
+      [
+        8,
+        "mid",
+        "base",
+        "strict25"
+      ],
+      [
+        32,
+        "high",
+        "tight",
+        "strict25"
+      ]
+    ],
+    "strategies": [
+      "edf",
+      "ema",
+      "fixed",
+      "full_qos",
+      "oracle"
+    ],
+    "max_rows_per_cell": 400
+  },
+  "note": "Measurement-driven replay from measured RTX5070/T4/A100 profiles."
+}

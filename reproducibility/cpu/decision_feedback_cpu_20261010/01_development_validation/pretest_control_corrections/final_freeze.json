@@ -1,0 +1,308 @@
+{
+  "status": "FROZEN",
+  "exploratory": true,
+  "frozen_at_utc": "2026-10-10T01:29:54.561368+00:00",
+  "code_sha256": {
+    "scripts/run_feasibility.py": "8d0278ea3158e11f8206f6eda3b455e5c43c7e404a1140414f548fd05d5f361c",
+    "scripts/decision_calibrator.py": "f88bbf71ffd3a5eb70e6f88efe52e8f2b8e216520ee02203855060a2c6e27b9a",
+    "frozen_support/calibrator_core.py": "e69136779a14ff01aedd2e26cfa3ea6d64f9a7589d240011108c083cd71e079e",
+    "frozen_support/profile_flows.py": "3987b696f4877e0db066e3b2ec47a71baef2d16e9ca8a8c2904cf68925a59c57",
+    "00_protocol_sources/frozen_sources/hetero_qos_sim_n2.py": "bc27f8dbf77bab7b453aa3a98df10811b3484e2b7e8301109056ed0c0799b3a6"
+  },
+  "input_sha256": {
+    "reproducibility/cpu/pooled_ema_cpu_20261009/00_configuration_sources/profiles_P0/cluster_08_profile.csv": "aba668df65d8273c63bba5e920f1815d83ab1b3cbf9ebc0d65a307e5bb15f5e3"
+  },
+  "selected": {
+    "uniform_adapter": {
+      "mode": "uniform_adapter",
+      "policy": "no_probe",
+      "eta": 0.05,
+      "ranking_weight": 0.1
+    },
+    "decision_weighted": {
+      "mode": "decision_weighted",
+      "policy": "no_probe",
+      "eta": 0.01,
+      "ranking_weight": 0.1
+    },
+    "rank_history": {
+      "mode": "rank_history",
+      "policy": "no_probe",
+      "eta": 0.15,
+      "ranking_weight": 1.0
+    },
+    "uniform_fullinfo": {
+      "mode": "uniform_fullinfo",
+      "policy": "no_probe",
+      "eta": 0.01,
+      "ranking_weight": 0.1
+    },
+    "rank_fullinfo": {
+      "mode": "rank_fullinfo",
+      "policy": "no_probe",
+      "eta": 0.01,
+      "ranking_weight": 0.1
+    }
+  },
+  "selected_legal": {
+    "mode": "rank_history",
+    "policy": "no_probe",
+    "eta": 0.15,
+    "ranking_weight": 1.0
+  },
+  "test_arms": [
+    {
+      "mode": "local_window",
+      "policy": "no_probe",
+      "eta": 0.05,
+      "ranking_weight": 0.1
+    },
+    {
+      "mode": "pool_ema",
+      "policy": "no_probe",
+      "eta": 0.05,
+      "ranking_weight": 0.1
+    },
+    {
+      "mode": "full_original",
+      "policy": "no_probe",
+      "eta": 0.05,
+      "ranking_weight": 0.1
+    },
+    {
+      "mode": "perfect_information",
+      "policy": "no_probe",
+      "eta": 0.05,
+      "ranking_weight": 0.1
+    },
+    {
+      "mode": "uniform_adapter",
+      "policy": "no_probe",
+      "eta": 0.05,
+      "ranking_weight": 0.1
+    },
+    {
+      "mode": "decision_weighted",
+      "policy": "no_probe",
+      "eta": 0.01,
+      "ranking_weight": 0.1
+    },
+    {
+      "mode": "rank_history",
+      "policy": "no_probe",
+      "eta": 0.15,
+      "ranking_weight": 1.0
+    },
+    {
+      "mode": "uniform_fullinfo",
+      "policy": "no_probe",
+      "eta": 0.01,
+      "ranking_weight": 0.1
+    },
+    {
+      "mode": "rank_fullinfo",
+      "policy": "no_probe",
+      "eta": 0.01,
+      "ranking_weight": 0.1
+    },
+    {
+      "mode": "local_window",
+      "policy": "random",
+      "eta": 0.05,
+      "ranking_weight": 0.1
+    },
+    {
+      "mode": "local_window",
+      "policy": "uncertainty",
+      "eta": 0.05,
+      "ranking_weight": 0.1
+    },
+    {
+      "mode": "local_window",
+      "policy": "gated_random",
+      "eta": 0.05,
+      "ranking_weight": 0.1
+    },
+    {
+      "mode": "local_window",
+      "policy": "critical",
+      "eta": 0.05,
+      "ranking_weight": 0.1
+    },
+    {
+      "mode": "rank_history",
+      "policy": "uncertainty",
+      "eta": 0.15,
+      "ranking_weight": 1.0
+    },
+    {
+      "mode": "rank_history",
+      "policy": "critical",
+      "eta": 0.15,
+      "ranking_weight": 1.0
+    },
+    {
+      "mode": "rank_history",
+      "policy": "gated_random",
+      "eta": 0.15,
+      "ranking_weight": 1.0
+    }
+  ],
+  "validation_images": [
+    31001,
+    31002,
+    31003,
+    31004
+  ],
+  "test_images": [
+    32001,
+    32002,
+    32003,
+    32004,
+    32005,
+    32006,
+    32007,
+    32008,
+    32009,
+    32010,
+    32011,
+    32012,
+    32013,
+    32014,
+    32015,
+    32016
+  ],
+  "validation_tasks": [
+    41001,
+    41002
+  ],
+  "test_tasks": [
+    42001,
+    42002,
+    42003
+  ],
+  "analysis": {
+    "rate_columns_are": "fraction",
+    "bootstrap_repetitions": 5000,
+    "seed": 20261010,
+    "primary_comparisons": [
+      {
+        "name": "decision_update_vs_window",
+        "family": "feasibility_sla",
+        "arm_a": {
+          "mode": "rank_history",
+          "policy": "no_probe",
+          "eta": 0.15,
+          "ranking_weight": 1.0
+        },
+        "arm_b": {
+          "mode": "local_window",
+          "policy": "no_probe",
+          "eta": 0.05,
+          "ranking_weight": 0.1
+        }
+      },
+      {
+        "name": "critical_feedback_vs_uncertainty",
+        "family": "feasibility_sla",
+        "arm_a": {
+          "mode": "local_window",
+          "policy": "critical",
+          "eta": 0.05,
+          "ranking_weight": 0.1
+        },
+        "arm_b": {
+          "mode": "local_window",
+          "policy": "uncertainty",
+          "eta": 0.05,
+          "ranking_weight": 0.1
+        }
+      },
+      {
+        "name": "combined_vs_validation_probe_baseline",
+        "family": "feasibility_sla",
+        "arm_a": {
+          "mode": "rank_history",
+          "policy": "critical",
+          "eta": 0.15,
+          "ranking_weight": 1.0
+        },
+        "arm_b": {
+          "mode": "local_window",
+          "policy": "critical",
+          "eta": 0.05,
+          "ranking_weight": 0.1
+        }
+      },
+      {
+        "name": "decision_objective_vs_uniform_adapter",
+        "family": "feasibility_sla",
+        "arm_a": {
+          "mode": "rank_history",
+          "policy": "no_probe",
+          "eta": 0.15,
+          "ranking_weight": 1.0
+        },
+        "arm_b": {
+          "mode": "uniform_adapter",
+          "policy": "no_probe",
+          "eta": 0.05,
+          "ranking_weight": 0.1
+        }
+      },
+      {
+        "name": "full_information_ranking_vs_uniform",
+        "family": "feasibility_sla",
+        "arm_a": {
+          "mode": "rank_fullinfo",
+          "policy": "no_probe",
+          "eta": 0.01,
+          "ranking_weight": 0.1
+        },
+        "arm_b": {
+          "mode": "uniform_fullinfo",
+          "policy": "no_probe",
+          "eta": 0.01,
+          "ranking_weight": 0.1
+        }
+      }
+    ],
+    "design": {
+      "test": {
+        "image_seeds": [
+          32001,
+          32002,
+          32003,
+          32004,
+          32005,
+          32006,
+          32007,
+          32008,
+          32009,
+          32010,
+          32011,
+          32012,
+          32013,
+          32014,
+          32015,
+          32016
+        ],
+        "task_seeds": [
+          42001,
+          42002,
+          42003
+        ],
+        "rho_levels": [
+          0.0,
+          0.5,
+          1.0
+        ],
+        "load_levels": [
+          0.75,
+          1.7
+        ]
+      }
+    }
+  },
+  "screening_note": "Prospective exploratory screen, not confirmatory proof. Old test data used only to choose research direction."
+}

@@ -1,0 +1,295 @@
+{
+  "verified_utc": "2026-10-18T10:47:52.604781+00:00",
+  "files": [
+    {
+      "path": "batch.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "batch_status.json",
+      "bytes": 268,
+      "sha256": "5301048049a641dd11874087ea151d3e6449f597e310e417ca897d91c32e75bf"
+    },
+    {
+      "path": "input_check_round_01/input_manifest.json",
+      "bytes": 1763,
+      "sha256": "53d3aca7541653cf823548bab8789ad850a89c50a393cb5b12840b76c7339e25"
+    },
+    {
+      "path": "input_check_round_01/status.json",
+      "bytes": 942,
+      "sha256": "a0d079af36a949cba030ec46863605fd3d16f9b8242f5b680da62e42c6d7c380"
+    },
+    {
+      "path": "remote_manifest.json",
+      "bytes": 9268,
+      "sha256": "95112b84dbe300fe45a2cfdb2dc42eb6f26a5dfe3fb336f3cdcdab910ec121ff"
+    },
+    {
+      "path": "round_01/configuration.json",
+      "bytes": 9302,
+      "sha256": "f5c80bd82fc91521e7f0944d1a2a81b71bb4a49de7e9f1677a813a7a3ebe6191"
+    },
+    {
+      "path": "round_01/environment.json",
+      "bytes": 1881,
+      "sha256": "505ec61b7a3614daeb841a10714ae0d6f49220fd62ce483680c04f64459a1f16"
+    },
+    {
+      "path": "round_01/input_manifest.json",
+      "bytes": 1763,
+      "sha256": "53d3aca7541653cf823548bab8789ad850a89c50a393cb5b12840b76c7339e25"
+    },
+    {
+      "path": "round_01/numerical_differences.csv",
+      "bytes": 1237,
+      "sha256": "1a3e3791272626d478f624b1bdb22a82efd050f40c2da662346769a8c6abbecf"
+    },
+    {
+      "path": "round_01/output_checks.csv",
+      "bytes": 2793,
+      "sha256": "af31af6c261e8d7858bfbe3132e0dfb5449a48b02121c0474d42d18b40b980fc"
+    },
+    {
+      "path": "round_01/post_context_processes.json",
+      "bytes": 618,
+      "sha256": "71c1108c532dfdfba86db0349d6e1cfd25955f8e37f25ec40957bb85a2a4f6d3"
+    },
+    {
+      "path": "round_01/pre_cuda_baseline.json",
+      "bytes": 384,
+      "sha256": "bab0ef9c4e233df47f4e3a0f71402d39d2a8ccbaabd85eef1324e35cf1c09670"
+    },
+    {
+      "path": "round_01/process_ownership.json",
+      "bytes": 3001,
+      "sha256": "72ab8b42edde30e4e57992531ebaf95adec0826e98f1c65946c116f073871a01"
+    },
+    {
+      "path": "round_01/round_summary.csv",
+      "bytes": 1071,
+      "sha256": "2fda59524e7f232a0e8aab4256f53d266f6ac01884dfd36a166e35064b6d17e3"
+    },
+    {
+      "path": "round_01/stages.csv",
+      "bytes": 2812,
+      "sha256": "e30adb53320dadbf4f225975162822692269c12e2859d391156947d8a8296160"
+    },
+    {
+      "path": "round_01/status.json",
+      "bytes": 726,
+      "sha256": "f3bb52d2d94ba428ab5565d1b591acd9c192d658441cead3f926acc6e9ff18aa"
+    },
+    {
+      "path": "round_01/telemetry.jsonl",
+      "bytes": 6796,
+      "sha256": "a2c6a5feb192c5b796e60fccb749e43930c88f89db4a551961cd3e6aabae3cae"
+    },
+    {
+      "path": "round_01/windows.csv",
+      "bytes": 40899,
+      "sha256": "925af7d52d59e19376b9719e7c7066cd12e82546cb9119fc572d2226619e3f1a"
+    },
+    {
+      "path": "round_01.log",
+      "bytes": 2703,
+      "sha256": "5f6b47675663baf69277042cad9745c484ce68fc919f2c1db99b70925120eecd"
+    },
+    {
+      "path": "round_02/configuration.json",
+      "bytes": 9308,
+      "sha256": "ad65f059de4a743269e647b9d1d93bc95d4e452aa324c4b95a2fcbd6bdf9de1a"
+    },
+    {
+      "path": "round_02/environment.json",
+      "bytes": 1881,
+      "sha256": "8b240ae56c38c1fcedb7fe8bfd8b2afd7e5700a1ceb25e8aad2f66990cb3da2c"
+    },
+    {
+      "path": "round_02/input_manifest.json",
+      "bytes": 1763,
+      "sha256": "c380c0b4a4567c53c559633c5f747d2f418ccb25522f77d1668b1c2b68977ac8"
+    },
+    {
+      "path": "round_02/numerical_differences.csv",
+      "bytes": 1234,
+      "sha256": "1af67d21f495f228edc09253c0254def0b807b9cd3cd23bc7bdcfc3e6c2a0d8a"
+    },
+    {
+      "path": "round_02/output_checks.csv",
+      "bytes": 2813,
+      "sha256": "b24c05f4e4c1eee2f6471e182f7b6d707425e68f478f8d37f4532b382f4fbb0e"
+    },
+    {
+      "path": "round_02/post_context_processes.json",
+      "bytes": 618,
+      "sha256": "a0d947c5605249441d21e71682237909f6261ffaa482733a98a98ef8bb2569d4"
+    },
+    {
+      "path": "round_02/pre_cuda_baseline.json",
+      "bytes": 384,
+      "sha256": "8fb5d1c7236dcc1186d0076b7454fa210a28887142e411a1cd838a079313a5b5"
+    },
+    {
+      "path": "round_02/process_ownership.json",
+      "bytes": 3001,
+      "sha256": "5e4c166f93757f3abbe359f589148a91a6ab886328ba3d3ccf59378f863f7923"
+    },
+    {
+      "path": "round_02/round_summary.csv",
+      "bytes": 1093,
+      "sha256": "b96e57458fbae49c0f3414a4c2ae1b3d42a09a4375608f163e99073600a3a67b"
+    },
+    {
+      "path": "round_02/stages.csv",
+      "bytes": 2845,
+      "sha256": "cd57e41011cdd00620fa66bbd584192f13231c0466605f9a28493773f2aed85c"
+    },
+    {
+      "path": "round_02/status.json",
+      "bytes": 732,
+      "sha256": "f7445c72c344715435ab7a9a2ad9e161cbe17a8b58af5fb70cf34416233dce14"
+    },
+    {
+      "path": "round_02/telemetry.jsonl",
+      "bytes": 6796,
+      "sha256": "d484f0590a3d5cda817f9ae24fbf2a9c1a41d582ed21b69d6cefeed6ab4abb69"
+    },
+    {
+      "path": "round_02/windows.csv",
+      "bytes": 41385,
+      "sha256": "e85775da9599a485a6dea9d415cd3b92191e1cb2c2dbd74ab76d82c090e6cce8"
+    },
+    {
+      "path": "round_02.log",
+      "bytes": 2737,
+      "sha256": "7bff38c416af76f85fe678c6388110967fe02a40467b5ff491dbd8c2a8c46f91"
+    },
+    {
+      "path": "round_03/configuration.json",
+      "bytes": 9302,
+      "sha256": "93d4a713af5441b1b1f269f123e9ccc9c4084f0cb876c324e64904e4926afaa4"
+    },
+    {
+      "path": "round_03/environment.json",
+      "bytes": 1881,
+      "sha256": "fbfeeb1eaf1a1efe409dd1119cb0dd1f255dd8ad27ff72949220deb07cd135b4"
+    },
+    {
+      "path": "round_03/input_manifest.json",
+      "bytes": 1763,
+      "sha256": "f63289f8bff98ddf4f57990ae6fcf4e340a3442a8102edbed640151d1e00e6b5"
+    },
+    {
+      "path": "round_03/numerical_differences.csv",
+      "bytes": 1234,
+      "sha256": "e42811563b2e0211b996f71d760747ca1009f00b91abf949984284ebbbbb291c"
+    },
+    {
+      "path": "round_03/output_checks.csv",
+      "bytes": 2793,
+      "sha256": "35c1b3769f07181162b0f5c3fb496f53f1418ffda24afa55a13c844c94d7d264"
+    },
+    {
+      "path": "round_03/post_context_processes.json",
+      "bytes": 618,
+      "sha256": "4767cf6138f505052c49f8625acc7d8aaf7719b825ce85180caa4a8a7a3e234a"
+    },
+    {
+      "path": "round_03/pre_cuda_baseline.json",
+      "bytes": 384,
+      "sha256": "06933f2637b7ea34159c4b91356907bca8cd5a7f9bdc7b111e0445acb60cfeda"
+    },
+    {
+      "path": "round_03/process_ownership.json",
+      "bytes": 3000,
+      "sha256": "4402f1a0c392b24fd30e7fb06c56da691f0c79cbeff75ec9b35294b359fafb6c"
+    },
+    {
+      "path": "round_03/round_summary.csv",
+      "bytes": 1066,
+      "sha256": "35a5083c8b5217bd3eec7f12fccfc6f5d3563a5fb1d1988deb958de9f7eb1658"
+    },
+    {
+      "path": "round_03/stages.csv",
+      "bytes": 2808,
+      "sha256": "c5fc484fb418eecc245f7fed4d6083e7a235ed54f1be382ad4ba446270c459ad"
+    },
+    {
+      "path": "round_03/status.json",
+      "bytes": 726,
+      "sha256": "5df359ca2bd39c443176b78b866f8571cfcd21fe330aeb61669a52496b59ebbb"
+    },
+    {
+      "path": "round_03/telemetry.jsonl",
+      "bytes": 6793,
+      "sha256": "4ff95b46ece749abe0a52ae5791d5c7c0e2d793859d99317b0cfe6655b11e19c"
+    },
+    {
+      "path": "round_03/windows.csv",
+      "bytes": 40889,
+      "sha256": "bef0cf8081008a7fd99574c492d07f08324e1e416f153a1dabecf73748226a95"
+    },
+    {
+      "path": "round_03.log",
+      "bytes": 2701,
+      "sha256": "77f53f57c1260beeb5179f549bb2501d4d8fedc69dfe67ad311c2c4db01bcd14"
+    },
+    {
+      "path": "smoke.log",
+      "bytes": 2666,
+      "sha256": "70b41a03a00bd968c4338657fb7a3f671cd102180ae6f4834b8d294f26285eac"
+    },
+    {
+      "path": "smoke_round_01/configuration.json",
+      "bytes": 6239,
+      "sha256": "f57601d65b590a07038ff65b4779cc2c7ae5f61e0db68bdc838a886e88ab2da4"
+    },
+    {
+      "path": "smoke_round_01/environment.json",
+      "bytes": 1674,
+      "sha256": "08543d5e6341fd7b929c7edf885da00eb408003f29faeb2d86f9a9cfbf0f02a7"
+    },
+    {
+      "path": "smoke_round_01/input_manifest.json",
+      "bytes": 1419,
+      "sha256": "88df76b2f797defa9a0b3b23d345350588946b6ace4c03db3340e99875abe808"
+    },
+    {
+      "path": "smoke_round_01/numerical_differences.csv",
+      "bytes": 1237,
+      "sha256": "a86cdbe70bf4acb40410ac8af5e6ec1a2d9274329eff9bfa939694607ac3844e"
+    },
+    {
+      "path": "smoke_round_01/output_checks.csv",
+      "bytes": 2793,
+      "sha256": "4d58b7d05f5c4e2e900b1a2401008ca148cafdd0ff3fc2c60fdb67e28476212a"
+    },
+    {
+      "path": "smoke_round_01/round_summary.csv",
+      "bytes": 1064,
+      "sha256": "00609d6b9ca830612509ce672d52972344c741fde8913f423ae2636eb15724f5"
+    },
+    {
+      "path": "smoke_round_01/stages.csv",
+      "bytes": 2782,
+      "sha256": "31d2003fefad9d7d0905b9a59f20526c5cbf4ed4f1ed71374b0e821a44fd0a25"
+    },
+    {
+      "path": "smoke_round_01/status.json",
+      "bytes": 705,
+      "sha256": "ff38801626d1ac41aa1fb6ff13b610bdb75c49856eb6cf83dcdb4cf5a9840a31"
+    },
+    {
+      "path": "smoke_round_01/telemetry.jsonl",
+      "bytes": 6465,
+      "sha256": "2b6cfb759ada57043bbab4f947011cbb184ab4cd1ce4632d5f3d015ee81401a1"
+    },
+    {
+      "path": "smoke_round_01/windows.csv",
+      "bytes": 2159,
+      "sha256": "9a34694b0a6941cd875e6fa78fa0abf5e7582eba59ea63d0172e4e171745c15c"
+    }
+  ]
+}

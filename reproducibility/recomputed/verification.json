@@ -1,0 +1,7 @@
+{
+  "input_sha256": "fac009f048007f929626d96417a505bdbde09541adab740762feaecab8242053",
+  "n_runs": 60,
+  "batch_groups": 12,
+  "merged_groups": 6,
+  "saved_results_match": true
+}

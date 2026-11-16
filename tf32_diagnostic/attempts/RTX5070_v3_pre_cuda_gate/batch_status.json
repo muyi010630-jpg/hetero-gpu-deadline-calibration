@@ -1,0 +1,11 @@
+{
+  "device": "RTX5070",
+  "state": "failed",
+  "started_utc": "2026-10-18T10:40:06.138656+00:00",
+  "runner_pid": 49520,
+  "completed_rounds": [],
+  "current_round": 1,
+  "child_pid": 46504,
+  "error": "RuntimeError('Round 1 requires inspection: exit=1, state=failed')",
+  "completed_utc": "2026-10-18T10:40:06.391720+00:00"
+}

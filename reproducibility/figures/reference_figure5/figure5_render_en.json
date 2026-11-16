@@ -1,0 +1,28 @@
+{
+  "language": "英文",
+  "font": "Arial",
+  "font_path": "<SYSTEM_FONTS>/arial.ttf",
+  "figure_size_mm": [
+    180,
+    85
+  ],
+  "png_dpi": 600,
+  "missing_glyph_warnings": [],
+  "outputs": [
+    {
+      "path": "<LOCAL_WORKDIR>/论文撰写/图片/图5_覆盖率与假安全率_英文.png",
+      "bytes": 198118,
+      "sha256": "51ca4c05ba1e7deb911510f4f424b8a1084ff5b25e9e4762c3f283f2b9e05b59"
+    },
+    {
+      "path": "<LOCAL_WORKDIR>/论文撰写/图片/图5_覆盖率与假安全率_英文.pdf",
+      "bytes": 40258,
+      "sha256": "8b93d25b2f21b03328a720d5f3647db37a3d3357aa7ce0a715ee978779f5b81c"
+    },
+    {
+      "path": "<LOCAL_WORKDIR>/论文撰写/图片/图5_覆盖率与假安全率_英文.svg",
+      "bytes": 45707,
+      "sha256": "d4200b2d282751f5a8f1e901753bc75709188919364e1181e64a431729183e98"
+    }
+  ]
+}
