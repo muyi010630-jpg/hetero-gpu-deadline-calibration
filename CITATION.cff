@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use these data and code, please cite the accompanying article; the article DOI will be added when it is assigned."
-title: "Data and code for: When Do Online Calibration Gains Carry through to Deadline Outcomes in Heterogeneous GPU Pools?"
+title: "Data and code for: From Prediction Error to Deadline Outcomes: Online Execution-Time Calibration for Deadline-Aware Scheduling in Heterogeneous GPU Pools"
 type: software
 authors:
   - family-names: Pang
